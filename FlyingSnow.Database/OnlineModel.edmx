@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="OnlineModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="t_ChangeIp">
+          <Key>
+            <PropertyRef Name="f_id" />
+          </Key>
+          <Property Name="f_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="f_ip" Type="varchar" MaxLength="15" />
+          <Property Name="f_time" Type="datetime" />
+          <Property Name="f_admin" Type="varchar" MaxLength="20" />
+          <Property Name="f_del" Type="tinyint" />
+          <Property Name="f_accounts" Type="varchar" MaxLength="10" />
+          <Property Name="f_ipAddress" Type="nvarchar" MaxLength="50" />
+          <Property Name="f_auditTime" Type="datetime" />
+          <Property Name="f_type" Type="tinyint" />
+        </EntityType>
+        <EntityType Name="t_online">
+          <Key>
+            <PropertyRef Name="f_accounts" />
+          </Key>
+          <Property Name="f_accounts" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="f_status" Type="int" />
+          <Property Name="f_ip" Type="varchar" MaxLength="50" />
+          <Property Name="f_time" Type="datetime" />
+          <Property Name="f_chip" Type="datetime" />
+          <Property Name="f_timenow" Type="datetime" />
+          <Property Name="f_SB_token" Type="varchar" MaxLength="16" />
+          <Property Name="f_sporttime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="t_validateLog">
+          <Key>
+            <PropertyRef Name="f_id" />
+          </Key>
+          <Property Name="f_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="f_accounts" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="f_type" Type="tinyint" />
+          <Property Name="f_time" Type="datetime" />
+          <Property Name="f_content" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Function Name="del_validateLog" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" StoreFunctionName="del-validateLog" />
+        <Function Name="pro_OnlineSet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Accounts" Type="varchar" Mode="In" />
+          <Parameter Name="IP" Type="nvarchar" Mode="In" />
+          <Parameter Name="Status" Type="int" Mode="In" />
+          <Parameter Name="DateTime" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="pro_OnlineTimeNow_up" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Accounts" Type="varchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="OnlineModelStoreContainer">
+          <EntitySet Name="t_ChangeIp" EntityType="Self.t_ChangeIp" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="t_online" EntityType="Self.t_online" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="t_validateLog" EntityType="Self.t_validateLog" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FlyingSnow.Contract.Online" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="t_ChangeIp">
+          <Key>
+            <PropertyRef Name="f_id" />
+          </Key>
+          <Property Name="f_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="f_ip" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="f_time" Type="DateTime" Precision="3" />
+          <Property Name="f_admin" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="f_del" Type="Byte" />
+          <Property Name="f_accounts" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="f_ipAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="f_auditTime" Type="DateTime" Precision="3" />
+          <Property Name="f_type" Type="Byte" />
+        </EntityType>
+        <EntityType Name="Online">
+          <Key>
+            <PropertyRef Name="Account" />
+          </Key>
+          <Property Name="Account" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Catagory" Type="Int32" />
+          <Property Name="SignInIp" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SignInTime" Type="DateTime" Precision="3" />
+          <Property Name="BetTime" Type="DateTime" Precision="3" />
+          <Property Name="TimeNow" Type="DateTime" Precision="3" />
+          <Property Name="SPAccessToken" Type="String" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="SportTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="t_validateLog">
+          <Key>
+            <PropertyRef Name="f_id" />
+          </Key>
+          <Property Name="f_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="f_accounts" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="f_type" Type="Byte" />
+          <Property Name="f_time" Type="DateTime" Precision="3" />
+          <Property Name="f_content" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="OnlineEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="t_ChangeIp" EntityType="Self.t_ChangeIp" />
+          <EntitySet Name="Online" EntityType="Self.Online" />
+          <EntitySet Name="t_validateLog" EntityType="Self.t_validateLog" />
+          <FunctionImport Name="del_validateLog" />
+          <FunctionImport Name="pro_OnlineSet">
+            <Parameter Name="Accounts" Mode="In" Type="String" />
+            <Parameter Name="IP" Mode="In" Type="String" />
+            <Parameter Name="Status" Mode="In" Type="Int32" />
+            <Parameter Name="DateTime" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="pro_OnlineTimeNow_up">
+          <Parameter Name="Accounts" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OnlineModelStoreContainer" CdmEntityContainer="OnlineEntities">
+          <EntitySetMapping Name="t_ChangeIp">
+            <EntityTypeMapping TypeName="FlyingSnow.Contract.Online.t_ChangeIp">
+              <MappingFragment StoreEntitySet="t_ChangeIp">
+                <ScalarProperty Name="f_id" ColumnName="f_id" />
+                <ScalarProperty Name="f_ip" ColumnName="f_ip" />
+                <ScalarProperty Name="f_time" ColumnName="f_time" />
+                <ScalarProperty Name="f_admin" ColumnName="f_admin" />
+                <ScalarProperty Name="f_del" ColumnName="f_del" />
+                <ScalarProperty Name="f_accounts" ColumnName="f_accounts" />
+                <ScalarProperty Name="f_ipAddress" ColumnName="f_ipAddress" />
+                <ScalarProperty Name="f_auditTime" ColumnName="f_auditTime" />
+                <ScalarProperty Name="f_type" ColumnName="f_type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Online">
+            <EntityTypeMapping TypeName="FlyingSnow.Contract.Online.Online">
+              <MappingFragment StoreEntitySet="t_online">
+                <ScalarProperty Name="Account" ColumnName="f_accounts" />
+                <ScalarProperty Name="Catagory" ColumnName="f_status" />
+                <ScalarProperty Name="SignInIp" ColumnName="f_ip" />
+                <ScalarProperty Name="SignInTime" ColumnName="f_time" />
+                <ScalarProperty Name="BetTime" ColumnName="f_chip" />
+                <ScalarProperty Name="TimeNow" ColumnName="f_timenow" />
+                <ScalarProperty Name="SPAccessToken" ColumnName="f_SB_token" />
+                <ScalarProperty Name="SportTime" ColumnName="f_sporttime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_validateLog">
+            <EntityTypeMapping TypeName="FlyingSnow.Contract.Online.t_validateLog">
+              <MappingFragment StoreEntitySet="t_validateLog">
+                <ScalarProperty Name="f_id" ColumnName="f_id" />
+                <ScalarProperty Name="f_accounts" ColumnName="f_accounts" />
+                <ScalarProperty Name="f_type" ColumnName="f_type" />
+                <ScalarProperty Name="f_time" ColumnName="f_time" />
+                <ScalarProperty Name="f_content" ColumnName="f_content" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="del_validateLog" FunctionName="OnlineModel.Store.del_validateLog" />
+          <FunctionImportMapping FunctionImportName="pro_OnlineSet" FunctionName="OnlineModel.Store.pro_OnlineSet" />
+          <FunctionImportMapping FunctionImportName="pro_OnlineTimeNow_up" FunctionName="OnlineModel.Store.pro_OnlineTimeNow_up" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

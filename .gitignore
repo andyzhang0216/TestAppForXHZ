@@ -3,3 +3,10 @@
 ################################################################################
 
 /FlyingSnow.Database/bin/Debug
+/FlyingSnow.Database/obj/Debug
+/FlyingSnow.Contract/bin/Debug
+/FlyingSnow.Contract/obj/Debug
+/FlyingSnow.Service/bin/Debug
+/FlyingSnow.Service/obj/Debug
+/TestApp/bin/Debug
+/TestApp/obj/Debug

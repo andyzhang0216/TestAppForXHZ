@@ -1,0 +1,875 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="BillModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="t_bill">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="decimal" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="f_date" Type="datetime" />
+          <Property Name="f_time" Type="datetime" />
+          <Property Name="f_id" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="f_typ" Type="varchar" MaxLength="10" />
+          <Property Name="f_type" Type="varchar" MaxLength="15" />
+          <Property Name="f_scene" Type="tinyint" />
+          <Property Name="f_content" Type="nvarchar(max)" />
+          <Property Name="f_pl" Type="float" />
+          <Property Name="f_money" Type="float" />
+          <Property Name="f_result" Type="float" />
+          <Property Name="f_ty" Type="float" />
+          <Property Name="f_mresult" Type="float" />
+          <Property Name="f_member" Type="varchar" MaxLength="20" />
+          <Property Name="f_team" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_gameid" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="f_yssy" Type="float" />
+          <Property Name="f_js" Type="tinyint" />
+          <Property Name="f_peril" Type="tinyint" />
+          <Property Name="f_alliance" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_majordomo" Type="varchar" MaxLength="20" />
+          <Property Name="f_bigpartner" Type="varchar" MaxLength="20" />
+          <Property Name="f_partner" Type="varchar" MaxLength="20" />
+          <Property Name="f_generalagent" Type="varchar" MaxLength="20" />
+          <Property Name="f_alagent" Type="varchar" MaxLength="20" />
+          <Property Name="f_mo1" Type="float" />
+          <Property Name="f_mo2" Type="float" />
+          <Property Name="f_mo3" Type="float" />
+          <Property Name="f_mo4" Type="float" />
+          <Property Name="f_rrf0" Type="float" />
+          <Property Name="f_rrf1" Type="float" />
+          <Property Name="f_rrf2" Type="float" />
+          <Property Name="f_rrf3" Type="int" />
+          <Property Name="f_ddx0" Type="float" />
+          <Property Name="f_ddx1" Type="float" />
+          <Property Name="f_ddx2" Type="float" />
+          <Property Name="f_del" Type="tinyint" />
+          <Property Name="f_ty0" Type="float" />
+          <Property Name="f_ty01" Type="float" />
+          <Property Name="f_ty02" Type="float" />
+          <Property Name="f_ty03" Type="float" />
+          <Property Name="f_ty04" Type="float" />
+          <Property Name="f_ty00" Type="float" />
+          <Property Name="f_ip" Type="varchar" MaxLength="50" />
+          <Property Name="f_mo" Type="float" />
+          <Property Name="f_mo0" Type="float" />
+          <Property Name="f_mo5" Type="float" />
+          <Property Name="f_rzjzf" Type="float" />
+          <Property Name="f_ryjzf" Type="float" />
+          <Property Name="f_sfjzf" Type="int" />
+          <Property Name="f_demo" Type="float" />
+          <Property Name="f_cc0" Type="float" />
+          <Property Name="f_cc1" Type="float" />
+          <Property Name="f_cc2" Type="float" />
+          <Property Name="f_cc3" Type="float" />
+          <Property Name="f_cc4" Type="float" />
+          <Property Name="f_WatchTime" Type="datetime" />
+          <Property Name="f_PublicPoint" Type="float" />
+          <Property Name="f_dyxs" Type="tinyint" />
+          <Property Name="f_AuthCode" Type="varchar" MaxLength="50" />
+          <Property Name="f_bzflag" Type="tinyint" />
+          <Property Name="f_SurplusMoney" Type="float" />
+          <Property Name="f_mlevel" Type="int" />
+          <Property Name="f_waittime" Type="tinyint" />
+          <Property Name="f_delwaittime" Type="tinyint" />
+          <Property Name="f_show" Type="tinyint" />
+          <Property Name="f_way" Type="tinyint" />
+          <Property Name="f_manage" Type="nvarchar" MaxLength="50" />
+          <Property Name="f_mgroup" Type="tinyint" />
+          <Property Name="f_exflag" Type="tinyint" />
+          <Property Name="f_area" Type="nvarchar" MaxLength="40" />
+          <Property Name="f_UpWaitName" Type="nvarchar" MaxLength="20" />
+          <Property Name="f_jscount" Type="tinyint" />
+          <Property Name="f_ischange" Type="tinyint" />
+          <Property Name="f_DCinfoID" Type="int" />
+        </EntityType>
+        <EntityType Name="t_bill_gg">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="decimal" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="f_date" Type="datetime" />
+          <Property Name="f_time" Type="datetime" />
+          <Property Name="f_id" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="f_typ1" Type="varchar" MaxLength="10" />
+          <Property Name="f_money" Type="float" />
+          <Property Name="f_result" Type="float" />
+          <Property Name="f_ty" Type="float" />
+          <Property Name="f_mresult" Type="float" />
+          <Property Name="f_member" Type="varchar" MaxLength="20" />
+          <Property Name="f_yssy" Type="float" />
+          <Property Name="f_js" Type="tinyint" />
+          <Property Name="f_peril" Type="tinyint" />
+          <Property Name="f_majordomo" Type="varchar" MaxLength="20" />
+          <Property Name="f_bigpartner" Type="varchar" MaxLength="20" />
+          <Property Name="f_partner" Type="varchar" MaxLength="20" />
+          <Property Name="f_generalagent" Type="varchar" MaxLength="20" />
+          <Property Name="f_alagent" Type="varchar" MaxLength="20" />
+          <Property Name="f_mo1" Type="float" />
+          <Property Name="f_mo2" Type="float" />
+          <Property Name="f_mo3" Type="float" />
+          <Property Name="f_mo4" Type="float" />
+          <Property Name="f_del" Type="tinyint" />
+          <Property Name="f_content_1" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_content_2" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_content_3" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_content_4" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_content_5" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_content_6" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_content_7" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_content_8" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_content_9" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_content_10" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_team_1" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_team_2" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_team_3" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_team_4" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_team_5" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_team_6" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_team_7" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_team_8" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_team_9" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_team_10" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_pl_1" Type="float" />
+          <Property Name="f_pl_2" Type="float" />
+          <Property Name="f_pl_3" Type="float" />
+          <Property Name="f_pl_4" Type="float" />
+          <Property Name="f_pl_5" Type="float" />
+          <Property Name="f_pl_6" Type="float" />
+          <Property Name="f_pl_7" Type="float" />
+          <Property Name="f_pl_8" Type="float" />
+          <Property Name="f_pl_9" Type="float" />
+          <Property Name="f_pl_10" Type="float" />
+          <Property Name="f_rrf0_1" Type="float" />
+          <Property Name="f_rrf0_2" Type="float" />
+          <Property Name="f_rrf0_3" Type="float" />
+          <Property Name="f_rrf0_4" Type="float" />
+          <Property Name="f_rrf0_5" Type="float" />
+          <Property Name="f_rrf0_6" Type="float" />
+          <Property Name="f_rrf0_7" Type="float" />
+          <Property Name="f_rrf0_8" Type="float" />
+          <Property Name="f_rrf0_9" Type="float" />
+          <Property Name="f_rrf0_10" Type="float" />
+          <Property Name="f_rrf1_1" Type="int" />
+          <Property Name="f_rrf1_2" Type="int" />
+          <Property Name="f_rrf1_3" Type="int" />
+          <Property Name="f_rrf1_4" Type="int" />
+          <Property Name="f_rrf1_5" Type="int" />
+          <Property Name="f_rrf1_6" Type="int" />
+          <Property Name="f_rrf1_7" Type="int" />
+          <Property Name="f_rrf1_8" Type="int" />
+          <Property Name="f_rrf1_9" Type="int" />
+          <Property Name="f_rrf1_10" Type="int" />
+          <Property Name="f_rrf2_1" Type="float" />
+          <Property Name="f_rrf2_2" Type="float" />
+          <Property Name="f_rrf2_3" Type="float" />
+          <Property Name="f_rrf2_4" Type="float" />
+          <Property Name="f_rrf2_5" Type="float" />
+          <Property Name="f_rrf2_6" Type="float" />
+          <Property Name="f_rrf2_7" Type="float" />
+          <Property Name="f_rrf2_8" Type="float" />
+          <Property Name="f_rrf2_9" Type="float" />
+          <Property Name="f_rrf2_10" Type="float" />
+          <Property Name="f_rrf3_1" Type="int" />
+          <Property Name="f_rrf3_2" Type="int" />
+          <Property Name="f_rrf3_3" Type="int" />
+          <Property Name="f_rrf3_4" Type="int" />
+          <Property Name="f_rrf3_5" Type="int" />
+          <Property Name="f_rrf3_6" Type="int" />
+          <Property Name="f_rrf3_7" Type="int" />
+          <Property Name="f_rrf3_8" Type="int" />
+          <Property Name="f_rrf3_9" Type="int" />
+          <Property Name="f_rrf3_10" Type="int" />
+          <Property Name="f_ddx0_1" Type="float" />
+          <Property Name="f_ddx0_2" Type="float" />
+          <Property Name="f_ddx0_3" Type="float" />
+          <Property Name="f_ddx0_4" Type="float" />
+          <Property Name="f_ddx0_5" Type="float" />
+          <Property Name="f_ddx0_6" Type="float" />
+          <Property Name="f_ddx0_7" Type="float" />
+          <Property Name="f_ddx0_8" Type="float" />
+          <Property Name="f_ddx0_9" Type="float" />
+          <Property Name="f_ddx0_10" Type="float" />
+          <Property Name="f_ddx1_1" Type="int" />
+          <Property Name="f_ddx1_2" Type="int" />
+          <Property Name="f_ddx1_3" Type="int" />
+          <Property Name="f_ddx1_4" Type="int" />
+          <Property Name="f_ddx1_5" Type="int" />
+          <Property Name="f_ddx1_6" Type="int" />
+          <Property Name="f_ddx1_7" Type="int" />
+          <Property Name="f_ddx1_8" Type="int" />
+          <Property Name="f_ddx1_9" Type="int" />
+          <Property Name="f_ddx1_10" Type="int" />
+          <Property Name="f_ddx2_1" Type="float" />
+          <Property Name="f_ddx2_2" Type="float" />
+          <Property Name="f_ddx2_3" Type="float" />
+          <Property Name="f_ddx2_4" Type="float" />
+          <Property Name="f_ddx2_5" Type="float" />
+          <Property Name="f_ddx2_6" Type="float" />
+          <Property Name="f_ddx2_7" Type="float" />
+          <Property Name="f_ddx2_8" Type="float" />
+          <Property Name="f_ddx2_9" Type="float" />
+          <Property Name="f_ddx2_10" Type="float" />
+          <Property Name="f_type_1" Type="varchar" MaxLength="15" />
+          <Property Name="f_type_2" Type="varchar" MaxLength="15" />
+          <Property Name="f_type_3" Type="varchar" MaxLength="15" />
+          <Property Name="f_type_4" Type="varchar" MaxLength="15" />
+          <Property Name="f_type_5" Type="varchar" MaxLength="15" />
+          <Property Name="f_type_6" Type="varchar" MaxLength="15" />
+          <Property Name="f_type_7" Type="varchar" MaxLength="15" />
+          <Property Name="f_type_8" Type="varchar" MaxLength="15" />
+          <Property Name="f_type_9" Type="varchar" MaxLength="15" />
+          <Property Name="f_type_10" Type="varchar" MaxLength="15" />
+          <Property Name="f_id_1" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="f_id_2" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="f_id_3" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="f_id_4" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="f_id_5" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="f_id_6" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="f_id_7" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="f_id_8" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="f_id_9" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="f_id_10" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="f_ty0" Type="float" />
+          <Property Name="f_ty01" Type="float" />
+          <Property Name="f_ty02" Type="float" />
+          <Property Name="f_ty03" Type="float" />
+          <Property Name="f_ty04" Type="float" />
+          <Property Name="f_ty00" Type="float" />
+          <Property Name="f_con_1" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_con_2" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_con_3" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_con_4" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_con_5" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_con_6" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_con_7" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_con_8" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_con_9" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_con_10" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_ip" Type="varchar" MaxLength="50" />
+          <Property Name="f_mo" Type="float" />
+          <Property Name="f_mo0" Type="float" />
+          <Property Name="f_mo5" Type="float" />
+          <Property Name="f_demo" Type="int" />
+          <Property Name="f_cc0" Type="float" />
+          <Property Name="f_cc1" Type="float" />
+          <Property Name="f_cc2" Type="float" />
+          <Property Name="f_cc3" Type="float" />
+          <Property Name="f_cc4" Type="float" />
+          <Property Name="f_AuthCode" Type="varchar" MaxLength="50" />
+          <Property Name="f_typ2" Type="varchar" MaxLength="4" />
+          <Property Name="f_typ3" Type="varchar" MaxLength="4" />
+          <Property Name="f_typ4" Type="varchar" MaxLength="4" />
+          <Property Name="f_typ5" Type="varchar" MaxLength="4" />
+          <Property Name="f_typ6" Type="varchar" MaxLength="4" />
+          <Property Name="f_typ7" Type="varchar" MaxLength="4" />
+          <Property Name="f_typ8" Type="varchar" MaxLength="4" />
+          <Property Name="f_typ9" Type="varchar" MaxLength="4" />
+          <Property Name="f_typ10" Type="varchar" MaxLength="4" />
+          <Property Name="f_SurplusMoney" Type="float" />
+          <Property Name="f_jstime" Type="datetime" />
+          <Property Name="f_way" Type="tinyint" />
+          <Property Name="f_exflag" Type="tinyint" />
+          <Property Name="f_area" Type="nvarchar" MaxLength="40" />
+          <Property Name="f_motherid" Type="varchar" MaxLength="36" />
+          <Property Name="f_jscount" Type="tinyint" />
+          <Property Name="f_ischange" Type="tinyint" />
+          <Property Name="f_jxstatus" Type="int" />
+          <Property Name="f_DCinfoID" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityContainer Name="BillModelStoreContainer">
+          <EntitySet Name="t_bill" EntityType="Self.t_bill" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="t_bill_gg" EntityType="Self.t_bill_gg" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FlyingSnow.Contract.Bill" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Bill">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TransferDate" Type="DateTime" Precision="3" />
+          <Property Name="BetTime" Type="DateTime" Precision="3" />
+          <Property Name="BillId" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="GameType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="BetType" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="SceneCatagory" Type="Byte" />
+          <Property Name="BetContent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Odds" Type="Double" />
+          <Property Name="BetMoney" Type="Double" />
+          <Property Name="Result" Type="Double" />
+          <Property Name="RefundAmount" Type="Double" />
+          <Property Name="MemberResult" Type="Double" />
+          <Property Name="Member" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PlayingMethod" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="GameId" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="WinAmount" Type="Double" />
+          <Property Name="CalculateStatus" Type="Byte" />
+          <Property Name="MemberDangerLevel" Type="Byte" />
+          <Property Name="Alliance" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="Majordomo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="BigPartner" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Partner" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="GeneralAgency" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Agency" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="EffectiveBetOfBigPartner" Type="Double" />
+          <Property Name="EffectiveBetOfPartner" Type="Double" />
+          <Property Name="EffectiveBetOfGeneralAgency" Type="Double" />
+          <Property Name="EffectiveBetOfAgency" Type="Double" />
+          <Property Name="OddsStandard" Type="Double" />
+          <Property Name="OddsFlag" Type="Double" />
+          <Property Name="OddsPercent" Type="Double" />
+          <Property Name="SpreadFlag" Type="Int32" />
+          <Property Name="Score" Type="Double" />
+          <Property Name="ScoreFlag" Type="Double" />
+          <Property Name="ScorePercent" Type="Double" />
+          <Property Name="Status" Type="Byte" />
+          <Property Name="RefundMember" Type="Double" />
+          <Property Name="RefundBigPartner" Type="Double" />
+          <Property Name="RefundPartner" Type="Double" />
+          <Property Name="RefundGeneralAgency" Type="Double" />
+          <Property Name="RefundAgency" Type="Double" />
+          <Property Name="RefundMajordomo" Type="Double" />
+          <Property Name="BillIP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CompanyResult" Type="Double" />
+          <Property Name="EffectiveBetOfMajordomo" Type="Double" />
+          <Property Name="EffectiveBetOfMember" Type="Double" />
+          <Property Name="ReferPointLeft" Type="Double" />
+          <Property Name="ReferPointRight" Type="Double" />
+          <Property Name="ReferPointFlag" Type="Int32" />
+          <Property Name="f_demo" Type="Double" />
+          <Property Name="OccupyByMajordomo" Type="Double" />
+          <Property Name="OccupyByBigPartner" Type="Double" />
+          <Property Name="OccupyByPartner" Type="Double" />
+          <Property Name="OccupyByGeneralAgency" Type="Double" />
+          <Property Name="OccupyByAgency" Type="Double" />
+          <Property Name="f_WatchTime" Type="DateTime" Precision="3" />
+          <Property Name="PublicPoint" Type="Double" />
+          <Property Name="GameStatus" Type="Byte" >
+          </Property>
+          <Property Name="AuthCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RemarkFlag" Type="Byte" />
+          <Property Name="SurplusMoney" Type="Double" />
+          <Property Name="f_mlevel" Type="Int32" />
+          <Property Name="BetDelaySecond" Type="Byte" />
+          <Property Name="DeleteDelaySecond" Type="Byte" />
+          <Property Name="AffirmState" Type="Byte" />
+          <Property Name="BetFlag" Type="Byte" />
+          <Property Name="Manager" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ManagerGroup" Type="Byte" />
+          <Property Name="ExFlag" Type="Byte" />
+          <Property Name="IPArea" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="UpWaitName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="CalculateCount" Type="Byte" />
+          <Property Name="f_ischange" Type="Byte" />
+          <Property Name="f_DCinfoID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="ParlayBill">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TransferDate" Type="DateTime" Precision="3" />
+          <Property Name="BetTime" Type="DateTime" Precision="3" />
+          <Property Name="BillId" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="GameType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="BetMoney" Type="Double" />
+          <Property Name="Result" Type="Double" />
+          <Property Name="RefundAmount" Type="Double" />
+          <Property Name="MemberResult" Type="Double" />
+          <Property Name="Member" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="WinAmount" Type="Double" />
+          <Property Name="CalculateStatus" Type="Byte" />
+          <Property Name="MemberDangerLevel" Type="Byte" />
+          <Property Name="Majordomo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="BigPartner" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Partner" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="GeneralAgency" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Agency" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="EffectiveBetOfBigPartner" Type="Double" />
+          <Property Name="EffectiveBetOfPartner" Type="Double" />
+          <Property Name="EffectiveBetOfGeneralAgency" Type="Double" />
+          <Property Name="EffectiveBetOfAgency" Type="Double" />
+          <Property Name="Status" Type="Byte" />
+          <Property Name="Content0" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="Content1" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="Content2" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="Content3" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="Content4" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="Content5" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="Content6" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="Content7" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="Content8" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="Content9" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="BetTeam0" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="BetTeam1" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="BetTeam2" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="BetTeam3" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="BetTeam4" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="BetTeam5" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="BetTeam6" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="BetTeam7" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="BetTeam8" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="BetTeam9" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="Odds0" Type="Double" />
+          <Property Name="Odds1" Type="Double" />
+          <Property Name="Odds2" Type="Double" />
+          <Property Name="Odds3" Type="Double" />
+          <Property Name="Odds4" Type="Double" />
+          <Property Name="Odds5" Type="Double" />
+          <Property Name="Odds6" Type="Double" />
+          <Property Name="Odds7" Type="Double" />
+          <Property Name="Odds8" Type="Double" />
+          <Property Name="Odds9" Type="Double" />
+          <Property Name="Spread0_1" Type="Double" />
+          <Property Name="Spread0_2" Type="Double" />
+          <Property Name="Spread0_3" Type="Double" />
+          <Property Name="Spread0_4" Type="Double" />
+          <Property Name="Spread0_5" Type="Double" />
+          <Property Name="Spread0_6" Type="Double" />
+          <Property Name="Spread0_7" Type="Double" />
+          <Property Name="Spread0_8" Type="Double" />
+          <Property Name="Spread0_9" Type="Double" />
+          <Property Name="Spread0_10" Type="Double" />
+          <Property Name="Spread1_1" Type="Int32" />
+          <Property Name="Spread1_2" Type="Int32" />
+          <Property Name="Spread1_3" Type="Int32" />
+          <Property Name="Spread1_4" Type="Int32" />
+          <Property Name="Spread1_5" Type="Int32" />
+          <Property Name="Spread1_6" Type="Int32" />
+          <Property Name="Spread1_7" Type="Int32" />
+          <Property Name="Spread1_8" Type="Int32" />
+          <Property Name="Spread1_9" Type="Int32" />
+          <Property Name="Spread1_10" Type="Int32" />
+          <Property Name="Spread2_1" Type="Double" />
+          <Property Name="Spread2_2" Type="Double" />
+          <Property Name="Spread2_3" Type="Double" />
+          <Property Name="Spread2_4" Type="Double" />
+          <Property Name="Spread2_5" Type="Double" />
+          <Property Name="Spread2_6" Type="Double" />
+          <Property Name="Spread2_7" Type="Double" />
+          <Property Name="Spread2_8" Type="Double" />
+          <Property Name="Spread2_9" Type="Double" />
+          <Property Name="Spread2_10" Type="Double" />
+          <Property Name="Spread3_1" Type="Int32" />
+          <Property Name="Spread3_2" Type="Int32" />
+          <Property Name="Spread3_3" Type="Int32" />
+          <Property Name="Spread3_4" Type="Int32" />
+          <Property Name="Spread3_5" Type="Int32" />
+          <Property Name="Spread3_6" Type="Int32" />
+          <Property Name="Spread3_7" Type="Int32" />
+          <Property Name="Spread3_8" Type="Int32" />
+          <Property Name="Spread3_9" Type="Int32" />
+          <Property Name="Spread3_10" Type="Int32" />
+          <Property Name="Score0_1" Type="Double" />
+          <Property Name="Score0_2" Type="Double" />
+          <Property Name="Score0_3" Type="Double" />
+          <Property Name="Score0_4" Type="Double" />
+          <Property Name="Score0_5" Type="Double" />
+          <Property Name="Score0_6" Type="Double" />
+          <Property Name="Score0_7" Type="Double" />
+          <Property Name="Score0_8" Type="Double" />
+          <Property Name="Score0_9" Type="Double" />
+          <Property Name="Score0_10" Type="Double" />
+          <Property Name="Score1_1" Type="Int32" />
+          <Property Name="Score1_2" Type="Int32" />
+          <Property Name="Score1_3" Type="Int32" />
+          <Property Name="Score1_4" Type="Int32" />
+          <Property Name="Score1_5" Type="Int32" />
+          <Property Name="Score1_6" Type="Int32" />
+          <Property Name="Score1_7" Type="Int32" />
+          <Property Name="Score1_8" Type="Int32" />
+          <Property Name="Score1_9" Type="Int32" />
+          <Property Name="Score1_10" Type="Int32" />
+          <Property Name="Score2_1" Type="Double" />
+          <Property Name="Score2_2" Type="Double" />
+          <Property Name="Score2_3" Type="Double" />
+          <Property Name="Score2_4" Type="Double" />
+          <Property Name="Score2_5" Type="Double" />
+          <Property Name="Score2_6" Type="Double" />
+          <Property Name="Score2_7" Type="Double" />
+          <Property Name="Score2_8" Type="Double" />
+          <Property Name="Score2_9" Type="Double" />
+          <Property Name="Score2_10" Type="Double" />
+          <Property Name="GameType0" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="GameType1" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="GameType2" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="GameType3" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="GameType4" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="GameType5" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="GameType6" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="GameType7" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="GameType8" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="GameType9" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="BillParlay0" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="BillParlay1" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="BillParlay2" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="BillParlay3" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="BillParlay4" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="BillParlay5" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="BillParlay6" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="BillParlay7" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="BillParlay8" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="BillParlay9" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="RefundMember" Type="Double" />
+          <Property Name="RefundBigPartner" Type="Double" />
+          <Property Name="RefundPartner" Type="Double" />
+          <Property Name="RefundGeneralAgency" Type="Double" />
+          <Property Name="RefundAgency" Type="Double" />
+          <Property Name="RefundMajordomo" Type="Double" />
+          <Property Name="Alliance0" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="Alliance1" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="Alliance2" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="Alliance3" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="Alliance4" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="Alliance5" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="Alliance6" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="Alliance7" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="Alliance8" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="Alliance9" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="BillIP" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CompanyResult" Type="Double" />
+          <Property Name="EffectiveBetOfMajordomo" Type="Double" />
+          <Property Name="EffectiveBetOfMember" Type="Double" />
+          <Property Name="f_demo" Type="Int32" />
+          <Property Name="OccupyByMajordomo" Type="Double" />
+          <Property Name="OccupyByBigPartner" Type="Double" />
+          <Property Name="OccupyByPartner" Type="Double" />
+          <Property Name="OccupyByGeneralAgency" Type="Double" />
+          <Property Name="OccupyByAgency" Type="Double" />
+          <Property Name="AuthCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="GameTypeName1" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="GameTypeName2" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="GameTypeName3" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="GameTypeName4" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="GameTypeName5" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="GameTypeName6" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="GameTypeName7" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="GameTypeName8" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="GameTypeName9" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="SurplusMoney" Type="Double" />
+          <Property Name="CloseAccountTime" Type="DateTime" Precision="3" />
+          <Property Name="BetFlag" Type="Byte" />
+          <Property Name="ExFlag" Type="Byte" />
+          <Property Name="IPArea" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="ParentId" Type="String" MaxLength="36" FixedLength="false" Unicode="false" />
+          <Property Name="CalculateCount" Type="Byte" />
+          <Property Name="f_ischange" Type="Byte" />
+          <Property Name="Demotion" Type="Int32" />
+          <Property Name="f_DCinfoID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="BillEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Bill" EntityType="FlyingSnow.Contract.Bill.Bill" />
+          <EntitySet Name="ParlayBill" EntityType="FlyingSnow.Contract.Bill.ParlayBill" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BillModelStoreContainer" CdmEntityContainer="BillEntities">
+          <EntitySetMapping Name="Bill">
+            <EntityTypeMapping TypeName="FlyingSnow.Contract.Bill.Bill">
+              <MappingFragment StoreEntitySet="t_bill">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TransferDate" ColumnName="f_date" />
+                <ScalarProperty Name="BetTime" ColumnName="f_time" />
+                <ScalarProperty Name="BillId" ColumnName="f_id" />
+                <ScalarProperty Name="GameType" ColumnName="f_typ" />
+                <ScalarProperty Name="BetType" ColumnName="f_type" />
+                <ScalarProperty Name="SceneCatagory" ColumnName="f_scene" />
+                <ScalarProperty Name="BetContent" ColumnName="f_content" />
+                <ScalarProperty Name="Odds" ColumnName="f_pl" />
+                <ScalarProperty Name="BetMoney" ColumnName="f_money" />
+                <ScalarProperty Name="Result" ColumnName="f_result" />
+                <ScalarProperty Name="RefundAmount" ColumnName="f_ty" />
+                <ScalarProperty Name="MemberResult" ColumnName="f_mresult" />
+                <ScalarProperty Name="Member" ColumnName="f_member" />
+                <ScalarProperty Name="PlayingMethod" ColumnName="f_team" />
+                <ScalarProperty Name="GameId" ColumnName="f_gameid" />
+                <ScalarProperty Name="WinAmount" ColumnName="f_yssy" />
+                <ScalarProperty Name="CalculateStatus" ColumnName="f_js" />
+                <ScalarProperty Name="MemberDangerLevel" ColumnName="f_peril" />
+                <ScalarProperty Name="Alliance" ColumnName="f_alliance" />
+                <ScalarProperty Name="Majordomo" ColumnName="f_majordomo" />
+                <ScalarProperty Name="BigPartner" ColumnName="f_bigpartner" />
+                <ScalarProperty Name="Partner" ColumnName="f_partner" />
+                <ScalarProperty Name="GeneralAgency" ColumnName="f_generalagent" />
+                <ScalarProperty Name="Agency" ColumnName="f_alagent" />
+                <ScalarProperty Name="EffectiveBetOfBigPartner" ColumnName="f_mo1" />
+                <ScalarProperty Name="EffectiveBetOfPartner" ColumnName="f_mo2" />
+                <ScalarProperty Name="EffectiveBetOfGeneralAgency" ColumnName="f_mo3" />
+                <ScalarProperty Name="EffectiveBetOfAgency" ColumnName="f_mo4" />
+                <ScalarProperty Name="OddsStandard" ColumnName="f_rrf0" />
+                <ScalarProperty Name="OddsFlag" ColumnName="f_rrf1" />
+                <ScalarProperty Name="OddsPercent" ColumnName="f_rrf2" />
+                <ScalarProperty Name="SpreadFlag" ColumnName="f_rrf3" />
+                <ScalarProperty Name="Score" ColumnName="f_ddx0" />
+                <ScalarProperty Name="ScoreFlag" ColumnName="f_ddx1" />
+                <ScalarProperty Name="ScorePercent" ColumnName="f_ddx2" />
+                <ScalarProperty Name="Status" ColumnName="f_del" />
+                <ScalarProperty Name="RefundMember" ColumnName="f_ty0" />
+                <ScalarProperty Name="RefundBigPartner" ColumnName="f_ty01" />
+                <ScalarProperty Name="RefundPartner" ColumnName="f_ty02" />
+                <ScalarProperty Name="RefundGeneralAgency" ColumnName="f_ty03" />
+                <ScalarProperty Name="RefundAgency" ColumnName="f_ty04" />
+                <ScalarProperty Name="RefundMajordomo" ColumnName="f_ty00" />
+                <ScalarProperty Name="BillIP" ColumnName="f_ip" />
+                <ScalarProperty Name="CompanyResult" ColumnName="f_mo" />
+                <ScalarProperty Name="EffectiveBetOfMajordomo" ColumnName="f_mo0" />
+                <ScalarProperty Name="EffectiveBetOfMember" ColumnName="f_mo5" />
+                <ScalarProperty Name="ReferPointLeft" ColumnName="f_rzjzf" />
+                <ScalarProperty Name="ReferPointRight" ColumnName="f_ryjzf" />
+                <ScalarProperty Name="ReferPointFlag" ColumnName="f_sfjzf" />
+                <ScalarProperty Name="f_demo" ColumnName="f_demo" />
+                <ScalarProperty Name="OccupyByMajordomo" ColumnName="f_cc0" />
+                <ScalarProperty Name="OccupyByBigPartner" ColumnName="f_cc1" />
+                <ScalarProperty Name="OccupyByPartner" ColumnName="f_cc2" />
+                <ScalarProperty Name="OccupyByGeneralAgency" ColumnName="f_cc3" />
+                <ScalarProperty Name="OccupyByAgency" ColumnName="f_cc4" />
+                <ScalarProperty Name="f_WatchTime" ColumnName="f_WatchTime" />
+                <ScalarProperty Name="PublicPoint" ColumnName="f_PublicPoint" />
+                <ScalarProperty Name="GameStatus" ColumnName="f_dyxs" />
+                <ScalarProperty Name="AuthCode" ColumnName="f_AuthCode" />
+                <ScalarProperty Name="RemarkFlag" ColumnName="f_bzflag" />
+                <ScalarProperty Name="SurplusMoney" ColumnName="f_SurplusMoney" />
+                <ScalarProperty Name="f_mlevel" ColumnName="f_mlevel" />
+                <ScalarProperty Name="BetDelaySecond" ColumnName="f_waittime" />
+                <ScalarProperty Name="DeleteDelaySecond" ColumnName="f_delwaittime" />
+                <ScalarProperty Name="AffirmState" ColumnName="f_show" />
+                <ScalarProperty Name="BetFlag" ColumnName="f_way" />
+                <ScalarProperty Name="Manager" ColumnName="f_manage" />
+                <ScalarProperty Name="ManagerGroup" ColumnName="f_mgroup" />
+                <ScalarProperty Name="ExFlag" ColumnName="f_exflag" />
+                <ScalarProperty Name="IPArea" ColumnName="f_area" />
+                <ScalarProperty Name="UpWaitName" ColumnName="f_UpWaitName" />
+                <ScalarProperty Name="CalculateCount" ColumnName="f_jscount" />
+                <ScalarProperty Name="f_ischange" ColumnName="f_ischange" />
+                <ScalarProperty Name="f_DCinfoID" ColumnName="f_DCinfoID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ParlayBill">
+            <EntityTypeMapping TypeName="FlyingSnow.Contract.Bill.ParlayBill">
+              <MappingFragment StoreEntitySet="t_bill_gg">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TransferDate" ColumnName="f_date" />
+                <ScalarProperty Name="BetTime" ColumnName="f_time" />
+                <ScalarProperty Name="BillId" ColumnName="f_id" />
+                <ScalarProperty Name="GameType" ColumnName="f_typ1" />
+                <ScalarProperty Name="BetMoney" ColumnName="f_money" />
+                <ScalarProperty Name="Result" ColumnName="f_result" />
+                <ScalarProperty Name="RefundAmount" ColumnName="f_ty" />
+                <ScalarProperty Name="MemberResult" ColumnName="f_mresult" />
+                <ScalarProperty Name="Member" ColumnName="f_member" />
+                <ScalarProperty Name="WinAmount" ColumnName="f_yssy" />
+                <ScalarProperty Name="CalculateStatus" ColumnName="f_js" />
+                <ScalarProperty Name="MemberDangerLevel" ColumnName="f_peril" />
+                <ScalarProperty Name="Majordomo" ColumnName="f_majordomo" />
+                <ScalarProperty Name="BigPartner" ColumnName="f_bigpartner" />
+                <ScalarProperty Name="Partner" ColumnName="f_partner" />
+                <ScalarProperty Name="GeneralAgency" ColumnName="f_generalagent" />
+                <ScalarProperty Name="Agency" ColumnName="f_alagent" />
+                <ScalarProperty Name="EffectiveBetOfBigPartner" ColumnName="f_mo1" />
+                <ScalarProperty Name="EffectiveBetOfPartner" ColumnName="f_mo2" />
+                <ScalarProperty Name="EffectiveBetOfGeneralAgency" ColumnName="f_mo3" />
+                <ScalarProperty Name="EffectiveBetOfAgency" ColumnName="f_mo4" />
+                <ScalarProperty Name="Status" ColumnName="f_del" />
+                <ScalarProperty Name="Content0" ColumnName="f_content_1" />
+                <ScalarProperty Name="Content1" ColumnName="f_content_2" />
+                <ScalarProperty Name="Content2" ColumnName="f_content_3" />
+                <ScalarProperty Name="Content3" ColumnName="f_content_4" />
+                <ScalarProperty Name="Content4" ColumnName="f_content_5" />
+                <ScalarProperty Name="Content5" ColumnName="f_content_6" />
+                <ScalarProperty Name="Content6" ColumnName="f_content_7" />
+                <ScalarProperty Name="Content7" ColumnName="f_content_8" />
+                <ScalarProperty Name="Content8" ColumnName="f_content_9" />
+                <ScalarProperty Name="Content9" ColumnName="f_content_10" />
+                <ScalarProperty Name="BetTeam0" ColumnName="f_team_1" />
+                <ScalarProperty Name="BetTeam1" ColumnName="f_team_2" />
+                <ScalarProperty Name="BetTeam2" ColumnName="f_team_3" />
+                <ScalarProperty Name="BetTeam3" ColumnName="f_team_4" />
+                <ScalarProperty Name="BetTeam4" ColumnName="f_team_5" />
+                <ScalarProperty Name="BetTeam5" ColumnName="f_team_6" />
+                <ScalarProperty Name="BetTeam6" ColumnName="f_team_7" />
+                <ScalarProperty Name="BetTeam7" ColumnName="f_team_8" />
+                <ScalarProperty Name="BetTeam8" ColumnName="f_team_9" />
+                <ScalarProperty Name="BetTeam9" ColumnName="f_team_10" />
+                <ScalarProperty Name="Odds0" ColumnName="f_pl_1" />
+                <ScalarProperty Name="Odds1" ColumnName="f_pl_2" />
+                <ScalarProperty Name="Odds2" ColumnName="f_pl_3" />
+                <ScalarProperty Name="Odds3" ColumnName="f_pl_4" />
+                <ScalarProperty Name="Odds4" ColumnName="f_pl_5" />
+                <ScalarProperty Name="Odds5" ColumnName="f_pl_6" />
+                <ScalarProperty Name="Odds6" ColumnName="f_pl_7" />
+                <ScalarProperty Name="Odds7" ColumnName="f_pl_8" />
+                <ScalarProperty Name="Odds8" ColumnName="f_pl_9" />
+                <ScalarProperty Name="Odds9" ColumnName="f_pl_10" />
+                <ScalarProperty Name="Spread0_1" ColumnName="f_rrf0_1" />
+                <ScalarProperty Name="Spread0_2" ColumnName="f_rrf0_2" />
+                <ScalarProperty Name="Spread0_3" ColumnName="f_rrf0_3" />
+                <ScalarProperty Name="Spread0_4" ColumnName="f_rrf0_4" />
+                <ScalarProperty Name="Spread0_5" ColumnName="f_rrf0_5" />
+                <ScalarProperty Name="Spread0_6" ColumnName="f_rrf0_6" />
+                <ScalarProperty Name="Spread0_7" ColumnName="f_rrf0_7" />
+                <ScalarProperty Name="Spread0_8" ColumnName="f_rrf0_8" />
+                <ScalarProperty Name="Spread0_9" ColumnName="f_rrf0_9" />
+                <ScalarProperty Name="Spread0_10" ColumnName="f_rrf0_10" />
+                <ScalarProperty Name="Spread1_1" ColumnName="f_rrf1_1" />
+                <ScalarProperty Name="Spread1_2" ColumnName="f_rrf1_2" />
+                <ScalarProperty Name="Spread1_3" ColumnName="f_rrf1_3" />
+                <ScalarProperty Name="Spread1_4" ColumnName="f_rrf1_4" />
+                <ScalarProperty Name="Spread1_5" ColumnName="f_rrf1_5" />
+                <ScalarProperty Name="Spread1_6" ColumnName="f_rrf1_6" />
+                <ScalarProperty Name="Spread1_7" ColumnName="f_rrf1_7" />
+                <ScalarProperty Name="Spread1_8" ColumnName="f_rrf1_8" />
+                <ScalarProperty Name="Spread1_9" ColumnName="f_rrf1_9" />
+                <ScalarProperty Name="Spread1_10" ColumnName="f_rrf1_10" />
+                <ScalarProperty Name="Spread2_1" ColumnName="f_rrf2_1" />
+                <ScalarProperty Name="Spread2_2" ColumnName="f_rrf2_2" />
+                <ScalarProperty Name="Spread2_3" ColumnName="f_rrf2_3" />
+                <ScalarProperty Name="Spread2_4" ColumnName="f_rrf2_4" />
+                <ScalarProperty Name="Spread2_5" ColumnName="f_rrf2_5" />
+                <ScalarProperty Name="Spread2_6" ColumnName="f_rrf2_6" />
+                <ScalarProperty Name="Spread2_7" ColumnName="f_rrf2_7" />
+                <ScalarProperty Name="Spread2_8" ColumnName="f_rrf2_8" />
+                <ScalarProperty Name="Spread2_9" ColumnName="f_rrf2_9" />
+                <ScalarProperty Name="Spread2_10" ColumnName="f_rrf2_10" />
+                <ScalarProperty Name="Spread3_1" ColumnName="f_rrf3_1" />
+                <ScalarProperty Name="Spread3_2" ColumnName="f_rrf3_2" />
+                <ScalarProperty Name="Spread3_3" ColumnName="f_rrf3_3" />
+                <ScalarProperty Name="Spread3_4" ColumnName="f_rrf3_4" />
+                <ScalarProperty Name="Spread3_5" ColumnName="f_rrf3_5" />
+                <ScalarProperty Name="Spread3_6" ColumnName="f_rrf3_6" />
+                <ScalarProperty Name="Spread3_7" ColumnName="f_rrf3_7" />
+                <ScalarProperty Name="Spread3_8" ColumnName="f_rrf3_8" />
+                <ScalarProperty Name="Spread3_9" ColumnName="f_rrf3_9" />
+                <ScalarProperty Name="Spread3_10" ColumnName="f_rrf3_10" />
+                <ScalarProperty Name="Score0_1" ColumnName="f_ddx0_1" />
+                <ScalarProperty Name="Score0_2" ColumnName="f_ddx0_2" />
+                <ScalarProperty Name="Score0_3" ColumnName="f_ddx0_3" />
+                <ScalarProperty Name="Score0_4" ColumnName="f_ddx0_4" />
+                <ScalarProperty Name="Score0_5" ColumnName="f_ddx0_5" />
+                <ScalarProperty Name="Score0_6" ColumnName="f_ddx0_6" />
+                <ScalarProperty Name="Score0_7" ColumnName="f_ddx0_7" />
+                <ScalarProperty Name="Score0_8" ColumnName="f_ddx0_8" />
+                <ScalarProperty Name="Score0_9" ColumnName="f_ddx0_9" />
+                <ScalarProperty Name="Score0_10" ColumnName="f_ddx0_10" />
+                <ScalarProperty Name="Score1_1" ColumnName="f_ddx1_1" />
+                <ScalarProperty Name="Score1_2" ColumnName="f_ddx1_2" />
+                <ScalarProperty Name="Score1_3" ColumnName="f_ddx1_3" />
+                <ScalarProperty Name="Score1_4" ColumnName="f_ddx1_4" />
+                <ScalarProperty Name="Score1_5" ColumnName="f_ddx1_5" />
+                <ScalarProperty Name="Score1_6" ColumnName="f_ddx1_6" />
+                <ScalarProperty Name="Score1_7" ColumnName="f_ddx1_7" />
+                <ScalarProperty Name="Score1_8" ColumnName="f_ddx1_8" />
+                <ScalarProperty Name="Score1_9" ColumnName="f_ddx1_9" />
+                <ScalarProperty Name="Score1_10" ColumnName="f_ddx1_10" />
+                <ScalarProperty Name="Score2_1" ColumnName="f_ddx2_1" />
+                <ScalarProperty Name="Score2_2" ColumnName="f_ddx2_2" />
+                <ScalarProperty Name="Score2_3" ColumnName="f_ddx2_3" />
+                <ScalarProperty Name="Score2_4" ColumnName="f_ddx2_4" />
+                <ScalarProperty Name="Score2_5" ColumnName="f_ddx2_5" />
+                <ScalarProperty Name="Score2_6" ColumnName="f_ddx2_6" />
+                <ScalarProperty Name="Score2_7" ColumnName="f_ddx2_7" />
+                <ScalarProperty Name="Score2_8" ColumnName="f_ddx2_8" />
+                <ScalarProperty Name="Score2_9" ColumnName="f_ddx2_9" />
+                <ScalarProperty Name="Score2_10" ColumnName="f_ddx2_10" />
+                <ScalarProperty Name="GameType0" ColumnName="f_type_1" />
+                <ScalarProperty Name="GameType1" ColumnName="f_type_2" />
+                <ScalarProperty Name="GameType2" ColumnName="f_type_3" />
+                <ScalarProperty Name="GameType3" ColumnName="f_type_4" />
+                <ScalarProperty Name="GameType4" ColumnName="f_type_5" />
+                <ScalarProperty Name="GameType5" ColumnName="f_type_6" />
+                <ScalarProperty Name="GameType6" ColumnName="f_type_7" />
+                <ScalarProperty Name="GameType7" ColumnName="f_type_8" />
+                <ScalarProperty Name="GameType8" ColumnName="f_type_9" />
+                <ScalarProperty Name="GameType9" ColumnName="f_type_10" />
+                <ScalarProperty Name="BillParlay0" ColumnName="f_id_1" />
+                <ScalarProperty Name="BillParlay1" ColumnName="f_id_2" />
+                <ScalarProperty Name="BillParlay2" ColumnName="f_id_3" />
+                <ScalarProperty Name="BillParlay3" ColumnName="f_id_4" />
+                <ScalarProperty Name="BillParlay4" ColumnName="f_id_5" />
+                <ScalarProperty Name="BillParlay5" ColumnName="f_id_6" />
+                <ScalarProperty Name="BillParlay6" ColumnName="f_id_7" />
+                <ScalarProperty Name="BillParlay7" ColumnName="f_id_8" />
+                <ScalarProperty Name="BillParlay8" ColumnName="f_id_9" />
+                <ScalarProperty Name="BillParlay9" ColumnName="f_id_10" />
+                <ScalarProperty Name="RefundMember" ColumnName="f_ty0" />
+                <ScalarProperty Name="RefundBigPartner" ColumnName="f_ty01" />
+                <ScalarProperty Name="RefundPartner" ColumnName="f_ty02" />
+                <ScalarProperty Name="RefundGeneralAgency" ColumnName="f_ty03" />
+                <ScalarProperty Name="RefundAgency" ColumnName="f_ty04" />
+                <ScalarProperty Name="RefundMajordomo" ColumnName="f_ty00" />
+                <ScalarProperty Name="Alliance0" ColumnName="f_con_1" />
+                <ScalarProperty Name="Alliance1" ColumnName="f_con_2" />
+                <ScalarProperty Name="Alliance2" ColumnName="f_con_3" />
+                <ScalarProperty Name="Alliance3" ColumnName="f_con_4" />
+                <ScalarProperty Name="Alliance4" ColumnName="f_con_5" />
+                <ScalarProperty Name="Alliance5" ColumnName="f_con_6" />
+                <ScalarProperty Name="Alliance6" ColumnName="f_con_7" />
+                <ScalarProperty Name="Alliance7" ColumnName="f_con_8" />
+                <ScalarProperty Name="Alliance8" ColumnName="f_con_9" />
+                <ScalarProperty Name="Alliance9" ColumnName="f_con_10" />
+                <ScalarProperty Name="BillIP" ColumnName="f_ip" />
+                <ScalarProperty Name="CompanyResult" ColumnName="f_mo" />
+                <ScalarProperty Name="EffectiveBetOfMajordomo" ColumnName="f_mo0" />
+                <ScalarProperty Name="EffectiveBetOfMember" ColumnName="f_mo5" />
+                <ScalarProperty Name="f_demo" ColumnName="f_demo" />
+                <ScalarProperty Name="OccupyByMajordomo" ColumnName="f_cc0" />
+                <ScalarProperty Name="OccupyByBigPartner" ColumnName="f_cc1" />
+                <ScalarProperty Name="OccupyByPartner" ColumnName="f_cc2" />
+                <ScalarProperty Name="OccupyByGeneralAgency" ColumnName="f_cc3" />
+                <ScalarProperty Name="OccupyByAgency" ColumnName="f_cc4" />
+                <ScalarProperty Name="AuthCode" ColumnName="f_AuthCode" />
+                <ScalarProperty Name="GameTypeName1" ColumnName="f_typ2" />
+                <ScalarProperty Name="GameTypeName2" ColumnName="f_typ3" />
+                <ScalarProperty Name="GameTypeName3" ColumnName="f_typ4" />
+                <ScalarProperty Name="GameTypeName4" ColumnName="f_typ5" />
+                <ScalarProperty Name="GameTypeName5" ColumnName="f_typ6" />
+                <ScalarProperty Name="GameTypeName6" ColumnName="f_typ7" />
+                <ScalarProperty Name="GameTypeName7" ColumnName="f_typ8" />
+                <ScalarProperty Name="GameTypeName8" ColumnName="f_typ9" />
+                <ScalarProperty Name="GameTypeName9" ColumnName="f_typ10" />
+                <ScalarProperty Name="SurplusMoney" ColumnName="f_SurplusMoney" />
+                <ScalarProperty Name="CloseAccountTime" ColumnName="f_jstime" />
+                <ScalarProperty Name="BetFlag" ColumnName="f_way" />
+                <ScalarProperty Name="ExFlag" ColumnName="f_exflag" />
+                <ScalarProperty Name="IPArea" ColumnName="f_area" />
+                <ScalarProperty Name="ParentId" ColumnName="f_motherid" />
+                <ScalarProperty Name="CalculateCount" ColumnName="f_jscount" />
+                <ScalarProperty Name="f_ischange" ColumnName="f_ischange" />
+                <ScalarProperty Name="Demotion" ColumnName="f_jxstatus" />
+                <ScalarProperty Name="f_DCinfoID" ColumnName="f_DCinfoID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

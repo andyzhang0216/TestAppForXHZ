@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BossModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="t_allfzbill_tj">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="f_SiteNumber" Type="tinyint" />
+          <Property Name="f_Count" Type="int" />
+          <Property Name="f_tjtime" Type="datetime" />
+          <Property Name="f_account" Type="varchar" MaxLength="20" />
+          <Property Name="f_billinfo" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="t_system">
+          <Key>
+            <PropertyRef Name="f_mode" />
+          </Key>
+          <Property Name="f_mode" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="f_datae" Type="datetime" />
+          <Property Name="f_datae2" Type="datetime" />
+          <Property Name="f_ipday" Type="int" />
+          <Property Name="f_change" Type="float" />
+          <Property Name="f_memberenter" Type="int" />
+          <Property Name="f_credit" Type="float" />
+          <Property Name="f_peril" Type="float" />
+          <Property Name="f_xdefer" Type="int" />
+          <Property Name="f_zdefer" Type="nvarchar" MaxLength="100" />
+          <Property Name="f_bbec" Type="float" />
+          <Property Name="f_abec" Type="float" />
+          <Property Name="f_notenter" Type="int" />
+          <Property Name="f_ip" Type="varchar(max)" />
+          <Property Name="f_gcsx" Type="float" />
+          <Property Name="f_qx" Type="int" />
+          <Property Name="f_cz" Type="int" />
+          <Property Name="f_hyxx" Type="float" />
+          <Property Name="f_flash" Type="int" />
+          <Property Name="f_finallytime" Type="datetime" />
+          <Property Name="f_xzjedy" Type="float" />
+          <Property Name="f_closecolor" Type="int" />
+          <Property Name="f_js_set" Type="varchar" MaxLength="5000" />
+          <Property Name="f_x" Type="int" />
+          <Property Name="f_y" Type="int" />
+          <Property Name="f_z" Type="int" />
+          <Property Name="f_ipsecond" Type="tinyint" Nullable="false" />
+          <Property Name="f_gipsecond" Type="tinyint" Nullable="false" />
+          <Property Name="f_gzing" Type="tinyint" />
+          <Property Name="f_xqkf" Type="tinyint" />
+          <Property Name="f_entercountry" Type="int" />
+          <Property Name="f_ballpk_A" Type="float" />
+          <Property Name="f_ballpk_B" Type="float" />
+          <Property Name="f_looknode" Type="int" />
+          <Property Name="f_fzStatus" Type="int" />
+          <Property Name="f_leavehours" Type="tinyint" />
+          <Property Name="f_mobilekf" Type="tinyint" />
+          <Property Name="f_majordomo" Type="varchar" MaxLength="2000" />
+          <Property Name="f_Iszdjs" Type="tinyint" />
+          <Property Name="f_fgspMode" Type="tinyint" />
+          <Property Name="f_majordomo_set" Type="varchar" MaxLength="350" />
+          <Property Name="f_ggxx" Type="float" />
+          <Property Name="f_initialcredit" Type="float" />
+          <Property Name="f_testmajordomo" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityContainer Name="BossModelStoreContainer">
+          <EntitySet Name="t_allfzbill_tj" EntityType="Self.t_allfzbill_tj" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="t_system" EntityType="Self.t_system" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FlyingSnow.Contract.Boss" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="BillStatistics">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SiteNumber" Type="Byte" />
+          <Property Name="Count" Type="Int32" />
+          <Property Name="CreateTime" Type="DateTime" Precision="3" />
+          <Property Name="Account" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="BillInfo" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="tsbossEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BillStatistics" EntityType="FlyingSnow.Contract.Boss.BillStatistics" />
+          <EntitySet Name="t_system" EntityType="FlyingSnow.Contract.Boss.t_system" />
+        </EntityContainer>
+        <EntityType Name="t_system">
+          <Key>
+            <PropertyRef Name="f_mode" />
+          </Key>
+          <Property Name="f_mode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="f_datae" Type="DateTime" Precision="3" />
+          <Property Name="f_datae2" Type="DateTime" Precision="3" />
+          <Property Name="f_ipday" Type="Int32" />
+          <Property Name="f_change" Type="Double" />
+          <Property Name="f_memberenter" Type="Int32" />
+          <Property Name="f_credit" Type="Double" />
+          <Property Name="f_peril" Type="Double" />
+          <Property Name="f_xdefer" Type="Int32" />
+          <Property Name="f_zdefer" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="f_bbec" Type="Double" />
+          <Property Name="f_abec" Type="Double" />
+          <Property Name="f_notenter" Type="Int32" />
+          <Property Name="f_ip" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="f_gcsx" Type="Double" />
+          <Property Name="f_qx" Type="Int32" />
+          <Property Name="f_cz" Type="Int32" />
+          <Property Name="f_hyxx" Type="Double" />
+          <Property Name="f_flash" Type="Int32" />
+          <Property Name="f_finallytime" Type="DateTime" Precision="3" />
+          <Property Name="f_xzjedy" Type="Double" />
+          <Property Name="f_closecolor" Type="Int32" />
+          <Property Name="f_js_set" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="f_x" Type="Int32" />
+          <Property Name="f_y" Type="Int32" />
+          <Property Name="f_z" Type="Int32" />
+          <Property Name="f_ipsecond" Type="Byte" Nullable="false" />
+          <Property Name="f_gipsecond" Type="Byte" Nullable="false" />
+          <Property Name="f_gzing" Type="Byte" />
+          <Property Name="f_xqkf" Type="Byte" />
+          <Property Name="f_entercountry" Type="Int32" />
+          <Property Name="f_ballpk_A" Type="Double" />
+          <Property Name="f_ballpk_B" Type="Double" />
+          <Property Name="f_looknode" Type="Int32" />
+          <Property Name="f_fzStatus" Type="Int32" />
+          <Property Name="f_leavehours" Type="Byte" />
+          <Property Name="f_mobilekf" Type="Byte" />
+          <Property Name="f_majordomo" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Name="f_Iszdjs" Type="Byte" />
+          <Property Name="f_fgspMode" Type="Byte" />
+          <Property Name="f_majordomo_set" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+          <Property Name="f_ggxx" Type="Double" />
+          <Property Name="f_initialcredit" Type="Double" />
+          <Property Name="f_testmajordomo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BossModelStoreContainer" CdmEntityContainer="tsbossEntities">
+          <EntitySetMapping Name="BillStatistics">
+            <EntityTypeMapping TypeName="FlyingSnow.Contract.Boss.BillStatistics">
+              <MappingFragment StoreEntitySet="t_allfzbill_tj">
+                <ScalarProperty Name="Id" ColumnName="id" />
+                <ScalarProperty Name="SiteNumber" ColumnName="f_SiteNumber" />
+                <ScalarProperty Name="Count" ColumnName="f_Count" />
+                <ScalarProperty Name="CreateTime" ColumnName="f_tjtime" />
+                <ScalarProperty Name="Account" ColumnName="f_account" />
+                <ScalarProperty Name="BillInfo" ColumnName="f_billinfo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_system">
+            <EntityTypeMapping TypeName="FlyingSnow.Contract.Boss.t_system">
+              <MappingFragment StoreEntitySet="t_system">
+                <ScalarProperty Name="f_testmajordomo" ColumnName="f_testmajordomo" />
+                <ScalarProperty Name="f_initialcredit" ColumnName="f_initialcredit" />
+                <ScalarProperty Name="f_ggxx" ColumnName="f_ggxx" />
+                <ScalarProperty Name="f_majordomo_set" ColumnName="f_majordomo_set" />
+                <ScalarProperty Name="f_fgspMode" ColumnName="f_fgspMode" />
+                <ScalarProperty Name="f_Iszdjs" ColumnName="f_Iszdjs" />
+                <ScalarProperty Name="f_majordomo" ColumnName="f_majordomo" />
+                <ScalarProperty Name="f_mobilekf" ColumnName="f_mobilekf" />
+                <ScalarProperty Name="f_leavehours" ColumnName="f_leavehours" />
+                <ScalarProperty Name="f_fzStatus" ColumnName="f_fzStatus" />
+                <ScalarProperty Name="f_looknode" ColumnName="f_looknode" />
+                <ScalarProperty Name="f_ballpk_B" ColumnName="f_ballpk_B" />
+                <ScalarProperty Name="f_ballpk_A" ColumnName="f_ballpk_A" />
+                <ScalarProperty Name="f_entercountry" ColumnName="f_entercountry" />
+                <ScalarProperty Name="f_xqkf" ColumnName="f_xqkf" />
+                <ScalarProperty Name="f_gzing" ColumnName="f_gzing" />
+                <ScalarProperty Name="f_gipsecond" ColumnName="f_gipsecond" />
+                <ScalarProperty Name="f_ipsecond" ColumnName="f_ipsecond" />
+                <ScalarProperty Name="f_z" ColumnName="f_z" />
+                <ScalarProperty Name="f_y" ColumnName="f_y" />
+                <ScalarProperty Name="f_x" ColumnName="f_x" />
+                <ScalarProperty Name="f_js_set" ColumnName="f_js_set" />
+                <ScalarProperty Name="f_closecolor" ColumnName="f_closecolor" />
+                <ScalarProperty Name="f_xzjedy" ColumnName="f_xzjedy" />
+                <ScalarProperty Name="f_finallytime" ColumnName="f_finallytime" />
+                <ScalarProperty Name="f_flash" ColumnName="f_flash" />
+                <ScalarProperty Name="f_hyxx" ColumnName="f_hyxx" />
+                <ScalarProperty Name="f_cz" ColumnName="f_cz" />
+                <ScalarProperty Name="f_qx" ColumnName="f_qx" />
+                <ScalarProperty Name="f_gcsx" ColumnName="f_gcsx" />
+                <ScalarProperty Name="f_ip" ColumnName="f_ip" />
+                <ScalarProperty Name="f_notenter" ColumnName="f_notenter" />
+                <ScalarProperty Name="f_abec" ColumnName="f_abec" />
+                <ScalarProperty Name="f_bbec" ColumnName="f_bbec" />
+                <ScalarProperty Name="f_zdefer" ColumnName="f_zdefer" />
+                <ScalarProperty Name="f_xdefer" ColumnName="f_xdefer" />
+                <ScalarProperty Name="f_peril" ColumnName="f_peril" />
+                <ScalarProperty Name="f_credit" ColumnName="f_credit" />
+                <ScalarProperty Name="f_memberenter" ColumnName="f_memberenter" />
+                <ScalarProperty Name="f_change" ColumnName="f_change" />
+                <ScalarProperty Name="f_ipday" ColumnName="f_ipday" />
+                <ScalarProperty Name="f_datae2" ColumnName="f_datae2" />
+                <ScalarProperty Name="f_datae" ColumnName="f_datae" />
+                <ScalarProperty Name="f_mode" ColumnName="f_mode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

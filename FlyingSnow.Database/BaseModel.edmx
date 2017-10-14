@@ -1,0 +1,710 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ts111Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="t_manage">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="decimal" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="f_accounts" Type="varchar" MaxLength="100" />
+          <Property Name="f_password" Type="varchar" MaxLength="100" />
+          <Property Name="f_title" Type="nvarchar" MaxLength="200" />
+          <Property Name="f_status" Type="int" />
+          <Property Name="f_enter" Type="int" />
+          <Property Name="f_remark" Type="varchar" MaxLength="1000" />
+          <Property Name="f_error" Type="int" />
+          <Property Name="f_majordomo" Type="varchar" MaxLength="100" />
+          <Property Name="f_bigpartner" Type="varchar" MaxLength="100" />
+          <Property Name="f_partner" Type="varchar" MaxLength="100" />
+          <Property Name="f_generalagent" Type="varchar" MaxLength="100" />
+          <Property Name="f_credit" Type="float" />
+          <Property Name="f_residualcredit" Type="float" />
+          <Property Name="f_percent" Type="varchar" MaxLength="100" />
+          <Property Name="f_ip" Type="varchar" MaxLength="15" />
+          <Property Name="f_time" Type="datetime" />
+          <Property Name="f_zq" Type="float" />
+          <Property Name="f_lq" Type="float" />
+          <Property Name="f_mz" Type="float" />
+          <Property Name="f_bj" Type="float" />
+          <Property Name="f_by" Type="float" />
+          <Property Name="f_sx" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="f_hygl" Type="int" />
+          <Property Name="f_alagent" Type="varchar" MaxLength="100" />
+          <Property Name="f_bb" Type="float" />
+          <Property Name="f_glhy" Type="int" />
+          <Property Name="f_ddsx" Type="float" />
+          <Property Name="f_joindate" Type="datetime" />
+          <Property Name="f_defer" Type="int" />
+          <Property Name="f_zs" Type="float" />
+          <Property Name="f_xgtime" Type="datetime" />
+          <Property Name="f_modifier" Type="varchar" MaxLength="100" />
+          <Property Name="f_sm" Type="float" />
+          <Property Name="f_game" Type="float" />
+          <Property Name="f_GameCredit" Type="float" />
+          <Property Name="f_GameSurplus" Type="float" />
+          <Property Name="f_wq" Type="float" />
+          <Property Name="f_bq" Type="float" />
+          <Property Name="f_hb" Type="float" />
+          <Property Name="f_cq" Type="float" />
+          <Property Name="f_ss" Type="float" />
+          <Property Name="f_Gamezssx" Type="float" />
+          <Property Name="f_MajAcc" Type="varchar" MaxLength="2000" />
+          <Property Name="f_Vd" Type="float" />
+          <Property Name="f_Et" Type="float" />
+          <Property Name="f_VdCredit" Type="float" />
+          <Property Name="f_VdSurplus" Type="float" />
+          <Property Name="f_Vdzssx" Type="float" />
+          <Property Name="f_pdpass" Type="tinyint" />
+          <Property Name="f_ot" Type="float" />
+          <Property Name="f_RemarkText" Type="nvarchar" MaxLength="40" />
+          <Property Name="f_zh" Type="float" />
+          <Property Name="f_etCredit" Type="float" />
+          <Property Name="f_etSurplus" Type="float" />
+          <Property Name="f_BankCode" Type="nvarchar" MaxLength="100" />
+          <Property Name="f_RemittanceAccount" Type="nvarchar" MaxLength="200" />
+          <Property Name="f_RemittanceName" Type="nvarchar" MaxLength="50" />
+          <Property Name="f_Deposit" Type="float" />
+          <Property Name="f_SecurityProblem" Type="nvarchar" MaxLength="300" />
+          <Property Name="f_SecurityAnswer" Type="nvarchar" MaxLength="300" />
+          <Property Name="f_phone" Type="varchar" MaxLength="50" />
+          <Property Name="f_email" Type="varchar" MaxLength="50" />
+          <Property Name="f_photoState" Type="tinyint" />
+          <Property Name="f_isBankShow" Type="tinyint" />
+          <Property Name="f_emailState" Type="tinyint" />
+          <Property Name="f_newID" Type="varchar" MaxLength="32" />
+          <Property Name="f_SubBank" Type="nvarchar" MaxLength="100" />
+          <Property Name="f_group" Type="tinyint" />
+          <Property Name="f_firstGener" Type="varchar" MaxLength="100" />
+          <Property Name="f_secondGener" Type="varchar" MaxLength="100" />
+          <Property Name="f_thirdGener" Type="varchar" MaxLength="100" />
+          <Property Name="f_looknode" Type="int" />
+          <Property Name="f_platState" Type="int" />
+          <Property Name="f_clientStatus" Type="tinyint" />
+          <Property Name="f_isJoinMem" Type="tinyint" />
+          <Property Name="f_idCard" Type="varchar" MaxLength="20" />
+          <Property Name="f_isOpenMem" Type="tinyint" />
+          <Property Name="f_ishow" Type="float" />
+          <Property Name="f_verifyCount" Type="tinyint" />
+          <Property Name="f_virtualDeposit" Type="int" />
+          <Property Name="f_ExcelNum" Type="tinyint" />
+          <Property Name="f_webSite" Type="int" />
+          <Property Name="f_phoneMessage" Type="varchar" MaxLength="20" />
+          <Property Name="f_phoneDate" Type="datetime" />
+          <Property Name="f_yzMode" Type="tinyint" />
+          <Property Name="f_dept" Type="nvarchar" MaxLength="20" />
+          <Property Name="f_remarkPyatyi" Type="nvarchar" MaxLength="100" />
+          <Property Name="f_remark3" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="t_member">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="decimal" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="f_accounts" Type="varchar" MaxLength="100" />
+          <Property Name="f_password" Type="varchar" MaxLength="100" />
+          <Property Name="f_title" Type="nvarchar" MaxLength="200" />
+          <Property Name="f_residualcredit" Type="float" />
+          <Property Name="f_peril" Type="int" />
+          <Property Name="f_enter" Type="int" />
+          <Property Name="f_spit" Type="int" />
+          <Property Name="f_enterdate" Type="datetime" />
+          <Property Name="f_spitdate" Type="datetime" />
+          <Property Name="f_defer" Type="int" />
+          <Property Name="f_lower" Type="float" />
+          <Property Name="f_remark" Type="varchar" MaxLength="1000" />
+          <Property Name="f_majordomo" Type="varchar" MaxLength="100" />
+          <Property Name="f_bigpartner" Type="varchar" MaxLength="100" />
+          <Property Name="f_partner" Type="varchar" MaxLength="100" />
+          <Property Name="f_generalagent" Type="varchar" MaxLength="100" />
+          <Property Name="f_alagent" Type="varchar" MaxLength="100" />
+          <Property Name="f_lq" Type="int" />
+          <Property Name="f_bj" Type="int" />
+          <Property Name="f_by" Type="int" />
+          <Property Name="f_zq" Type="int" />
+          <Property Name="f_mz" Type="int" />
+          <Property Name="f_error" Type="int" />
+          <Property Name="f_time" Type="datetime" />
+          <Property Name="f_ip" Type="varchar" MaxLength="100" />
+          <Property Name="f_bb" Type="int" />
+          <Property Name="f_joindate" Type="datetime" />
+          <Property Name="f_zs" Type="int" />
+          <Property Name="f_xgtime" Type="datetime" />
+          <Property Name="f_Tollgate" Type="int" />
+          <Property Name="f_modifier" Type="varchar" MaxLength="100" />
+          <Property Name="f_sm" Type="int" />
+          <Property Name="f_UserHead" Type="varchar" MaxLength="200" />
+          <Property Name="f_UserGender" Type="int" />
+          <Property Name="f_game" Type="float" />
+          <Property Name="f_passwordjy" Type="int" />
+          <Property Name="f_wq" Type="int" />
+          <Property Name="f_bq" Type="int" />
+          <Property Name="f_hb" Type="int" />
+          <Property Name="f_cq" Type="int" />
+          <Property Name="f_ss" Type="int" />
+          <Property Name="f_StupeSurplus" Type="int" />
+          <Property Name="f_VoicePass" Type="nvarchar" MaxLength="50" />
+          <Property Name="f_RemittanceAccount" Type="varchar" MaxLength="160" />
+          <Property Name="f_RemittanceName" Type="nvarchar" MaxLength="50" />
+          <Property Name="f_SecurityProblem" Type="nvarchar" MaxLength="300" />
+          <Property Name="f_SecurityAnswer" Type="nvarchar" MaxLength="300" />
+          <Property Name="f_BankCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="f_Vd" Type="int" />
+          <Property Name="f_Et" Type="int" />
+          <Property Name="f_VDStupeSurplus" Type="int" />
+          <Property Name="f_bonus" Type="float" />
+          <Property Name="f_ot" Type="int" />
+          <Property Name="f_NowGame" Type="nvarchar" MaxLength="100" />
+          <Property Name="f_FHCredit" Type="int" />
+          <Property Name="f_passwordjy2" Type="int" />
+          <Property Name="f_SubBank" Type="nvarchar" MaxLength="160" />
+          <Property Name="f_periltypes" Type="int" Nullable="false" />
+          <Property Name="f_vdzssx" Type="float" />
+          <Property Name="f_RemarkText" Type="nvarchar" MaxLength="40" />
+          <Property Name="f_zh" Type="tinyint" />
+          <Property Name="f_pdpass" Type="tinyint" />
+          <Property Name="epayInAccount" Type="varchar" MaxLength="50" />
+          <Property Name="epayOutAccount" Type="varchar" MaxLength="50" />
+          <Property Name="epayName" Type="varchar" MaxLength="50" />
+          <Property Name="etpInAccount" Type="varchar" MaxLength="50" />
+          <Property Name="etpOutAccount" Type="varchar" MaxLength="50" />
+          <Property Name="etpName" Type="varchar" MaxLength="50" />
+          <Property Name="f_creditchagetype" Type="int" />
+          <Property Name="f_Record" Type="tinyint" />
+          <Property Name="f_autoWhite" Type="tinyint" />
+          <Property Name="f_ballid" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="f_type" Type="varchar" MaxLength="4" />
+          <Property Name="f_intime" Type="datetime" />
+          <Property Name="f_mode" Type="int" />
+          <Property Name="f_pk" Type="tinyint" />
+          <Property Name="f_AGSurplus2" Type="float" />
+          <Property Name="f_MGSurplus2" Type="float" />
+          <Property Name="f_SB_token" Type="varchar" MaxLength="32" />
+          <Property Name="f_CNFSurplus2" Type="float" />
+          <Property Name="f_SBSurplus2" Type="float" />
+          <Property Name="f_DJSurplus2" Type="float" />
+          <Property Name="f_unhmd" Type="tinyint" />
+          <Property Name="f_gamemode" Type="int" />
+          <Property Name="f_OGSurplus2" Type="float" />
+          <Property Name="f_BBINSurplus2" Type="float" />
+          <Property Name="f_ChatroomSurplus2" Type="float" />
+          <Property Name="f_ABSurplus2" Type="float" />
+          <Property Name="f_AGIframeSurplus2" Type="float" />
+          <Property Name="f_AGIPlatfromSurplus" Type="float" />
+          <Property Name="f_HBSurplus2" Type="float" />
+          <Property Name="f_VdSurplus2" Type="float" />
+          <Property Name="f_SUNSurplus2" Type="float" />
+          <Property Name="f_CMD_token" Type="varchar" MaxLength="32" />
+          <Property Name="f_CMDSurplus2" Type="float" />
+          <Property Name="f_SCSurplus2" Type="float" />
+          <Property Name="f_remark3" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="t_MemExpansion">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="decimal" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="f_member" Type="varchar" MaxLength="20" />
+          <Property Name="f_jsjkbz" Type="tinyint" />
+          <Property Name="f_jsjksee" Type="int" />
+          <Property Name="f_createtime" Type="datetime" Nullable="false" />
+          <Property Name="f_createby" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="t_transfer">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="decimal" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="f_date" Type="datetime" />
+          <Property Name="f_time" Type="datetime" />
+          <Property Name="f_baktime" Type="datetime" />
+          <Property Name="f_gzseconds" Type="smallint" />
+        </EntityType>
+        <EntityContainer Name="ts111ModelStoreContainer">
+          <EntitySet Name="t_manage" EntityType="Self.t_manage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="t_member" EntityType="Self.t_member" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="t_MemExpansion" EntityType="Self.t_MemExpansion" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="t_transfer" EntityType="Self.t_transfer" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FlyingSnow.Contract.Base" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Manager">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Account" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Title" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Catagory" Type="Int32" />
+          <Property Name="EnterAllow" Type="Int32" />
+          <Property Name="Remark" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="Error" Type="Int32" />
+          <Property Name="Majordomo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="BigPartner" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Partner" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="GeneralAgency" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Credit" Type="Double" />
+          <Property Name="ResidualCredit" Type="Double" />
+          <Property Name="Percent" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="SignInIP" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="LastSignInTime" Type="DateTime" Precision="3" />
+          <Property Name="Football" Type="Double" />
+          <Property Name="Basketball" Type="Double" />
+          <Property Name="AmericanFootball" Type="Double" />
+          <Property Name="AmericanBaseball" Type="Double" />
+          <Property Name="JapaneseBaseball" Type="Double" />
+          <Property Name="Sx" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Hygl" Type="Int32" />
+          <Property Name="Agency" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="TaiwaneseBaseball" Type="Double" />
+          <Property Name="Glhy" Type="Int32" />
+          <Property Name="LimitCatagory" Type="Double" />
+          <Property Name="SignUpTime" Type="DateTime" Precision="3" />
+          <Property Name="Defer" Type="Int32" />
+          <Property Name="Exponent" Type="Double" />
+          <Property Name="ModifyTime" Type="DateTime" Precision="3" />
+          <Property Name="Modifier" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="HorseRace2" Type="Double" />
+          <Property Name="VSGame" Type="Double" />
+          <Property Name="GameCredit" Type="Double" />
+          <Property Name="GameSurplus" Type="Double" />
+          <Property Name="Tennis" Type="Double" />
+          <Property Name="Hockey" Type="Double" />
+          <Property Name="KoreanBaseball" Type="Double" />
+          <Property Name="ColorBall" Type="Double" />
+          <Property Name="HorseRace" Type="Double" />
+          <Property Name="GameLoseLimit" Type="Double" />
+          <Property Name="SearchableMajordomo" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Name="Gamer" Type="Double" />
+          <Property Name="ComputerGame" Type="Double" />
+          <Property Name="GamerCredit" Type="Double" />
+          <Property Name="GamerSurplus" Type="Double" />
+          <Property Name="GamerLoseLimit" Type="Double" />
+          <Property Name="ResetPasswordFlag" Type="Byte" />
+          <Property Name="Other" Type="Double" />
+          <Property Name="RemarkText" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="MixParlay" Type="Double" />
+          <Property Name="ComputerGameCredit" Type="Double" />
+          <Property Name="ComputerGameSurplus" Type="Double" />
+          <Property Name="PaymentMethod" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="RemittanceAccount" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="RemittanceName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Deposit" Type="Double" />
+          <Property Name="SecurityProblem" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="SecurityAnswer" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PhotoState" Type="Byte" />
+          <Property Name="IsBankShow" Type="Byte" />
+          <Property Name="EmailState" Type="Byte" />
+          <Property Name="EmailVerificationCode" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+          <Property Name="SubBank" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Group" Type="Byte" />
+          <Property Name="FirstGener" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="SecondGener" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ThirdGener" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Looknode" Type="Int32" />
+          <Property Name="PlatState" Type="Int32" />
+          <Property Name="ClientStatus" Type="Byte" />
+          <Property Name="AllowJoinMember" Type="Byte" />
+          <Property Name="IDCard" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="AllowAddMember" Type="Byte" />
+          <Property Name="Status" Type="Double" />
+          <Property Name="VerifyCount" Type="Byte" />
+          <Property Name="VirtualDeposit" Type="Int32" />
+          <Property Name="ExcelNum" Type="Byte" />
+          <Property Name="SubSite" Type="Int32" />
+          <Property Name="PhoneAuth" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="PhoneAuthDate" Type="DateTime" Precision="3" />
+          <Property Name="VerifyMethod" Type="Byte" />
+          <Property Name="Department" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="RemarkPyatyi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Remark3" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="BaseEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Manager" EntityType="FlyingSnow.Contract.Base.Manager" />
+          <EntitySet Name="Transfer" EntityType="FlyingSnow.Contract.Base.Transfer" />
+          <EntitySet Name="Monitor" EntityType="FlyingSnow.Contract.Base.Monitor" />
+          <EntitySet Name="t_member" EntityType="FlyingSnow.Contract.Base.t_member" />
+        </EntityContainer>
+        <EntityType Name="Transfer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+          <Property Name="TransferTime" Type="DateTime" Precision="3" />
+          <Property Name="Baktime" Type="DateTime" Precision="3" />
+          <Property Name="TransferSecond" Type="Int16" />
+        </EntityType>
+        <EntityType Name="Monitor">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Member" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Remarks" Type="Byte" />
+          <Property Name="SeeFlag" Type="Int32" />
+          <Property Name="Createtime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Createby" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="t_member">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="f_accounts" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="f_password" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="f_title" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="f_residualcredit" Type="Double" />
+          <Property Name="f_peril" Type="Int32" />
+          <Property Name="f_enter" Type="Int32" />
+          <Property Name="f_spit" Type="Int32" />
+          <Property Name="f_enterdate" Type="DateTime" Precision="3" />
+          <Property Name="f_spitdate" Type="DateTime" Precision="3" />
+          <Property Name="f_defer" Type="Int32" />
+          <Property Name="f_lower" Type="Double" />
+          <Property Name="f_remark" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="f_majordomo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="f_bigpartner" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="f_partner" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="f_generalagent" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="f_alagent" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="f_lq" Type="Int32" />
+          <Property Name="f_bj" Type="Int32" />
+          <Property Name="f_by" Type="Int32" />
+          <Property Name="f_zq" Type="Int32" />
+          <Property Name="f_mz" Type="Int32" />
+          <Property Name="f_error" Type="Int32" />
+          <Property Name="f_time" Type="DateTime" Precision="3" />
+          <Property Name="f_ip" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="f_bb" Type="Int32" />
+          <Property Name="f_joindate" Type="DateTime" Precision="3" />
+          <Property Name="f_zs" Type="Int32" />
+          <Property Name="f_xgtime" Type="DateTime" Precision="3" />
+          <Property Name="f_Tollgate" Type="Int32" />
+          <Property Name="f_modifier" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="f_sm" Type="Int32" />
+          <Property Name="f_UserHead" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="f_UserGender" Type="Int32" />
+          <Property Name="f_game" Type="Double" />
+          <Property Name="f_passwordjy" Type="Int32" />
+          <Property Name="f_wq" Type="Int32" />
+          <Property Name="f_bq" Type="Int32" />
+          <Property Name="f_hb" Type="Int32" />
+          <Property Name="f_cq" Type="Int32" />
+          <Property Name="f_ss" Type="Int32" />
+          <Property Name="f_StupeSurplus" Type="Int32" />
+          <Property Name="f_VoicePass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="f_RemittanceAccount" Type="String" MaxLength="160" FixedLength="false" Unicode="false" />
+          <Property Name="f_RemittanceName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="f_SecurityProblem" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="f_SecurityAnswer" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="f_BankCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="f_Vd" Type="Int32" />
+          <Property Name="f_Et" Type="Int32" />
+          <Property Name="f_VDStupeSurplus" Type="Int32" />
+          <Property Name="f_bonus" Type="Double" />
+          <Property Name="f_ot" Type="Int32" />
+          <Property Name="f_NowGame" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="f_FHCredit" Type="Int32" />
+          <Property Name="f_passwordjy2" Type="Int32" />
+          <Property Name="f_SubBank" Type="String" MaxLength="160" FixedLength="false" Unicode="true" />
+          <Property Name="f_periltypes" Type="Int32" Nullable="false" />
+          <Property Name="f_vdzssx" Type="Double" />
+          <Property Name="f_RemarkText" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+          <Property Name="f_zh" Type="Byte" />
+          <Property Name="f_pdpass" Type="Byte" />
+          <Property Name="epayInAccount" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="epayOutAccount" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="epayName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="etpInAccount" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="etpOutAccount" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="etpName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="f_creditchagetype" Type="Int32" />
+          <Property Name="f_Record" Type="Byte" />
+          <Property Name="f_autoWhite" Type="Byte" />
+          <Property Name="f_ballid" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="f_type" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="f_intime" Type="DateTime" Precision="3" />
+          <Property Name="f_mode" Type="Int32" />
+          <Property Name="f_pk" Type="Byte" />
+          <Property Name="f_AGSurplus2" Type="Double" />
+          <Property Name="f_MGSurplus2" Type="Double" />
+          <Property Name="f_SB_token" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+          <Property Name="f_CNFSurplus2" Type="Double" />
+          <Property Name="f_SBSurplus2" Type="Double" />
+          <Property Name="f_DJSurplus2" Type="Double" />
+          <Property Name="f_unhmd" Type="Byte" />
+          <Property Name="f_gamemode" Type="Int32" />
+          <Property Name="f_OGSurplus2" Type="Double" />
+          <Property Name="f_BBINSurplus2" Type="Double" />
+          <Property Name="f_ChatroomSurplus2" Type="Double" />
+          <Property Name="f_ABSurplus2" Type="Double" />
+          <Property Name="f_AGIframeSurplus2" Type="Double" />
+          <Property Name="f_AGIPlatfromSurplus" Type="Double" />
+          <Property Name="f_HBSurplus2" Type="Double" />
+          <Property Name="f_VdSurplus2" Type="Double" />
+          <Property Name="f_SUNSurplus2" Type="Double" />
+          <Property Name="f_CMD_token" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+          <Property Name="f_CMDSurplus2" Type="Double" />
+          <Property Name="f_SCSurplus2" Type="Double" />
+          <Property Name="f_remark3" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ts111ModelStoreContainer" CdmEntityContainer="BaseEntities">
+          <EntitySetMapping Name="Manager">
+            <EntityTypeMapping TypeName="FlyingSnow.Contract.Base.Manager">
+              <MappingFragment StoreEntitySet="t_manage">
+                <ScalarProperty Name="Id" ColumnName="id" />
+                <ScalarProperty Name="Account" ColumnName="f_accounts" />
+                <ScalarProperty Name="Password" ColumnName="f_password" />
+                <ScalarProperty Name="Title" ColumnName="f_title" />
+                <ScalarProperty Name="Catagory" ColumnName="f_status" />
+                <ScalarProperty Name="EnterAllow" ColumnName="f_enter" />
+                <ScalarProperty Name="Remark" ColumnName="f_remark" />
+                <ScalarProperty Name="Error" ColumnName="f_error" />
+                <ScalarProperty Name="Majordomo" ColumnName="f_majordomo" />
+                <ScalarProperty Name="BigPartner" ColumnName="f_bigpartner" />
+                <ScalarProperty Name="Partner" ColumnName="f_partner" />
+                <ScalarProperty Name="GeneralAgency" ColumnName="f_generalagent" />
+                <ScalarProperty Name="Credit" ColumnName="f_credit" />
+                <ScalarProperty Name="ResidualCredit" ColumnName="f_residualcredit" />
+                <ScalarProperty Name="Percent" ColumnName="f_percent" />
+                <ScalarProperty Name="SignInIP" ColumnName="f_ip" />
+                <ScalarProperty Name="LastSignInTime" ColumnName="f_time" />
+                <ScalarProperty Name="Football" ColumnName="f_zq" />
+                <ScalarProperty Name="Basketball" ColumnName="f_lq" />
+                <ScalarProperty Name="AmericanFootball" ColumnName="f_mz" />
+                <ScalarProperty Name="AmericanBaseball" ColumnName="f_bj" />
+                <ScalarProperty Name="JapaneseBaseball" ColumnName="f_by" />
+                <ScalarProperty Name="Sx" ColumnName="f_sx" />
+                <ScalarProperty Name="Hygl" ColumnName="f_hygl" />
+                <ScalarProperty Name="Agency" ColumnName="f_alagent" />
+                <ScalarProperty Name="TaiwaneseBaseball" ColumnName="f_bb" />
+                <ScalarProperty Name="Glhy" ColumnName="f_glhy" />
+                <ScalarProperty Name="LimitCatagory" ColumnName="f_ddsx" />
+                <ScalarProperty Name="SignUpTime" ColumnName="f_joindate" />
+                <ScalarProperty Name="Defer" ColumnName="f_defer" />
+                <ScalarProperty Name="Exponent" ColumnName="f_zs" />
+                <ScalarProperty Name="ModifyTime" ColumnName="f_xgtime" />
+                <ScalarProperty Name="Modifier" ColumnName="f_modifier" />
+                <ScalarProperty Name="HorseRace2" ColumnName="f_sm" />
+                <ScalarProperty Name="VSGame" ColumnName="f_game" />
+                <ScalarProperty Name="GameCredit" ColumnName="f_GameCredit" />
+                <ScalarProperty Name="GameSurplus" ColumnName="f_GameSurplus" />
+                <ScalarProperty Name="Tennis" ColumnName="f_wq" />
+                <ScalarProperty Name="Hockey" ColumnName="f_bq" />
+                <ScalarProperty Name="KoreanBaseball" ColumnName="f_hb" />
+                <ScalarProperty Name="ColorBall" ColumnName="f_cq" />
+                <ScalarProperty Name="HorseRace" ColumnName="f_ss" />
+                <ScalarProperty Name="GameLoseLimit" ColumnName="f_Gamezssx" />
+                <ScalarProperty Name="SearchableMajordomo" ColumnName="f_MajAcc" />
+                <ScalarProperty Name="Gamer" ColumnName="f_Vd" />
+                <ScalarProperty Name="ComputerGame" ColumnName="f_Et" />
+                <ScalarProperty Name="GamerCredit" ColumnName="f_VdCredit" />
+                <ScalarProperty Name="GamerSurplus" ColumnName="f_VdSurplus" />
+                <ScalarProperty Name="GamerLoseLimit" ColumnName="f_Vdzssx" />
+                <ScalarProperty Name="ResetPasswordFlag" ColumnName="f_pdpass" />
+                <ScalarProperty Name="Other" ColumnName="f_ot" />
+                <ScalarProperty Name="RemarkText" ColumnName="f_RemarkText" />
+                <ScalarProperty Name="MixParlay" ColumnName="f_zh" />
+                <ScalarProperty Name="ComputerGameCredit" ColumnName="f_etCredit" />
+                <ScalarProperty Name="ComputerGameSurplus" ColumnName="f_etSurplus" />
+                <ScalarProperty Name="PaymentMethod" ColumnName="f_BankCode" />
+                <ScalarProperty Name="RemittanceAccount" ColumnName="f_RemittanceAccount" />
+                <ScalarProperty Name="RemittanceName" ColumnName="f_RemittanceName" />
+                <ScalarProperty Name="Deposit" ColumnName="f_Deposit" />
+                <ScalarProperty Name="SecurityProblem" ColumnName="f_SecurityProblem" />
+                <ScalarProperty Name="SecurityAnswer" ColumnName="f_SecurityAnswer" />
+                <ScalarProperty Name="Phone" ColumnName="f_phone" />
+                <ScalarProperty Name="Email" ColumnName="f_email" />
+                <ScalarProperty Name="PhotoState" ColumnName="f_photoState" />
+                <ScalarProperty Name="IsBankShow" ColumnName="f_isBankShow" />
+                <ScalarProperty Name="EmailState" ColumnName="f_emailState" />
+                <ScalarProperty Name="EmailVerificationCode" ColumnName="f_newID" />
+                <ScalarProperty Name="SubBank" ColumnName="f_SubBank" />
+                <ScalarProperty Name="Group" ColumnName="f_group" />
+                <ScalarProperty Name="FirstGener" ColumnName="f_firstGener" />
+                <ScalarProperty Name="SecondGener" ColumnName="f_secondGener" />
+                <ScalarProperty Name="ThirdGener" ColumnName="f_thirdGener" />
+                <ScalarProperty Name="Looknode" ColumnName="f_looknode" />
+                <ScalarProperty Name="PlatState" ColumnName="f_platState" />
+                <ScalarProperty Name="ClientStatus" ColumnName="f_clientStatus" />
+                <ScalarProperty Name="AllowJoinMember" ColumnName="f_isJoinMem" />
+                <ScalarProperty Name="IDCard" ColumnName="f_idCard" />
+                <ScalarProperty Name="AllowAddMember" ColumnName="f_isOpenMem" />
+                <ScalarProperty Name="Status" ColumnName="f_ishow" />
+                <ScalarProperty Name="VerifyCount" ColumnName="f_verifyCount" />
+                <ScalarProperty Name="VirtualDeposit" ColumnName="f_virtualDeposit" />
+                <ScalarProperty Name="ExcelNum" ColumnName="f_ExcelNum" />
+                <ScalarProperty Name="SubSite" ColumnName="f_webSite" />
+                <ScalarProperty Name="PhoneAuth" ColumnName="f_phoneMessage" />
+                <ScalarProperty Name="PhoneAuthDate" ColumnName="f_phoneDate" />
+                <ScalarProperty Name="VerifyMethod" ColumnName="f_yzMode" />
+                <ScalarProperty Name="Department" ColumnName="f_dept" />
+                <ScalarProperty Name="RemarkPyatyi" ColumnName="f_remarkPyatyi" />
+                <ScalarProperty Name="Remark3" ColumnName="f_remark3" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Transfer">
+            <EntityTypeMapping TypeName="FlyingSnow.Contract.Base.Transfer">
+              <MappingFragment StoreEntitySet="t_transfer">
+                <ScalarProperty Name="TransferSecond" ColumnName="f_gzseconds" />
+                <ScalarProperty Name="Baktime" ColumnName="f_baktime" />
+                <ScalarProperty Name="TransferTime" ColumnName="f_time" />
+                <ScalarProperty Name="Date" ColumnName="f_date" />
+                <ScalarProperty Name="Id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Monitor">
+            <EntityTypeMapping TypeName="FlyingSnow.Contract.Base.Monitor">
+              <MappingFragment StoreEntitySet="t_MemExpansion">
+                <ScalarProperty Name="Createby" ColumnName="f_createby" />
+                <ScalarProperty Name="Createtime" ColumnName="f_createtime" />
+                <ScalarProperty Name="SeeFlag" ColumnName="f_jsjksee" />
+                <ScalarProperty Name="Remarks" ColumnName="f_jsjkbz" />
+                <ScalarProperty Name="Member" ColumnName="f_member" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="t_member">
+            <EntityTypeMapping TypeName="FlyingSnow.Contract.Base.t_member">
+              <MappingFragment StoreEntitySet="t_member">
+                <ScalarProperty Name="f_remark3" ColumnName="f_remark3" />
+                <ScalarProperty Name="f_SCSurplus2" ColumnName="f_SCSurplus2" />
+                <ScalarProperty Name="f_CMDSurplus2" ColumnName="f_CMDSurplus2" />
+                <ScalarProperty Name="f_CMD_token" ColumnName="f_CMD_token" />
+                <ScalarProperty Name="f_SUNSurplus2" ColumnName="f_SUNSurplus2" />
+                <ScalarProperty Name="f_VdSurplus2" ColumnName="f_VdSurplus2" />
+                <ScalarProperty Name="f_HBSurplus2" ColumnName="f_HBSurplus2" />
+                <ScalarProperty Name="f_AGIPlatfromSurplus" ColumnName="f_AGIPlatfromSurplus" />
+                <ScalarProperty Name="f_AGIframeSurplus2" ColumnName="f_AGIframeSurplus2" />
+                <ScalarProperty Name="f_ABSurplus2" ColumnName="f_ABSurplus2" />
+                <ScalarProperty Name="f_ChatroomSurplus2" ColumnName="f_ChatroomSurplus2" />
+                <ScalarProperty Name="f_BBINSurplus2" ColumnName="f_BBINSurplus2" />
+                <ScalarProperty Name="f_OGSurplus2" ColumnName="f_OGSurplus2" />
+                <ScalarProperty Name="f_gamemode" ColumnName="f_gamemode" />
+                <ScalarProperty Name="f_unhmd" ColumnName="f_unhmd" />
+                <ScalarProperty Name="f_DJSurplus2" ColumnName="f_DJSurplus2" />
+                <ScalarProperty Name="f_SBSurplus2" ColumnName="f_SBSurplus2" />
+                <ScalarProperty Name="f_CNFSurplus2" ColumnName="f_CNFSurplus2" />
+                <ScalarProperty Name="f_SB_token" ColumnName="f_SB_token" />
+                <ScalarProperty Name="f_MGSurplus2" ColumnName="f_MGSurplus2" />
+                <ScalarProperty Name="f_AGSurplus2" ColumnName="f_AGSurplus2" />
+                <ScalarProperty Name="f_pk" ColumnName="f_pk" />
+                <ScalarProperty Name="f_mode" ColumnName="f_mode" />
+                <ScalarProperty Name="f_intime" ColumnName="f_intime" />
+                <ScalarProperty Name="f_type" ColumnName="f_type" />
+                <ScalarProperty Name="f_ballid" ColumnName="f_ballid" />
+                <ScalarProperty Name="f_autoWhite" ColumnName="f_autoWhite" />
+                <ScalarProperty Name="f_Record" ColumnName="f_Record" />
+                <ScalarProperty Name="f_creditchagetype" ColumnName="f_creditchagetype" />
+                <ScalarProperty Name="etpName" ColumnName="etpName" />
+                <ScalarProperty Name="etpOutAccount" ColumnName="etpOutAccount" />
+                <ScalarProperty Name="etpInAccount" ColumnName="etpInAccount" />
+                <ScalarProperty Name="epayName" ColumnName="epayName" />
+                <ScalarProperty Name="epayOutAccount" ColumnName="epayOutAccount" />
+                <ScalarProperty Name="epayInAccount" ColumnName="epayInAccount" />
+                <ScalarProperty Name="f_pdpass" ColumnName="f_pdpass" />
+                <ScalarProperty Name="f_zh" ColumnName="f_zh" />
+                <ScalarProperty Name="f_RemarkText" ColumnName="f_RemarkText" />
+                <ScalarProperty Name="f_vdzssx" ColumnName="f_vdzssx" />
+                <ScalarProperty Name="f_periltypes" ColumnName="f_periltypes" />
+                <ScalarProperty Name="f_SubBank" ColumnName="f_SubBank" />
+                <ScalarProperty Name="f_passwordjy2" ColumnName="f_passwordjy2" />
+                <ScalarProperty Name="f_FHCredit" ColumnName="f_FHCredit" />
+                <ScalarProperty Name="f_NowGame" ColumnName="f_NowGame" />
+                <ScalarProperty Name="f_ot" ColumnName="f_ot" />
+                <ScalarProperty Name="f_bonus" ColumnName="f_bonus" />
+                <ScalarProperty Name="f_VDStupeSurplus" ColumnName="f_VDStupeSurplus" />
+                <ScalarProperty Name="f_Et" ColumnName="f_Et" />
+                <ScalarProperty Name="f_Vd" ColumnName="f_Vd" />
+                <ScalarProperty Name="f_BankCode" ColumnName="f_BankCode" />
+                <ScalarProperty Name="f_SecurityAnswer" ColumnName="f_SecurityAnswer" />
+                <ScalarProperty Name="f_SecurityProblem" ColumnName="f_SecurityProblem" />
+                <ScalarProperty Name="f_RemittanceName" ColumnName="f_RemittanceName" />
+                <ScalarProperty Name="f_RemittanceAccount" ColumnName="f_RemittanceAccount" />
+                <ScalarProperty Name="f_VoicePass" ColumnName="f_VoicePass" />
+                <ScalarProperty Name="f_StupeSurplus" ColumnName="f_StupeSurplus" />
+                <ScalarProperty Name="f_ss" ColumnName="f_ss" />
+                <ScalarProperty Name="f_cq" ColumnName="f_cq" />
+                <ScalarProperty Name="f_hb" ColumnName="f_hb" />
+                <ScalarProperty Name="f_bq" ColumnName="f_bq" />
+                <ScalarProperty Name="f_wq" ColumnName="f_wq" />
+                <ScalarProperty Name="f_passwordjy" ColumnName="f_passwordjy" />
+                <ScalarProperty Name="f_game" ColumnName="f_game" />
+                <ScalarProperty Name="f_UserGender" ColumnName="f_UserGender" />
+                <ScalarProperty Name="f_UserHead" ColumnName="f_UserHead" />
+                <ScalarProperty Name="f_sm" ColumnName="f_sm" />
+                <ScalarProperty Name="f_modifier" ColumnName="f_modifier" />
+                <ScalarProperty Name="f_Tollgate" ColumnName="f_Tollgate" />
+                <ScalarProperty Name="f_xgtime" ColumnName="f_xgtime" />
+                <ScalarProperty Name="f_zs" ColumnName="f_zs" />
+                <ScalarProperty Name="f_joindate" ColumnName="f_joindate" />
+                <ScalarProperty Name="f_bb" ColumnName="f_bb" />
+                <ScalarProperty Name="f_ip" ColumnName="f_ip" />
+                <ScalarProperty Name="f_time" ColumnName="f_time" />
+                <ScalarProperty Name="f_error" ColumnName="f_error" />
+                <ScalarProperty Name="f_mz" ColumnName="f_mz" />
+                <ScalarProperty Name="f_zq" ColumnName="f_zq" />
+                <ScalarProperty Name="f_by" ColumnName="f_by" />
+                <ScalarProperty Name="f_bj" ColumnName="f_bj" />
+                <ScalarProperty Name="f_lq" ColumnName="f_lq" />
+                <ScalarProperty Name="f_alagent" ColumnName="f_alagent" />
+                <ScalarProperty Name="f_generalagent" ColumnName="f_generalagent" />
+                <ScalarProperty Name="f_partner" ColumnName="f_partner" />
+                <ScalarProperty Name="f_bigpartner" ColumnName="f_bigpartner" />
+                <ScalarProperty Name="f_majordomo" ColumnName="f_majordomo" />
+                <ScalarProperty Name="f_remark" ColumnName="f_remark" />
+                <ScalarProperty Name="f_lower" ColumnName="f_lower" />
+                <ScalarProperty Name="f_defer" ColumnName="f_defer" />
+                <ScalarProperty Name="f_spitdate" ColumnName="f_spitdate" />
+                <ScalarProperty Name="f_enterdate" ColumnName="f_enterdate" />
+                <ScalarProperty Name="f_spit" ColumnName="f_spit" />
+                <ScalarProperty Name="f_enter" ColumnName="f_enter" />
+                <ScalarProperty Name="f_peril" ColumnName="f_peril" />
+                <ScalarProperty Name="f_residualcredit" ColumnName="f_residualcredit" />
+                <ScalarProperty Name="f_title" ColumnName="f_title" />
+                <ScalarProperty Name="f_password" ColumnName="f_password" />
+                <ScalarProperty Name="f_accounts" ColumnName="f_accounts" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
