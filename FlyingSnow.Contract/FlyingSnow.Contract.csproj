@@ -40,9 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\Alliance.cs" />
+    <Compile Include="Base\BallCountry.cs" />
+    <Compile Include="Base\BallTeam.cs" />
+    <Compile Include="Base\GameControl.cs" />
     <Compile Include="Base\Manager.cs" />
     <Compile Include="Base\Monitor.cs" />
     <Compile Include="Bill\Bill.cs" />
+    <Compile Include="Boss\FollowSetting.cs" />
     <Compile Include="Old\OldBill.cs" />
     <Compile Include="Old\OldParlayBill.cs" />
     <Compile Include="Bill\ParlayBill.cs" />

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="ts111Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="ts111Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="t_manage">
           <Key>
             <PropertyRef Name="id" />
@@ -223,13 +223,261 @@
           <Property Name="f_baktime" Type="datetime" />
           <Property Name="f_gzseconds" Type="smallint" />
         </EntityType>
+        <EntityType Name="t_alliance">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="f_alliance" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_type" Type="int" />
+          <Property Name="f_xh" Type="int" />
+          <Property Name="f_lmdj" Type="tinyint" />
+          <Property Name="f_0fpkf" Type="tinyint" />
+          <Property Name="f_rfgpplzh" Type="float" />
+          <Property Name="f_dxgpplzh" Type="float" />
+          <Property Name="f_mainid" Type="int" />
+          <Property Name="f_ballid" Type="int" />
+          <Property Name="f_countryid" Type="int" />
+          <Property Name="f_alliance_more" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_Parentid" Type="int" />
+          <Property Name="f_jsmode" Type="tinyint" />
+          <Property Name="f_playid" Type="int" />
+          <Property Name="f_wfmode" Type="tinyint" />
+          <Property Name="f_source" Type="tinyint" />
+        </EntityType>
+        <EntityType Name="t_ballcountry">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="f_type" Type="tinyint" />
+          <Property Name="f_title" Type="nvarchar" MaxLength="100" />
+          <Property Name="f_sort" Type="int" />
+          <Property Name="f_mainid" Type="int" />
+          <Property Name="f_ico" Type="varchar" MaxLength="20" />
+          <Property Name="f_balltyp" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="t_ball">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="f_type" Type="int" />
+          <Property Name="f_ball" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_alliance" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_ball_more" Type="nvarchar" MaxLength="600" />
+          <Property Name="f_mainid" Type="int" />
+          <Property Name="f_imgname" Type="nvarchar" MaxLength="30" />
+          <Property Name="f_imgopen" Type="tinyint" />
+          <Property Name="f_parentid" Type="int" />
+          <Property Name="f_source" Type="tinyint" />
+        </EntityType>
+        <EntityType Name="t_controlbaseball_a">
+          <Key>
+            <PropertyRef Name="f_id" />
+          </Key>
+          <Property Name="f_id" Type="int" Nullable="false" />
+          <Property Name="f_z_rf" Type="int" />
+          <Property Name="f_z_dx" Type="int" />
+          <Property Name="f_z_dy" Type="int" />
+          <Property Name="f_z_ysey" Type="int" />
+          <Property Name="f_z_ds" Type="int" />
+          <Property Name="f_z_zdrf" Type="int" />
+          <Property Name="f_z_zddx" Type="int" />
+          <Property Name="f_z_zdds" Type="int" />
+          <Property Name="f_z_qsf" Type="int" />
+          <Property Name="f_z_qwf" Type="int" />
+          <Property Name="f_z_djzgdf" Type="int" />
+          <Property Name="f_z_zkzdfrf" Type="int" />
+          <Property Name="f_z_zkzdfdx" Type="int" />
+          <Property Name="f_z_zkzdfdy" Type="int" />
+          <Property Name="f_z_zkzdfysey" Type="int" />
+          <Property Name="f_z_zkzdfds" Type="int" />
+          <Property Name="f_z_djzgrf" Type="int" />
+          <Property Name="f_z_gj" Type="int" />
+          <Property Name="f_z_gg" Type="int" />
+          <Property Name="f_z_dyjrf" Type="int" />
+          <Property Name="f_z_dyjdx" Type="int" />
+          <Property Name="f_z_dyjdy" Type="int" />
+          <Property Name="f_z_dyjds" Type="int" />
+          <Property Name="f_z_sbcrf" Type="int" />
+          <Property Name="f_z_sbcdx" Type="int" />
+          <Property Name="f_z_sbcdy" Type="int" />
+          <Property Name="f_z_sbcds" Type="int" />
+          <Property Name="f_z_sbczdrf" Type="int" />
+          <Property Name="f_z_sbczddx" Type="int" />
+          <Property Name="f_z_sbczdds" Type="int" />
+          <Property Name="f_z_xbcrf" Type="int" />
+          <Property Name="f_z_xbcdx" Type="int" />
+          <Property Name="f_z_xbcdy" Type="int" />
+          <Property Name="f_z_xbcds" Type="int" />
+          <Property Name="f_z_xbczdrf" Type="int" />
+          <Property Name="f_z_xbczddx" Type="int" />
+          <Property Name="f_z_xbczdds" Type="int" />
+          <Property Name="f_z_jzf" Type="int" />
+          <Property Name="f_x_rf" Type="float" />
+          <Property Name="f_x_dx" Type="float" />
+          <Property Name="f_x_dy" Type="float" />
+          <Property Name="f_x_ysey" Type="float" />
+          <Property Name="f_x_ds" Type="float" />
+          <Property Name="f_x_zdrf" Type="float" />
+          <Property Name="f_x_zddx" Type="float" />
+          <Property Name="f_x_zdds" Type="float" />
+          <Property Name="f_x_qsf" Type="float" />
+          <Property Name="f_x_qwf" Type="float" />
+          <Property Name="f_x_zkzdfrf" Type="float" />
+          <Property Name="f_x_zkzdfdx" Type="float" />
+          <Property Name="f_x_zkzdfdy" Type="float" />
+          <Property Name="f_x_zkzdfysey" Type="float" />
+          <Property Name="f_x_zkzdfds" Type="float" />
+          <Property Name="f_x_djzgrf" Type="float" />
+          <Property Name="f_x_gj" Type="float" />
+          <Property Name="f_x_gg" Type="float" />
+          <Property Name="f_x_dyjrf" Type="float" />
+          <Property Name="f_x_dyjdx" Type="float" />
+          <Property Name="f_x_dyjdy" Type="float" />
+          <Property Name="f_x_dyjds" Type="float" />
+          <Property Name="f_x_sbcrf" Type="float" />
+          <Property Name="f_x_sbcdx" Type="float" />
+          <Property Name="f_x_sbcdy" Type="float" />
+          <Property Name="f_x_sbcds" Type="float" />
+          <Property Name="f_x_sbczdrf" Type="float" />
+          <Property Name="f_x_sbczddx" Type="float" />
+          <Property Name="f_x_sbczdds" Type="float" />
+          <Property Name="f_x_xbcrf" Type="float" />
+          <Property Name="f_x_xbcdx" Type="float" />
+          <Property Name="f_x_xbcdy" Type="float" />
+          <Property Name="f_x_xbcds" Type="float" />
+          <Property Name="f_x_xbczdrf" Type="float" />
+          <Property Name="f_x_xbczddx" Type="float" />
+          <Property Name="f_x_xbczdds" Type="float" />
+          <Property Name="f_x_jzf" Type="float" />
+          <Property Name="f_d_rf" Type="float" />
+          <Property Name="f_d_dx" Type="float" />
+          <Property Name="f_d_dy" Type="float" />
+          <Property Name="f_d_ysey" Type="float" />
+          <Property Name="f_d_ds" Type="float" />
+          <Property Name="f_d_zdrf" Type="float" />
+          <Property Name="f_d_zddx" Type="float" />
+          <Property Name="f_d_zdds" Type="float" />
+          <Property Name="f_d_qsf" Type="float" />
+          <Property Name="f_d_qwf" Type="float" />
+          <Property Name="f_d_zkzdfrf" Type="float" />
+          <Property Name="f_d_zkzdfdx" Type="float" />
+          <Property Name="f_d_zkzdfdy" Type="float" />
+          <Property Name="f_d_zkzdfysey" Type="float" />
+          <Property Name="f_d_zkzdfds" Type="float" />
+          <Property Name="f_d_djzgrf" Type="float" />
+          <Property Name="f_d_gj" Type="float" />
+          <Property Name="f_d_gg" Type="float" />
+          <Property Name="f_d_dyjrf" Type="float" />
+          <Property Name="f_d_dyjdx" Type="float" />
+          <Property Name="f_d_dyjdy" Type="float" />
+          <Property Name="f_d_dyjds" Type="float" />
+          <Property Name="f_d_sbcrf" Type="float" />
+          <Property Name="f_d_sbcdx" Type="float" />
+          <Property Name="f_d_sbcdy" Type="float" />
+          <Property Name="f_d_sbcds" Type="float" />
+          <Property Name="f_d_sbczdrf" Type="float" />
+          <Property Name="f_d_sbczddx" Type="float" />
+          <Property Name="f_d_sbczdds" Type="float" />
+          <Property Name="f_d_xbcrf" Type="float" />
+          <Property Name="f_d_xbcdx" Type="float" />
+          <Property Name="f_d_xbcdy" Type="float" />
+          <Property Name="f_d_xbcds" Type="float" />
+          <Property Name="f_d_xbczdrf" Type="float" />
+          <Property Name="f_d_xbczddx" Type="float" />
+          <Property Name="f_d_xbczdds" Type="float" />
+          <Property Name="f_d_jzf" Type="float" />
+          <Property Name="f_j_rf" Type="float" />
+          <Property Name="f_j_dx" Type="float" />
+          <Property Name="f_j_dy" Type="float" />
+          <Property Name="f_j_ysey" Type="float" />
+          <Property Name="f_j_ds" Type="float" />
+          <Property Name="f_j_zdrf" Type="float" />
+          <Property Name="f_j_zddx" Type="float" />
+          <Property Name="f_j_zdds" Type="float" />
+          <Property Name="f_j_qsf" Type="float" />
+          <Property Name="f_j_qwf" Type="float" />
+          <Property Name="f_j_zkzdfrf" Type="float" />
+          <Property Name="f_j_zkzdfdx" Type="float" />
+          <Property Name="f_j_zkzdfdy" Type="float" />
+          <Property Name="f_j_zkzdfysey" Type="float" />
+          <Property Name="f_j_zkzdfds" Type="float" />
+          <Property Name="f_j_djzgrf" Type="float" />
+          <Property Name="f_j_gj" Type="float" />
+          <Property Name="f_j_gg" Type="float" />
+          <Property Name="f_j_dyjrf" Type="float" />
+          <Property Name="f_j_dyjdx" Type="float" />
+          <Property Name="f_j_dyjdy" Type="float" />
+          <Property Name="f_j_dyjds" Type="float" />
+          <Property Name="f_j_sbcrf" Type="float" />
+          <Property Name="f_j_sbcdx" Type="float" />
+          <Property Name="f_j_sbcdy" Type="float" />
+          <Property Name="f_j_sbcds" Type="float" />
+          <Property Name="f_j_sbczdrf" Type="float" />
+          <Property Name="f_j_sbczddx" Type="float" />
+          <Property Name="f_j_sbczdds" Type="float" />
+          <Property Name="f_j_xbcrf" Type="float" />
+          <Property Name="f_j_xbcdx" Type="float" />
+          <Property Name="f_j_xbcdy" Type="float" />
+          <Property Name="f_j_xbcds" Type="float" />
+          <Property Name="f_j_xbczdrf" Type="float" />
+          <Property Name="f_j_xbczddx" Type="float" />
+          <Property Name="f_j_xbczdds" Type="float" />
+          <Property Name="f_j_jzf" Type="float" />
+          <Property Name="f_p_rf" Type="float" />
+          <Property Name="f_p_dx" Type="float" />
+          <Property Name="f_p_dy" Type="float" />
+          <Property Name="f_p_ysey" Type="float" />
+          <Property Name="f_p_ds" Type="float" />
+          <Property Name="f_p_zdrf" Type="float" />
+          <Property Name="f_p_zddx" Type="float" />
+          <Property Name="f_p_zdds" Type="float" />
+          <Property Name="f_p_qsf" Type="float" />
+          <Property Name="f_p_qwf" Type="float" />
+          <Property Name="f_p_zkzdfrf" Type="float" />
+          <Property Name="f_p_zkzdfdx" Type="float" />
+          <Property Name="f_p_zkzdfdy" Type="float" />
+          <Property Name="f_p_zkzdfysey" Type="float" />
+          <Property Name="f_p_zkzdfds" Type="float" />
+          <Property Name="f_p_djzgrf" Type="float" />
+          <Property Name="f_p_gj" Type="float" />
+          <Property Name="f_p_gg" Type="float" />
+          <Property Name="f_p_dyjrf" Type="float" />
+          <Property Name="f_p_dyjdx" Type="float" />
+          <Property Name="f_p_dyjdy" Type="float" />
+          <Property Name="f_p_dyjds" Type="float" />
+          <Property Name="f_p_sbcrf" Type="float" />
+          <Property Name="f_p_sbcdx" Type="float" />
+          <Property Name="f_p_sbcdy" Type="float" />
+          <Property Name="f_p_sbcds" Type="float" />
+          <Property Name="f_p_sbczdrf" Type="float" />
+          <Property Name="f_p_sbczddx" Type="float" />
+          <Property Name="f_p_sbczdds" Type="float" />
+          <Property Name="f_p_xbcrf" Type="float" />
+          <Property Name="f_p_xbcdx" Type="float" />
+          <Property Name="f_p_xbcdy" Type="float" />
+          <Property Name="f_p_xbcds" Type="float" />
+          <Property Name="f_p_xbczdrf" Type="float" />
+          <Property Name="f_p_xbczddx" Type="float" />
+          <Property Name="f_p_xbczdds" Type="float" />
+          <Property Name="f_p_jzf" Type="float" />
+          <Property Name="f_sfkfbskg" Type="int" />
+          <Property Name="f_ldfz" Type="int" />
+        </EntityType>
         <EntityContainer Name="ts111ModelStoreContainer">
           <EntitySet Name="t_manage" EntityType="Self.t_manage" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="t_alliance" EntityType="Self.t_alliance" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="t_ballcountry" EntityType="Self.t_ballcountry" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="t_member" EntityType="Self.t_member" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="t_MemExpansion" EntityType="Self.t_MemExpansion" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="t_transfer" EntityType="Self.t_transfer" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="t_ball" EntityType="Self.t_ball" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="t_controlbaseball_a" EntityType="Self.t_controlbaseball_a" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="FlyingSnow.Contract.Base" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -332,6 +580,10 @@
           <EntitySet Name="Transfer" EntityType="FlyingSnow.Contract.Base.Transfer" />
           <EntitySet Name="Monitor" EntityType="FlyingSnow.Contract.Base.Monitor" />
           <EntitySet Name="t_member" EntityType="FlyingSnow.Contract.Base.t_member" />
+          <EntitySet Name="Alliance" EntityType="FlyingSnow.Contract.Base.Alliance" />
+          <EntitySet Name="BallCountry" EntityType="FlyingSnow.Contract.Base.BallCountry" />
+          <EntitySet Name="BallTeam" EntityType="FlyingSnow.Contract.Base.BallTeam" />
+          <EntitySet Name="GameControl" EntityType="FlyingSnow.Contract.Base.GameControl" />
         </EntityContainer>
         <EntityType Name="Transfer">
           <Key>
@@ -456,6 +708,249 @@
           <Property Name="f_CMDSurplus2" Type="Double" />
           <Property Name="f_SCSurplus2" Type="Double" />
           <Property Name="f_remark3" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Alliance">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AllianceName" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="BallType" Type="Int32" />
+          <Property Name="IndexNum" Type="Int32" />
+          <Property Name="AllianceLevel" Type="Byte" />
+          <Property Name="ZeroScore" Type="Byte" />
+          <Property Name="SumSpreadOdds" Type="Double" />
+          <Property Name="SumScoreOdds" Type="Double" />
+          <Property Name="MainId" Type="Int32" />
+          <Property Name="BallId" Type="Int32" />
+          <Property Name="CountryId" Type="Int32" />
+          <Property Name="AllianceNameMore" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="ParentId" Type="Int32" />
+          <Property Name="CalculateMode" Type="Byte" />
+          <Property Name="PalyId" Type="Int32" />
+          <Property Name="Number" Type="Byte" />
+          <Property Name="Source" Type="Byte" />
+        </EntityType>
+        <EntityType Name="BallCountry">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Type" Type="Byte" />
+          <Property Name="Title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SortValue" Type="Int32" />
+          <Property Name="MainId" Type="Int32" />
+          <Property Name="BallFlag" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="BallType" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="GameControl">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Spread" Type="Int32" />
+          <Property Name="Score" Type="Int32" />
+          <Property Name="Single" Type="Int32" />
+          <Property Name="OneLoseTwoWin" Type="Int32" />
+          <Property Name="SingleOrDouble" Type="Int32" />
+          <Property Name="BallingSpread" Type="Int32" />
+          <Property Name="BallingScore" Type="Int32" />
+          <Property Name="BallingSignleOrDouble" Type="Int32" />
+          <Property Name="VieFirstPoint" Type="Int32" />
+          <Property Name="VieLastPoint" Type="Int32" />
+          <Property Name="f_z_djzgdf" Type="Int32" />
+          <Property Name="f_z_zkzdfrf" Type="Int32" />
+          <Property Name="f_z_zkzdfdx" Type="Int32" />
+          <Property Name="f_z_zkzdfdy" Type="Int32" />
+          <Property Name="f_z_zkzdfysey" Type="Int32" />
+          <Property Name="f_z_zkzdfds" Type="Int32" />
+          <Property Name="SumOddsScore" Type="Int32" />
+          <Property Name="Champion" Type="Int32" />
+          <Property Name="Parlay" Type="Int32" />
+          <Property Name="SpreadOfFirst" Type="Int32" />
+          <Property Name="ScoreOfFirst" Type="Int32" />
+          <Property Name="CapotOfFirst" Type="Int32" />
+          <Property Name="SingleOrDoubleOfFirst" Type="Int32" />
+          <Property Name="SpreadOfFirstHalf" Type="Int32" />
+          <Property Name="ScoreOfFirstHalf" Type="Int32" />
+          <Property Name="CapotOfFirstHalf" Type="Int32" />
+          <Property Name="SingleOrDoubleOfFirstHalf" Type="Int32" />
+          <Property Name="SpreadOfFirstHalfGo" Type="Int32" />
+          <Property Name="ScoreOfFirstHalfGo" Type="Int32" />
+          <Property Name="SingleOrDoubleOfFirstHalfGo" Type="Int32" />
+          <Property Name="SpreadOfSecondHalf" Type="Int32" />
+          <Property Name="ScoreOfSecondHalf" Type="Int32" />
+          <Property Name="CapotOfSecondHalf" Type="Int32" />
+          <Property Name="SingleOrDoubleOfSecondHalf" Type="Int32" />
+          <Property Name="SpreadOfSecondHalfGo" Type="Int32" />
+          <Property Name="ScoreOfSecondHalfGo" Type="Int32" />
+          <Property Name="SingleOrDoubleOfSecondHalfGo" Type="Int32" />
+          <Property Name="ReferPoint" Type="Int32" />
+          <Property Name="SpreadLimited" Type="Double" />
+          <Property Name="ScoreLimited" Type="Double" />
+          <Property Name="CapotLimited" Type="Double" />
+          <Property Name="OneLoseTwoWinLimited" Type="Double" />
+          <Property Name="SingleOrDoubleLimited" Type="Double" />
+          <Property Name="SpreadGoLimited" Type="Double" />
+          <Property Name="ScoreGoLimited" Type="Double" />
+          <Property Name="CapotGoLimited" Type="Double" />
+          <Property Name="VieFirstPointLimited" Type="Double" />
+          <Property Name="f_x_qwf" Type="Double" />
+          <Property Name="f_x_zkzdfrf" Type="Double" />
+          <Property Name="f_x_zkzdfdx" Type="Double" />
+          <Property Name="f_x_zkzdfdy" Type="Double" />
+          <Property Name="f_x_zkzdfysey" Type="Double" />
+          <Property Name="f_x_zkzdfds" Type="Double" />
+          <Property Name="f_x_djzgrf" Type="Double" />
+          <Property Name="f_x_gj" Type="Double" />
+          <Property Name="f_x_gg" Type="Double" />
+          <Property Name="f_x_dyjrf" Type="Double" />
+          <Property Name="f_x_dyjdx" Type="Double" />
+          <Property Name="f_x_dyjdy" Type="Double" />
+          <Property Name="f_x_dyjds" Type="Double" />
+          <Property Name="f_x_sbcrf" Type="Double" />
+          <Property Name="f_x_sbcdx" Type="Double" />
+          <Property Name="f_x_sbcdy" Type="Double" />
+          <Property Name="f_x_sbcds" Type="Double" />
+          <Property Name="f_x_sbczdrf" Type="Double" />
+          <Property Name="f_x_sbczddx" Type="Double" />
+          <Property Name="f_x_sbczdds" Type="Double" />
+          <Property Name="f_x_xbcrf" Type="Double" />
+          <Property Name="f_x_xbcdx" Type="Double" />
+          <Property Name="f_x_xbcdy" Type="Double" />
+          <Property Name="f_x_xbcds" Type="Double" />
+          <Property Name="f_x_xbczdrf" Type="Double" />
+          <Property Name="f_x_xbczddx" Type="Double" />
+          <Property Name="f_x_xbczdds" Type="Double" />
+          <Property Name="f_x_jzf" Type="Double" />
+          <Property Name="f_d_rf" Type="Double" />
+          <Property Name="f_d_dx" Type="Double" />
+          <Property Name="f_d_dy" Type="Double" />
+          <Property Name="f_d_ysey" Type="Double" />
+          <Property Name="f_d_ds" Type="Double" />
+          <Property Name="f_d_zdrf" Type="Double" />
+          <Property Name="f_d_zddx" Type="Double" />
+          <Property Name="f_d_zdds" Type="Double" />
+          <Property Name="f_d_qsf" Type="Double" />
+          <Property Name="f_d_qwf" Type="Double" />
+          <Property Name="f_d_zkzdfrf" Type="Double" />
+          <Property Name="f_d_zkzdfdx" Type="Double" />
+          <Property Name="f_d_zkzdfdy" Type="Double" />
+          <Property Name="f_d_zkzdfysey" Type="Double" />
+          <Property Name="f_d_zkzdfds" Type="Double" />
+          <Property Name="f_d_djzgrf" Type="Double" />
+          <Property Name="f_d_gj" Type="Double" />
+          <Property Name="f_d_gg" Type="Double" />
+          <Property Name="f_d_dyjrf" Type="Double" />
+          <Property Name="f_d_dyjdx" Type="Double" />
+          <Property Name="f_d_dyjdy" Type="Double" />
+          <Property Name="f_d_dyjds" Type="Double" />
+          <Property Name="f_d_sbcrf" Type="Double" />
+          <Property Name="f_d_sbcdx" Type="Double" />
+          <Property Name="f_d_sbcdy" Type="Double" />
+          <Property Name="f_d_sbcds" Type="Double" />
+          <Property Name="f_d_sbczdrf" Type="Double" />
+          <Property Name="f_d_sbczddx" Type="Double" />
+          <Property Name="f_d_sbczdds" Type="Double" />
+          <Property Name="f_d_xbcrf" Type="Double" />
+          <Property Name="f_d_xbcdx" Type="Double" />
+          <Property Name="f_d_xbcdy" Type="Double" />
+          <Property Name="f_d_xbcds" Type="Double" />
+          <Property Name="f_d_xbczdrf" Type="Double" />
+          <Property Name="f_d_xbczddx" Type="Double" />
+          <Property Name="f_d_xbczdds" Type="Double" />
+          <Property Name="f_d_jzf" Type="Double" />
+          <Property Name="f_j_rf" Type="Double" />
+          <Property Name="f_j_dx" Type="Double" />
+          <Property Name="f_j_dy" Type="Double" />
+          <Property Name="f_j_ysey" Type="Double" />
+          <Property Name="f_j_ds" Type="Double" />
+          <Property Name="f_j_zdrf" Type="Double" />
+          <Property Name="f_j_zddx" Type="Double" />
+          <Property Name="f_j_zdds" Type="Double" />
+          <Property Name="f_j_qsf" Type="Double" />
+          <Property Name="f_j_qwf" Type="Double" />
+          <Property Name="f_j_zkzdfrf" Type="Double" />
+          <Property Name="f_j_zkzdfdx" Type="Double" />
+          <Property Name="f_j_zkzdfdy" Type="Double" />
+          <Property Name="f_j_zkzdfysey" Type="Double" />
+          <Property Name="f_j_zkzdfds" Type="Double" />
+          <Property Name="f_j_djzgrf" Type="Double" />
+          <Property Name="f_j_gj" Type="Double" />
+          <Property Name="f_j_gg" Type="Double" />
+          <Property Name="f_j_dyjrf" Type="Double" />
+          <Property Name="f_j_dyjdx" Type="Double" />
+          <Property Name="f_j_dyjdy" Type="Double" />
+          <Property Name="f_j_dyjds" Type="Double" />
+          <Property Name="f_j_sbcrf" Type="Double" />
+          <Property Name="f_j_sbcdx" Type="Double" />
+          <Property Name="f_j_sbcdy" Type="Double" />
+          <Property Name="f_j_sbcds" Type="Double" />
+          <Property Name="f_j_sbczdrf" Type="Double" />
+          <Property Name="f_j_sbczddx" Type="Double" />
+          <Property Name="f_j_sbczdds" Type="Double" />
+          <Property Name="f_j_xbcrf" Type="Double" />
+          <Property Name="f_j_xbcdx" Type="Double" />
+          <Property Name="f_j_xbcdy" Type="Double" />
+          <Property Name="f_j_xbcds" Type="Double" />
+          <Property Name="f_j_xbczdrf" Type="Double" />
+          <Property Name="f_j_xbczddx" Type="Double" />
+          <Property Name="f_j_xbczdds" Type="Double" />
+          <Property Name="f_j_jzf" Type="Double" />
+          <Property Name="f_p_rf" Type="Double" />
+          <Property Name="f_p_dx" Type="Double" />
+          <Property Name="f_p_dy" Type="Double" />
+          <Property Name="f_p_ysey" Type="Double" />
+          <Property Name="f_p_ds" Type="Double" />
+          <Property Name="f_p_zdrf" Type="Double" />
+          <Property Name="f_p_zddx" Type="Double" />
+          <Property Name="f_p_zdds" Type="Double" />
+          <Property Name="f_p_qsf" Type="Double" />
+          <Property Name="f_p_qwf" Type="Double" />
+          <Property Name="f_p_zkzdfrf" Type="Double" />
+          <Property Name="f_p_zkzdfdx" Type="Double" />
+          <Property Name="f_p_zkzdfdy" Type="Double" />
+          <Property Name="f_p_zkzdfysey" Type="Double" />
+          <Property Name="f_p_zkzdfds" Type="Double" />
+          <Property Name="f_p_djzgrf" Type="Double" />
+          <Property Name="f_p_gj" Type="Double" />
+          <Property Name="f_p_gg" Type="Double" />
+          <Property Name="f_p_dyjrf" Type="Double" />
+          <Property Name="f_p_dyjdx" Type="Double" />
+          <Property Name="f_p_dyjdy" Type="Double" />
+          <Property Name="f_p_dyjds" Type="Double" />
+          <Property Name="f_p_sbcrf" Type="Double" />
+          <Property Name="f_p_sbcdx" Type="Double" />
+          <Property Name="f_p_sbcdy" Type="Double" />
+          <Property Name="f_p_sbcds" Type="Double" />
+          <Property Name="f_p_sbczdrf" Type="Double" />
+          <Property Name="f_p_sbczddx" Type="Double" />
+          <Property Name="f_p_sbczdds" Type="Double" />
+          <Property Name="f_p_xbcrf" Type="Double" />
+          <Property Name="f_p_xbcdx" Type="Double" />
+          <Property Name="f_p_xbcdy" Type="Double" />
+          <Property Name="f_p_xbcds" Type="Double" />
+          <Property Name="f_p_xbczdrf" Type="Double" />
+          <Property Name="f_p_xbczddx" Type="Double" />
+          <Property Name="f_p_xbczdds" Type="Double" />
+          <Property Name="f_p_jzf" Type="Double" />
+          <Property Name="f_sfkfbskg" Type="Int32" />
+          <Property Name="f_ldfz" Type="Int32" />
+        </EntityType>
+        <EntityType Name="BallTeam">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Type" Type="Int32" />
+          <Property Name="TeamName" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="AllianceName" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="TeamNameMore" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="MainId" Type="Int32" />
+          <Property Name="ImgName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="ImgOpen" Type="Byte" />
+          <Property Name="ParentId" Type="Int32" />
+          <Property Name="Source" Type="Byte" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -682,6 +1177,253 @@
                 <ScalarProperty Name="f_password" ColumnName="f_password" />
                 <ScalarProperty Name="f_accounts" ColumnName="f_accounts" />
                 <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Alliance">
+            <EntityTypeMapping TypeName="FlyingSnow.Contract.Base.Alliance">
+              <MappingFragment StoreEntitySet="t_alliance">
+                <ScalarProperty Name="Source" ColumnName="f_source" />
+                <ScalarProperty Name="Number" ColumnName="f_wfmode" />
+                <ScalarProperty Name="PalyId" ColumnName="f_playid" />
+                <ScalarProperty Name="CalculateMode" ColumnName="f_jsmode" />
+                <ScalarProperty Name="ParentId" ColumnName="f_Parentid" />
+                <ScalarProperty Name="AllianceNameMore" ColumnName="f_alliance_more" />
+                <ScalarProperty Name="CountryId" ColumnName="f_countryid" />
+                <ScalarProperty Name="BallId" ColumnName="f_ballid" />
+                <ScalarProperty Name="MainId" ColumnName="f_mainid" />
+                <ScalarProperty Name="SumScoreOdds" ColumnName="f_dxgpplzh" />
+                <ScalarProperty Name="SumSpreadOdds" ColumnName="f_rfgpplzh" />
+                <ScalarProperty Name="ZeroScore" ColumnName="f_0fpkf" />
+                <ScalarProperty Name="AllianceLevel" ColumnName="f_lmdj" />
+                <ScalarProperty Name="IndexNum" ColumnName="f_xh" />
+                <ScalarProperty Name="BallType" ColumnName="f_type" />
+                <ScalarProperty Name="AllianceName" ColumnName="f_alliance" />
+                <ScalarProperty Name="Id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BallCountry">
+            <EntityTypeMapping TypeName="FlyingSnow.Contract.Base.BallCountry">
+              <MappingFragment StoreEntitySet="t_ballcountry">
+                <ScalarProperty Name="BallType" ColumnName="f_balltyp" />
+                <ScalarProperty Name="BallFlag" ColumnName="f_ico" />
+                <ScalarProperty Name="MainId" ColumnName="f_mainid" />
+                <ScalarProperty Name="SortValue" ColumnName="f_sort" />
+                <ScalarProperty Name="Title" ColumnName="f_title" />
+                <ScalarProperty Name="Type" ColumnName="f_type" />
+                <ScalarProperty Name="Id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BallTeam">
+            <EntityTypeMapping TypeName="FlyingSnow.Contract.Base.BallTeam">
+              <MappingFragment StoreEntitySet="t_ball">
+                <ScalarProperty Name="Source" ColumnName="f_source" />
+                <ScalarProperty Name="ParentId" ColumnName="f_parentid" />
+                <ScalarProperty Name="ImgOpen" ColumnName="f_imgopen" />
+                <ScalarProperty Name="ImgName" ColumnName="f_imgname" />
+                <ScalarProperty Name="MainId" ColumnName="f_mainid" />
+                <ScalarProperty Name="TeamNameMore" ColumnName="f_ball_more" />
+                <ScalarProperty Name="AllianceName" ColumnName="f_alliance" />
+                <ScalarProperty Name="TeamName" ColumnName="f_ball" />
+                <ScalarProperty Name="Type" ColumnName="f_type" />
+                <ScalarProperty Name="Id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GameControl">
+            <EntityTypeMapping TypeName="FlyingSnow.Contract.Base.GameControl">
+              <MappingFragment StoreEntitySet="t_controlbaseball_a">
+                <ScalarProperty Name="f_ldfz" ColumnName="f_ldfz" />
+                <ScalarProperty Name="f_sfkfbskg" ColumnName="f_sfkfbskg" />
+                <ScalarProperty Name="f_p_jzf" ColumnName="f_p_jzf" />
+                <ScalarProperty Name="f_p_xbczdds" ColumnName="f_p_xbczdds" />
+                <ScalarProperty Name="f_p_xbczddx" ColumnName="f_p_xbczddx" />
+                <ScalarProperty Name="f_p_xbczdrf" ColumnName="f_p_xbczdrf" />
+                <ScalarProperty Name="f_p_xbcds" ColumnName="f_p_xbcds" />
+                <ScalarProperty Name="f_p_xbcdy" ColumnName="f_p_xbcdy" />
+                <ScalarProperty Name="f_p_xbcdx" ColumnName="f_p_xbcdx" />
+                <ScalarProperty Name="f_p_xbcrf" ColumnName="f_p_xbcrf" />
+                <ScalarProperty Name="f_p_sbczdds" ColumnName="f_p_sbczdds" />
+                <ScalarProperty Name="f_p_sbczddx" ColumnName="f_p_sbczddx" />
+                <ScalarProperty Name="f_p_sbczdrf" ColumnName="f_p_sbczdrf" />
+                <ScalarProperty Name="f_p_sbcds" ColumnName="f_p_sbcds" />
+                <ScalarProperty Name="f_p_sbcdy" ColumnName="f_p_sbcdy" />
+                <ScalarProperty Name="f_p_sbcdx" ColumnName="f_p_sbcdx" />
+                <ScalarProperty Name="f_p_sbcrf" ColumnName="f_p_sbcrf" />
+                <ScalarProperty Name="f_p_dyjds" ColumnName="f_p_dyjds" />
+                <ScalarProperty Name="f_p_dyjdy" ColumnName="f_p_dyjdy" />
+                <ScalarProperty Name="f_p_dyjdx" ColumnName="f_p_dyjdx" />
+                <ScalarProperty Name="f_p_dyjrf" ColumnName="f_p_dyjrf" />
+                <ScalarProperty Name="f_p_gg" ColumnName="f_p_gg" />
+                <ScalarProperty Name="f_p_gj" ColumnName="f_p_gj" />
+                <ScalarProperty Name="f_p_djzgrf" ColumnName="f_p_djzgrf" />
+                <ScalarProperty Name="f_p_zkzdfds" ColumnName="f_p_zkzdfds" />
+                <ScalarProperty Name="f_p_zkzdfysey" ColumnName="f_p_zkzdfysey" />
+                <ScalarProperty Name="f_p_zkzdfdy" ColumnName="f_p_zkzdfdy" />
+                <ScalarProperty Name="f_p_zkzdfdx" ColumnName="f_p_zkzdfdx" />
+                <ScalarProperty Name="f_p_zkzdfrf" ColumnName="f_p_zkzdfrf" />
+                <ScalarProperty Name="f_p_qwf" ColumnName="f_p_qwf" />
+                <ScalarProperty Name="f_p_qsf" ColumnName="f_p_qsf" />
+                <ScalarProperty Name="f_p_zdds" ColumnName="f_p_zdds" />
+                <ScalarProperty Name="f_p_zddx" ColumnName="f_p_zddx" />
+                <ScalarProperty Name="f_p_zdrf" ColumnName="f_p_zdrf" />
+                <ScalarProperty Name="f_p_ds" ColumnName="f_p_ds" />
+                <ScalarProperty Name="f_p_ysey" ColumnName="f_p_ysey" />
+                <ScalarProperty Name="f_p_dy" ColumnName="f_p_dy" />
+                <ScalarProperty Name="f_p_dx" ColumnName="f_p_dx" />
+                <ScalarProperty Name="f_p_rf" ColumnName="f_p_rf" />
+                <ScalarProperty Name="f_j_jzf" ColumnName="f_j_jzf" />
+                <ScalarProperty Name="f_j_xbczdds" ColumnName="f_j_xbczdds" />
+                <ScalarProperty Name="f_j_xbczddx" ColumnName="f_j_xbczddx" />
+                <ScalarProperty Name="f_j_xbczdrf" ColumnName="f_j_xbczdrf" />
+                <ScalarProperty Name="f_j_xbcds" ColumnName="f_j_xbcds" />
+                <ScalarProperty Name="f_j_xbcdy" ColumnName="f_j_xbcdy" />
+                <ScalarProperty Name="f_j_xbcdx" ColumnName="f_j_xbcdx" />
+                <ScalarProperty Name="f_j_xbcrf" ColumnName="f_j_xbcrf" />
+                <ScalarProperty Name="f_j_sbczdds" ColumnName="f_j_sbczdds" />
+                <ScalarProperty Name="f_j_sbczddx" ColumnName="f_j_sbczddx" />
+                <ScalarProperty Name="f_j_sbczdrf" ColumnName="f_j_sbczdrf" />
+                <ScalarProperty Name="f_j_sbcds" ColumnName="f_j_sbcds" />
+                <ScalarProperty Name="f_j_sbcdy" ColumnName="f_j_sbcdy" />
+                <ScalarProperty Name="f_j_sbcdx" ColumnName="f_j_sbcdx" />
+                <ScalarProperty Name="f_j_sbcrf" ColumnName="f_j_sbcrf" />
+                <ScalarProperty Name="f_j_dyjds" ColumnName="f_j_dyjds" />
+                <ScalarProperty Name="f_j_dyjdy" ColumnName="f_j_dyjdy" />
+                <ScalarProperty Name="f_j_dyjdx" ColumnName="f_j_dyjdx" />
+                <ScalarProperty Name="f_j_dyjrf" ColumnName="f_j_dyjrf" />
+                <ScalarProperty Name="f_j_gg" ColumnName="f_j_gg" />
+                <ScalarProperty Name="f_j_gj" ColumnName="f_j_gj" />
+                <ScalarProperty Name="f_j_djzgrf" ColumnName="f_j_djzgrf" />
+                <ScalarProperty Name="f_j_zkzdfds" ColumnName="f_j_zkzdfds" />
+                <ScalarProperty Name="f_j_zkzdfysey" ColumnName="f_j_zkzdfysey" />
+                <ScalarProperty Name="f_j_zkzdfdy" ColumnName="f_j_zkzdfdy" />
+                <ScalarProperty Name="f_j_zkzdfdx" ColumnName="f_j_zkzdfdx" />
+                <ScalarProperty Name="f_j_zkzdfrf" ColumnName="f_j_zkzdfrf" />
+                <ScalarProperty Name="f_j_qwf" ColumnName="f_j_qwf" />
+                <ScalarProperty Name="f_j_qsf" ColumnName="f_j_qsf" />
+                <ScalarProperty Name="f_j_zdds" ColumnName="f_j_zdds" />
+                <ScalarProperty Name="f_j_zddx" ColumnName="f_j_zddx" />
+                <ScalarProperty Name="f_j_zdrf" ColumnName="f_j_zdrf" />
+                <ScalarProperty Name="f_j_ds" ColumnName="f_j_ds" />
+                <ScalarProperty Name="f_j_ysey" ColumnName="f_j_ysey" />
+                <ScalarProperty Name="f_j_dy" ColumnName="f_j_dy" />
+                <ScalarProperty Name="f_j_dx" ColumnName="f_j_dx" />
+                <ScalarProperty Name="f_j_rf" ColumnName="f_j_rf" />
+                <ScalarProperty Name="f_d_jzf" ColumnName="f_d_jzf" />
+                <ScalarProperty Name="f_d_xbczdds" ColumnName="f_d_xbczdds" />
+                <ScalarProperty Name="f_d_xbczddx" ColumnName="f_d_xbczddx" />
+                <ScalarProperty Name="f_d_xbczdrf" ColumnName="f_d_xbczdrf" />
+                <ScalarProperty Name="f_d_xbcds" ColumnName="f_d_xbcds" />
+                <ScalarProperty Name="f_d_xbcdy" ColumnName="f_d_xbcdy" />
+                <ScalarProperty Name="f_d_xbcdx" ColumnName="f_d_xbcdx" />
+                <ScalarProperty Name="f_d_xbcrf" ColumnName="f_d_xbcrf" />
+                <ScalarProperty Name="f_d_sbczdds" ColumnName="f_d_sbczdds" />
+                <ScalarProperty Name="f_d_sbczddx" ColumnName="f_d_sbczddx" />
+                <ScalarProperty Name="f_d_sbczdrf" ColumnName="f_d_sbczdrf" />
+                <ScalarProperty Name="f_d_sbcds" ColumnName="f_d_sbcds" />
+                <ScalarProperty Name="f_d_sbcdy" ColumnName="f_d_sbcdy" />
+                <ScalarProperty Name="f_d_sbcdx" ColumnName="f_d_sbcdx" />
+                <ScalarProperty Name="f_d_sbcrf" ColumnName="f_d_sbcrf" />
+                <ScalarProperty Name="f_d_dyjds" ColumnName="f_d_dyjds" />
+                <ScalarProperty Name="f_d_dyjdy" ColumnName="f_d_dyjdy" />
+                <ScalarProperty Name="f_d_dyjdx" ColumnName="f_d_dyjdx" />
+                <ScalarProperty Name="f_d_dyjrf" ColumnName="f_d_dyjrf" />
+                <ScalarProperty Name="f_d_gg" ColumnName="f_d_gg" />
+                <ScalarProperty Name="f_d_gj" ColumnName="f_d_gj" />
+                <ScalarProperty Name="f_d_djzgrf" ColumnName="f_d_djzgrf" />
+                <ScalarProperty Name="f_d_zkzdfds" ColumnName="f_d_zkzdfds" />
+                <ScalarProperty Name="f_d_zkzdfysey" ColumnName="f_d_zkzdfysey" />
+                <ScalarProperty Name="f_d_zkzdfdy" ColumnName="f_d_zkzdfdy" />
+                <ScalarProperty Name="f_d_zkzdfdx" ColumnName="f_d_zkzdfdx" />
+                <ScalarProperty Name="f_d_zkzdfrf" ColumnName="f_d_zkzdfrf" />
+                <ScalarProperty Name="f_d_qwf" ColumnName="f_d_qwf" />
+                <ScalarProperty Name="f_d_qsf" ColumnName="f_d_qsf" />
+                <ScalarProperty Name="f_d_zdds" ColumnName="f_d_zdds" />
+                <ScalarProperty Name="f_d_zddx" ColumnName="f_d_zddx" />
+                <ScalarProperty Name="f_d_zdrf" ColumnName="f_d_zdrf" />
+                <ScalarProperty Name="f_d_ds" ColumnName="f_d_ds" />
+                <ScalarProperty Name="f_d_ysey" ColumnName="f_d_ysey" />
+                <ScalarProperty Name="f_d_dy" ColumnName="f_d_dy" />
+                <ScalarProperty Name="f_d_dx" ColumnName="f_d_dx" />
+                <ScalarProperty Name="f_d_rf" ColumnName="f_d_rf" />
+                <ScalarProperty Name="f_x_jzf" ColumnName="f_x_jzf" />
+                <ScalarProperty Name="f_x_xbczdds" ColumnName="f_x_xbczdds" />
+                <ScalarProperty Name="f_x_xbczddx" ColumnName="f_x_xbczddx" />
+                <ScalarProperty Name="f_x_xbczdrf" ColumnName="f_x_xbczdrf" />
+                <ScalarProperty Name="f_x_xbcds" ColumnName="f_x_xbcds" />
+                <ScalarProperty Name="f_x_xbcdy" ColumnName="f_x_xbcdy" />
+                <ScalarProperty Name="f_x_xbcdx" ColumnName="f_x_xbcdx" />
+                <ScalarProperty Name="f_x_xbcrf" ColumnName="f_x_xbcrf" />
+                <ScalarProperty Name="f_x_sbczdds" ColumnName="f_x_sbczdds" />
+                <ScalarProperty Name="f_x_sbczddx" ColumnName="f_x_sbczddx" />
+                <ScalarProperty Name="f_x_sbczdrf" ColumnName="f_x_sbczdrf" />
+                <ScalarProperty Name="f_x_sbcds" ColumnName="f_x_sbcds" />
+                <ScalarProperty Name="f_x_sbcdy" ColumnName="f_x_sbcdy" />
+                <ScalarProperty Name="f_x_sbcdx" ColumnName="f_x_sbcdx" />
+                <ScalarProperty Name="f_x_sbcrf" ColumnName="f_x_sbcrf" />
+                <ScalarProperty Name="f_x_dyjds" ColumnName="f_x_dyjds" />
+                <ScalarProperty Name="f_x_dyjdy" ColumnName="f_x_dyjdy" />
+                <ScalarProperty Name="f_x_dyjdx" ColumnName="f_x_dyjdx" />
+                <ScalarProperty Name="f_x_dyjrf" ColumnName="f_x_dyjrf" />
+                <ScalarProperty Name="f_x_gg" ColumnName="f_x_gg" />
+                <ScalarProperty Name="f_x_gj" ColumnName="f_x_gj" />
+                <ScalarProperty Name="f_x_djzgrf" ColumnName="f_x_djzgrf" />
+                <ScalarProperty Name="f_x_zkzdfds" ColumnName="f_x_zkzdfds" />
+                <ScalarProperty Name="f_x_zkzdfysey" ColumnName="f_x_zkzdfysey" />
+                <ScalarProperty Name="f_x_zkzdfdy" ColumnName="f_x_zkzdfdy" />
+                <ScalarProperty Name="f_x_zkzdfdx" ColumnName="f_x_zkzdfdx" />
+                <ScalarProperty Name="f_x_zkzdfrf" ColumnName="f_x_zkzdfrf" />
+                <ScalarProperty Name="f_x_qwf" ColumnName="f_x_qwf" />
+                <ScalarProperty Name="VieFirstPointLimited" ColumnName="f_x_qsf" />
+                <ScalarProperty Name="CapotGoLimited" ColumnName="f_x_zdds" />
+                <ScalarProperty Name="ScoreGoLimited" ColumnName="f_x_zddx" />
+                <ScalarProperty Name="SpreadGoLimited" ColumnName="f_x_zdrf" />
+                <ScalarProperty Name="SingleOrDoubleLimited" ColumnName="f_x_ds" />
+                <ScalarProperty Name="OneLoseTwoWinLimited" ColumnName="f_x_ysey" />
+                <ScalarProperty Name="CapotLimited" ColumnName="f_x_dy" />
+                <ScalarProperty Name="ScoreLimited" ColumnName="f_x_dx" />
+                <ScalarProperty Name="SpreadLimited" ColumnName="f_x_rf" />
+                <ScalarProperty Name="ReferPoint" ColumnName="f_z_jzf" />
+                <ScalarProperty Name="SingleOrDoubleOfSecondHalfGo" ColumnName="f_z_xbczdds" />
+                <ScalarProperty Name="ScoreOfSecondHalfGo" ColumnName="f_z_xbczddx" />
+                <ScalarProperty Name="SpreadOfSecondHalfGo" ColumnName="f_z_xbczdrf" />
+                <ScalarProperty Name="SingleOrDoubleOfSecondHalf" ColumnName="f_z_xbcds" />
+                <ScalarProperty Name="CapotOfSecondHalf" ColumnName="f_z_xbcdy" />
+                <ScalarProperty Name="ScoreOfSecondHalf" ColumnName="f_z_xbcdx" />
+                <ScalarProperty Name="SpreadOfSecondHalf" ColumnName="f_z_xbcrf" />
+                <ScalarProperty Name="SingleOrDoubleOfFirstHalfGo" ColumnName="f_z_sbczdds" />
+                <ScalarProperty Name="ScoreOfFirstHalfGo" ColumnName="f_z_sbczddx" />
+                <ScalarProperty Name="SpreadOfFirstHalfGo" ColumnName="f_z_sbczdrf" />
+                <ScalarProperty Name="SingleOrDoubleOfFirstHalf" ColumnName="f_z_sbcds" />
+                <ScalarProperty Name="CapotOfFirstHalf" ColumnName="f_z_sbcdy" />
+                <ScalarProperty Name="ScoreOfFirstHalf" ColumnName="f_z_sbcdx" />
+                <ScalarProperty Name="SpreadOfFirstHalf" ColumnName="f_z_sbcrf" />
+                <ScalarProperty Name="SingleOrDoubleOfFirst" ColumnName="f_z_dyjds" />
+                <ScalarProperty Name="CapotOfFirst" ColumnName="f_z_dyjdy" />
+                <ScalarProperty Name="ScoreOfFirst" ColumnName="f_z_dyjdx" />
+                <ScalarProperty Name="SpreadOfFirst" ColumnName="f_z_dyjrf" />
+                <ScalarProperty Name="Parlay" ColumnName="f_z_gg" />
+                <ScalarProperty Name="Champion" ColumnName="f_z_gj" />
+                <ScalarProperty Name="SumOddsScore" ColumnName="f_z_djzgrf" />
+                <ScalarProperty Name="f_z_zkzdfds" ColumnName="f_z_zkzdfds" />
+                <ScalarProperty Name="f_z_zkzdfysey" ColumnName="f_z_zkzdfysey" />
+                <ScalarProperty Name="f_z_zkzdfdy" ColumnName="f_z_zkzdfdy" />
+                <ScalarProperty Name="f_z_zkzdfdx" ColumnName="f_z_zkzdfdx" />
+                <ScalarProperty Name="f_z_zkzdfrf" ColumnName="f_z_zkzdfrf" />
+                <ScalarProperty Name="f_z_djzgdf" ColumnName="f_z_djzgdf" />
+                <ScalarProperty Name="VieLastPoint" ColumnName="f_z_qwf" />
+                <ScalarProperty Name="VieFirstPoint" ColumnName="f_z_qsf" />
+                <ScalarProperty Name="BallingSignleOrDouble" ColumnName="f_z_zdds" />
+                <ScalarProperty Name="BallingScore" ColumnName="f_z_zddx" />
+                <ScalarProperty Name="BallingSpread" ColumnName="f_z_zdrf" />
+                <ScalarProperty Name="SingleOrDouble" ColumnName="f_z_ds" />
+                <ScalarProperty Name="OneLoseTwoWin" ColumnName="f_z_ysey" />
+                <ScalarProperty Name="Single" ColumnName="f_z_dy" />
+                <ScalarProperty Name="Score" ColumnName="f_z_dx" />
+                <ScalarProperty Name="Spread" ColumnName="f_z_rf" />
+                <ScalarProperty Name="Id" ColumnName="f_id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

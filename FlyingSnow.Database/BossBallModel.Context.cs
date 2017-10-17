@@ -9,28 +9,24 @@
 
 namespace FlyingSnow.Database
 {
-    using Contract.Base;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-
-    public partial class BaseDBContext : DbContext
+    
+    public partial class BossBallEntities : DbContext
     {
-        public BaseDBContext()
-            : base("name=BaseEntities")
+        public BossBallEntities()
+            : base("name=BossBallEntities")
         {
         }
-
+    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
         }
-
-        public virtual DbSet<Manager> Managers { get; set; }
-        public virtual DbSet<Transfer> Transfers { get; set; }
-        public virtual DbSet<Monitor> Monitors { get; set; }
-        public virtual DbSet<t_member> t_member { get; set; }
-        public virtual DbSet<Alliance> Alliances { get; set; }
-        public virtual DbSet<BallCountry> BallCountries { get; set; }
+    
+        public virtual DbSet<t_a_preserve> t_a_preserve { get; set; }
+        public virtual DbSet<NewGame> t_newbaseball_a { get; set; }
+        public virtual DbSet<OldGame> t_oldbaseball_a { get; set; }
     }
 }

@@ -37,8 +37,12 @@ namespace TestApp
             //monitorService.GetMonitorResult(new MonitorQueryObj());
             //monitorService.GetMonitorResultDetail(new MonitorDetailQueryObj() { QueryMember = "DX61", QueryType = "l_game_XFBJL" });
 
-            ReportService reportService = new ReportService();
-            reportService.GetBillReport(new ReportQueryObj());
+            //ReportService reportService = new ReportService();
+            //reportService.GetBillReport(new ReportQueryObj());
+
+            //AllianceService allianceService = new AllianceService();
+            //allianceService.GetAlliances(new AllianceQueryObj() { BallType = BallTypes.Football, SearchStr = "女足"});
+            //allianceService.SetZeroScore(30712, false);
         }
     }
 }
