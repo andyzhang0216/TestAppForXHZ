@@ -1166,248 +1166,248 @@
           <Property Name="TotalOfOneLoseTwoWinSubsite" Type="Double" />
           <Property Name="TotalOfTeamAOneLoseTwoWinSubsite" Type="Double" />
           <Property Name="SpreadJump" Type="Double" />
-          <Property Name="WaterLevelMax" Type="Double" />
-          <Property Name="WaterLevelMin" Type="Double" />
+          <Property Name="WaterLevelMaxOfSpread" Type="Double" />
+          <Property Name="WaterLevelMinOfSpread" Type="Double" />
           <Property Name="ScoreJump" Type="Double" />
-          <Property Name="f_dxswmax" Type="Double" />
-          <Property Name="f_dxswmin" Type="Double" />
-          <Property Name="f_order" Type="Int32" />
-          <Property Name="f_brf" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="f_bdx" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="f_bdy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="f_bysey" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="f_bds" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="f_bqsf" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="f_bqwf" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="f_bdjzgdf" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="f_drf" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="f_ddx" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="f_ddy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="f_dysey" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="f_dds" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="f_dqsf" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="f_dqwf" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="f_ddjzgdf" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="f_dtrf" Type="DateTime" Precision="3" />
-          <Property Name="f_dtdx" Type="DateTime" Precision="3" />
-          <Property Name="f_dtdy" Type="DateTime" Precision="3" />
-          <Property Name="f_dtysey" Type="DateTime" Precision="3" />
-          <Property Name="f_dtds" Type="DateTime" Precision="3" />
-          <Property Name="f_dtqsf" Type="DateTime" Precision="3" />
-          <Property Name="f_dtqwf" Type="DateTime" Precision="3" />
-          <Property Name="f_dtdjzgdf" Type="DateTime" Precision="3" />
-          <Property Name="f_delay" Type="Int32" />
+          <Property Name="WaterLevelMaxOfScore" Type="Double" />
+          <Property Name="WaterLevelMinOfScore" Type="Double" />
+          <Property Name="Orderd" Type="Int32" />
+          <Property Name="SpreadOfBigBet" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ScoreOfBigBet" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CapotOfBigBet" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="OneLoseTwoWinOfBigBet" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SingleOrDoubleOfBigBet" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="VieFirstPointOfBigBet" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="VieLastPointOfBigBet" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="HighestScoreOfSingle" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SpreadOfDelay" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ScoreOfDelay" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="CapotOfDelay" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="OneLoseTwoWinOfDelay" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SingleOrDoubleOfDelay" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="VieFirstPointOfDelay" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="VieLastPointOfDelay" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="HighestScoreOfDelay" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="DelayOfSpread" Type="DateTime" Precision="3" />
+          <Property Name="DelayOfScore" Type="DateTime" Precision="3" />
+          <Property Name="DelayOfCapot" Type="DateTime" Precision="3" />
+          <Property Name="DelayOfOneLoseTwoWin" Type="DateTime" Precision="3" />
+          <Property Name="DelayOfSingleOrDouble" Type="DateTime" Precision="3" />
+          <Property Name="DelayOfVieFirstPoint" Type="DateTime" Precision="3" />
+          <Property Name="DelayOfVieLastPoint" Type="DateTime" Precision="3" />
+          <Property Name="DelayOfHighestScore" Type="DateTime" Precision="3" />
+          <Property Name="DelaySeconds" Type="Int32" />
           <Property Name="f_xdelay" Type="Int32" />
-          <Property Name="f_q1zdpl" Type="Double" />
-          <Property Name="f_q1ydpl" Type="Double" />
-          <Property Name="f_q1zdggcj" Type="Double" />
-          <Property Name="f_q1ydggcj" Type="Double" />
-          <Property Name="f_q1zdsx" Type="Double" />
-          <Property Name="f_q1ydsx" Type="Double" />
+          <Property Name="OddsOfTeamAVieFirstPoint" Type="Double" />
+          <Property Name="OddsOfTeamBVieFirstPoint" Type="Double" />
+          <Property Name="GapOfTeamAParlayVieFirstPoint" Type="Double" />
+          <Property Name="GapOfTeamBPaylayVieLastPoint" Type="Double" />
+          <Property Name="DifferenceOfTeamAVieFirstPoint" Type="Double" />
+          <Property Name="DifferenceOfTeamBVieFirstPoint" Type="Double" />
           <Property Name="f_q1ldjecj" Type="Double" />
           <Property Name="f_q1tpl" Type="Double" />
-          <Property Name="f_q1pljz" Type="Double" />
-          <Property Name="f_q1zdcj" Type="Double" />
-          <Property Name="f_q1ydcj" Type="Double" />
-          <Property Name="f_q2zdpl" Type="Double" />
-          <Property Name="f_q2ydpl" Type="Double" />
-          <Property Name="f_q2zdggcj" Type="Double" />
-          <Property Name="f_q2ydggcj" Type="Double" />
-          <Property Name="f_q2zdsx" Type="Double" />
-          <Property Name="f_q2ydsx" Type="Double" />
+          <Property Name="SumOddsOfVieFirstPoint" Type="Double" />
+          <Property Name="GapOfTeamAVieFirstPoint" Type="Double" />
+          <Property Name="GapOfTeamBVieFirstPoint" Type="Double" />
+          <Property Name="OddsOfTeamAVieLastPoint" Type="Double" />
+          <Property Name="OddsOfTeamBVieLastPoint" Type="Double" />
+          <Property Name="GapOfTeamAParlayVieLastPoint" Type="Double" />
+          <Property Name="GapOfTeamBParlayVieLastPoint" Type="Double" />
+          <Property Name="DifferenceOfTeamAVieLastPoint" Type="Double" />
+          <Property Name="DifferenceOfTeamBVieLastPoint" Type="Double" />
           <Property Name="f_q2ldjecj" Type="Double" />
           <Property Name="f_q2tpl" Type="Double" />
-          <Property Name="f_q2pljz" Type="Double" />
-          <Property Name="f_q2zdcj" Type="Double" />
-          <Property Name="f_q2ydcj" Type="Double" />
-          <Property Name="f_q3zdpl" Type="Double" />
-          <Property Name="f_q3ydpl" Type="Double" />
-          <Property Name="f_q3zdggcj" Type="Double" />
-          <Property Name="f_q3ydggcj" Type="Double" />
-          <Property Name="f_q3zdsx" Type="Double" />
-          <Property Name="f_q3ydsx" Type="Double" />
+          <Property Name="SumOddsOfVieLastPoint" Type="Double" />
+          <Property Name="GapOfTeamAVieLastPoint" Type="Double" />
+          <Property Name="GapOfTeamBVieLastPoint" Type="Double" />
+          <Property Name="OddsOfTeamAHighestScore" Type="Double" />
+          <Property Name="OddsOfTeamBHighestScore" Type="Double" />
+          <Property Name="GapOfTeamAParlayHighestScore" Type="Double" />
+          <Property Name="GapOfTeamBParlayHighestScore" Type="Double" />
+          <Property Name="DifferenceOfTeamAHighestScore" Type="Double" />
+          <Property Name="DifferenceOfTeamBHighestScore" Type="Double" />
           <Property Name="f_q3ldjecj" Type="Double" />
           <Property Name="f_q3tpl" Type="Double" />
-          <Property Name="f_q3pljz" Type="Double" />
-          <Property Name="f_q3zdcj" Type="Double" />
-          <Property Name="f_q3ydcj" Type="Double" />
-          <Property Name="f_bsjg1_dyj" Type="Int32" />
-          <Property Name="f_bsjg2_dyj" Type="Int32" />
-          <Property Name="f_bsjg1_dej" Type="Int32" />
-          <Property Name="f_bsjg2_dej" Type="Int32" />
-          <Property Name="f_bsjg1_dsj" Type="Int32" />
-          <Property Name="f_bsjg2_dsj" Type="Int32" />
-          <Property Name="f_bsjg1_dsij" Type="Int32" />
-          <Property Name="f_bsjg2_dsij" Type="Int32" />
-          <Property Name="f_bsjg1_jj" Type="Int32" />
-          <Property Name="f_bsjg2_jj" Type="Int32" />
-          <Property Name="f_bsjg1_sbc" Type="Int32" />
-          <Property Name="f_bsjg2_sbc" Type="Int32" />
-          <Property Name="f_bsjg1_xbc" Type="Int32" />
-          <Property Name="f_bsjg2_xbc" Type="Int32" />
-          <Property Name="f_bsjg1_qc" Type="Int32" />
-          <Property Name="f_bsjg2_qc" Type="Int32" />
+          <Property Name="SumOddsOfHighestScore" Type="Double" />
+          <Property Name="GapOfTeamAHighestScore" Type="Double" />
+          <Property Name="GapOfTeamBHighestScore" Type="Double" />
+          <Property Name="GameResultOfTeamAPeriod1" Type="Int32" />
+          <Property Name="GameResultOfTeamBPeriod1" Type="Int32" />
+          <Property Name="GameResultOfTeamAPeriod2" Type="Int32" />
+          <Property Name="GameResultOfTeamBPeriod2" Type="Int32" />
+          <Property Name="GameResultOfTeamAPeriod3" Type="Int32" />
+          <Property Name="GameResultOfTeamBPeriod3" Type="Int32" />
+          <Property Name="GameResultOfTeamAPeriod4" Type="Int32" />
+          <Property Name="GameResultOfTeamBPeriod4" Type="Int32" />
+          <Property Name="GameResultOfTeamAAddPeriod" Type="Int32" />
+          <Property Name="GameResultOfTeamBAddPeriod" Type="Int32" />
+          <Property Name="GameResultOfTeamAFirstHalf" Type="Int32" />
+          <Property Name="GameResultOfTeamBFirstHalf" Type="Int32" />
+          <Property Name="GameResultOfTeamASecondHalf" Type="Int32" />
+          <Property Name="GameResultOfTeamBSecondHalf" Type="Int32" />
+          <Property Name="GameResultOfTeamA" Type="Int32" />
+          <Property Name="GameResultOfTeamB" Type="Int32" />
           <Property Name="f_bsjg1_zkczdf" Type="Int32" />
           <Property Name="f_bsjg2_zkczdf" Type="Int32" />
-          <Property Name="f_bsjg1_qsf" Type="Int32" />
-          <Property Name="f_bsjg2_qsf" Type="Int32" />
-          <Property Name="f_bsjg1_qwf" Type="Int32" />
-          <Property Name="f_bsjg2_qwf" Type="Int32" />
-          <Property Name="f_bsjg1_djzgdf" Type="Int32" />
-          <Property Name="f_bsjg2_djzgdf" Type="Int32" />
-          <Property Name="f_qsf_i" Type="Double" />
-          <Property Name="f_qsf_ii" Type="Double" />
-          <Property Name="f_qsf_j" Type="Double" />
-          <Property Name="f_qsf_jj" Type="Double" />
-          <Property Name="f_qsf_j2" Type="Double" />
-          <Property Name="f_qsf_jj2" Type="Double" />
-          <Property Name="f_qwf_i" Type="Double" />
-          <Property Name="f_qwf_ii" Type="Double" />
-          <Property Name="f_qwf_j" Type="Double" />
-          <Property Name="f_qwf_jj" Type="Double" />
-          <Property Name="f_qwf_j2" Type="Double" />
-          <Property Name="f_qwf_jj2" Type="Double" />
-          <Property Name="f_djzgdf_i" Type="Double" />
-          <Property Name="f_djzgdf_ii" Type="Double" />
-          <Property Name="f_djzgdf_j" Type="Double" />
-          <Property Name="f_djzgdf_jj" Type="Double" />
-          <Property Name="f_djzgdf_j2" Type="Double" />
-          <Property Name="f_djzgdf_jj2" Type="Double" />
-          <Property Name="f_qsf_a" Type="Int32" />
-          <Property Name="f_qsf_b" Type="Int32" />
-          <Property Name="f_qwf_a" Type="Int32" />
-          <Property Name="f_qwf_b" Type="Int32" />
-          <Property Name="f_djzgdf_a" Type="Int32" />
-          <Property Name="f_djzgdf_b" Type="Int32" />
-          <Property Name="f_bsjg1_dwj" Type="Int32" />
-          <Property Name="f_bsjg2_dwj" Type="Int32" />
-          <Property Name="f_bsjg1_dlj" Type="Int32" />
-          <Property Name="f_bsjg2_dlj" Type="Int32" />
-          <Property Name="f_bsjg1_dqj" Type="Int32" />
-          <Property Name="f_bsjg2_dqj" Type="Int32" />
-          <Property Name="f_bsjg1_dbj" Type="Int32" />
-          <Property Name="f_bsjg2_dbj" Type="Int32" />
-          <Property Name="f_bsjg1_djj" Type="Int32" />
-          <Property Name="f_bsjg2_djj" Type="Int32" />
-          <Property Name="f_dxcj" Type="Double" />
+          <Property Name="GameResultOfTeamAVieFirstPoint" Type="Int32" />
+          <Property Name="GameResultOfTeamBVieFirstResult" Type="Int32" />
+          <Property Name="GameResultOfTeamAVieLastPoint" Type="Int32" />
+          <Property Name="GameResultOfTeamBVieLastPoint" Type="Int32" />
+          <Property Name="GameResultOfTeamAHighestScore" Type="Int32" />
+          <Property Name="GameResultOfTeamBHighestScore" Type="Int32" />
+          <Property Name="BetCountOfVieFirstPoint" Type="Double" />
+          <Property Name="BetCountOfVieFirstPoint2" Type="Double" />
+          <Property Name="CompanyResultOfVieFirstPoint" Type="Double" />
+          <Property Name="CompanyResultOfVieFirstPoint2" Type="Double" />
+          <Property Name="CompanyMoneyOfVieFirstPoint" Type="Double" />
+          <Property Name="CompanyMoneyOfVieFirstPoint2" Type="Double" />
+          <Property Name="BetCountOfVieLastPoint" Type="Double" />
+          <Property Name="BetCountOfVieLastPoint2" Type="Double" />
+          <Property Name="CompanyResultOfVieLastPoint" Type="Double" />
+          <Property Name="CompanyResultOfVieLastPoint2" Type="Double" />
+          <Property Name="CompanyMoneyOfVieLastPoint" Type="Double" />
+          <Property Name="CompanyMoneyOfVieLastPoint2" Type="Double" />
+          <Property Name="BetCountOfHighestScore" Type="Double" />
+          <Property Name="BetCountOfHighestScore2" Type="Double" />
+          <Property Name="CompanyResultOfHighestScore" Type="Double" />
+          <Property Name="CompanyResultOfHighestScore2" Type="Double" />
+          <Property Name="CompanyMoneyOfHighestScore" Type="Double" />
+          <Property Name="CompanyMoneyOfHighestScore2" Type="Double" />
+          <Property Name="DangerLevelOfTeamAVieFirstPoint" Type="Int32" />
+          <Property Name="DangerLevelOfTeamBVieFirstPoint" Type="Int32" />
+          <Property Name="DangerLevelOfTeamAVieLastPoint" Type="Int32" />
+          <Property Name="DangerLevelOfTeamBVieLastPoint" Type="Int32" />
+          <Property Name="DangerLevelOfTeamAHighestScore" Type="Int32" />
+          <Property Name="DangerLevelOfTeamBHighestScore" Type="Int32" />
+          <Property Name="GameResultOfTeamAPeriod5" Type="Int32" />
+          <Property Name="GameResultOfTeamBPeriod5" Type="Int32" />
+          <Property Name="GameResultOfTeamAPeriod6" Type="Int32" />
+          <Property Name="GameResultOfTeamBPeriod6" Type="Int32" />
+          <Property Name="GameResultOfTeamAPeriod7" Type="Int32" />
+          <Property Name="GameResultOfTeamBPeriod7" Type="Int32" />
+          <Property Name="GameResultOfTeamAPeriod8" Type="Int32" />
+          <Property Name="GameResultOfTeamBPeriod8" Type="Int32" />
+          <Property Name="GameResultOfTeamAPeriod9" Type="Int32" />
+          <Property Name="GameResultOfTeamBPeriod9" Type="Int32" />
+          <Property Name="GapOfScore" Type="Double" />
           <Property Name="f_suodan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="f_rf_dd" Type="Single" />
-          <Property Name="f_rf_dc" Type="Single" />
-          <Property Name="f_dx_dd" Type="Single" />
-          <Property Name="f_dx_dc" Type="Single" />
-          <Property Name="f_dy_dd" Type="Single" />
-          <Property Name="f_dy_dc" Type="Single" />
-          <Property Name="f_er_dd" Type="Single" />
-          <Property Name="f_er_dc" Type="Single" />
-          <Property Name="f_ds_dd" Type="Single" />
-          <Property Name="f_ds_dc" Type="Single" />
-          <Property Name="f_sf_dd" Type="Single" />
-          <Property Name="f_sf_dc" Type="Single" />
-          <Property Name="f_wf_dd" Type="Single" />
-          <Property Name="f_wf_dc" Type="Single" />
-          <Property Name="f_d_rf" Type="Single" />
-          <Property Name="f_d_dx" Type="Single" />
-          <Property Name="f_d_dy" Type="Single" />
-          <Property Name="f_d_ysey" Type="Single" />
-          <Property Name="f_d_ds" Type="Single" />
-          <Property Name="f_d_qsf" Type="Single" />
-          <Property Name="f_d_qwf" Type="Single" />
-          <Property Name="f_lmdj" Type="Byte" />
-          <Property Name="f_sxymkf" Type="Int32" />
-          <Property Name="f_SdbsTime" Type="DateTime" Precision="3" />
-          <Property Name="f_Wxtext" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
-          <Property Name="f_jstext" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
-          <Property Name="f_rfdxdsauto" Type="Byte" />
-          <Property Name="f_tpjs_rfpl_j1" Type="Single" />
-          <Property Name="f_tpjs_rfpl_p1" Type="Single" />
-          <Property Name="f_tpjs_rfpl_j2" Type="Single" />
-          <Property Name="f_tpjs_rfpl_p2" Type="Single" />
-          <Property Name="f_tpjs_rfpl_p3" Type="Single" />
-          <Property Name="f_tpjs_rfpk_j1" Type="Single" />
-          <Property Name="f_tpjs_rfpk_p1" Type="Single" />
-          <Property Name="f_tpjs_rfpk_j2" Type="Single" />
-          <Property Name="f_tpjs_rfpk_p2" Type="Single" />
-          <Property Name="f_tpjs_rfpk_p3" Type="Single" />
-          <Property Name="f_tpjs_dxpl_j1" Type="Single" />
-          <Property Name="f_tpjs_dxpl_p1" Type="Single" />
-          <Property Name="f_tpjs_dxpl_j2" Type="Single" />
-          <Property Name="f_tpjs_dxpl_p2" Type="Single" />
-          <Property Name="f_tpjs_dxpl_p3" Type="Single" />
-          <Property Name="f_tpjs_dxpk_j1" Type="Single" />
-          <Property Name="f_tpjs_dxpk_p1" Type="Single" />
-          <Property Name="f_tpjs_dxpk_j2" Type="Single" />
-          <Property Name="f_tpjs_dxpk_p2" Type="Single" />
-          <Property Name="f_tpjs_dxpk_p3" Type="Single" />
-          <Property Name="f_tpjs_dypl_j1" Type="Single" />
-          <Property Name="f_tpjs_dypl_p1" Type="Single" />
-          <Property Name="f_tpjs_dypl_j2" Type="Single" />
-          <Property Name="f_tpjs_dypl_p2" Type="Single" />
-          <Property Name="f_tpjs_dypl_p3" Type="Single" />
-          <Property Name="f_tpjs_dspl_j1" Type="Single" />
-          <Property Name="f_tpjs_dspl_p1" Type="Single" />
-          <Property Name="f_tpjs_dspl_j2" Type="Single" />
-          <Property Name="f_tpjs_dspl_p2" Type="Single" />
-          <Property Name="f_tpjs_dspl_p3" Type="Single" />
-          <Property Name="f_tpjs_yepl_j1" Type="Single" />
-          <Property Name="f_tpjs_yepl_p1" Type="Single" />
-          <Property Name="f_tpjs_yepl_j2" Type="Single" />
-          <Property Name="f_tpjs_yepl_p2" Type="Single" />
-          <Property Name="f_tpjs_yepl_p3" Type="Single" />
-          <Property Name="f_tpjs_qsfpl_j1" Type="Single" />
-          <Property Name="f_tpjs_qsfpl_p1" Type="Single" />
-          <Property Name="f_tpjs_qsfpl_j2" Type="Single" />
-          <Property Name="f_tpjs_qsfpl_p2" Type="Single" />
-          <Property Name="f_tpjs_qsfpl_p3" Type="Single" />
-          <Property Name="f_tpjs_qwfpl_j1" Type="Single" />
-          <Property Name="f_tpjs_qwfpl_p1" Type="Single" />
-          <Property Name="f_tpjs_qwfpl_j2" Type="Single" />
-          <Property Name="f_tpjs_qwfpl_p2" Type="Single" />
-          <Property Name="f_tpjs_qwfpl_p3" Type="Single" />
-          <Property Name="f_zdyc_rfj11" Type="Single" />
-          <Property Name="f_zdyc_rfj21" Type="Single" />
-          <Property Name="f_zdyc_rfj31" Type="Single" />
-          <Property Name="f_zdyc_rfj41" Type="Single" />
-          <Property Name="f_zdyc_rfj51" Type="Single" />
-          <Property Name="f_zdyc_rfj12" Type="Single" />
-          <Property Name="f_zdyc_rfj22" Type="Single" />
-          <Property Name="f_zdyc_rfj32" Type="Single" />
-          <Property Name="f_zdyc_rfj42" Type="Single" />
-          <Property Name="f_zdyc_rfj52" Type="Single" />
-          <Property Name="f_zdyc_rfs1" Type="Byte" />
-          <Property Name="f_zdyc_rfs2" Type="Byte" />
-          <Property Name="f_zdyc_rfs3" Type="Byte" />
-          <Property Name="f_zdyc_rfs4" Type="Byte" />
-          <Property Name="f_zdyc_rfs5" Type="Byte" />
-          <Property Name="f_zdyc_dxj11" Type="Single" />
-          <Property Name="f_zdyc_dxj21" Type="Single" />
-          <Property Name="f_zdyc_dxj31" Type="Single" />
-          <Property Name="f_zdyc_dxj41" Type="Single" />
-          <Property Name="f_zdyc_dxj51" Type="Single" />
-          <Property Name="f_zdyc_dxj12" Type="Single" />
-          <Property Name="f_zdyc_dxj22" Type="Single" />
-          <Property Name="f_zdyc_dxj32" Type="Single" />
-          <Property Name="f_zdyc_dxj42" Type="Single" />
-          <Property Name="f_zdyc_dxj52" Type="Single" />
-          <Property Name="f_zdyc_dxs1" Type="Byte" />
-          <Property Name="f_zdyc_dxs2" Type="Byte" />
-          <Property Name="f_zdyc_dxs3" Type="Byte" />
-          <Property Name="f_zdyc_dxs4" Type="Byte" />
-          <Property Name="f_zdyc_dxs5" Type="Byte" />
-          <Property Name="f_zdyc_dsj11" Type="Single" />
-          <Property Name="f_zdyc_dsj21" Type="Single" />
-          <Property Name="f_zdyc_dsj31" Type="Single" />
-          <Property Name="f_zdyc_dsj41" Type="Single" />
-          <Property Name="f_zdyc_dsj51" Type="Single" />
-          <Property Name="f_zdyc_dsj12" Type="Single" />
-          <Property Name="f_zdyc_dsj22" Type="Single" />
-          <Property Name="f_zdyc_dsj32" Type="Single" />
-          <Property Name="f_zdyc_dsj42" Type="Single" />
-          <Property Name="f_zdyc_dsj52" Type="Single" />
-          <Property Name="f_zdyc_dss1" Type="Byte" />
-          <Property Name="f_zdyc_dss2" Type="Byte" />
-          <Property Name="f_zdyc_dss3" Type="Byte" />
-          <Property Name="f_zdyc_dss4" Type="Byte" />
-          <Property Name="f_zdyc_dss5" Type="Byte" />
+          <Property Name="LimitOfSpreadSingleBet" Type="Single" />
+          <Property Name="LimitOfSpreadSingleScene" Type="Single" />
+          <Property Name="LimitOfScoreSingleBet" Type="Single" />
+          <Property Name="LimitOfScoreSingleScene" Type="Single" />
+          <Property Name="LimitOfCapotSingleBet" Type="Single" />
+          <Property Name="LimitOfCapotSingleScene" Type="Single" />
+          <Property Name="LimitOfOneLoseTwoWinSingleBet" Type="Single" />
+          <Property Name="LimitOfOneLoseTwoWinSingleScene" Type="Single" />
+          <Property Name="LimitOfSingleOrDoubleSingleBet" Type="Single" />
+          <Property Name="LimitOfSingleOrDoubleSingleScene" Type="Single" />
+          <Property Name="LimitOfVieFirstPointSingleBet" Type="Single" />
+          <Property Name="LimitOfVieFirstPointSingleScene" Type="Single" />
+          <Property Name="LimitOfVieLastPointSingleBet" Type="Single" />
+          <Property Name="LimitOfVieLastPointSingleScene" Type="Single" />
+          <Property Name="BigBetOfSpread" Type="Single" />
+          <Property Name="BigBetOfScore" Type="Single" />
+          <Property Name="BigBetOfCapot" Type="Single" />
+          <Property Name="BigBetOfOneLoseTwoWin" Type="Single" />
+          <Property Name="BigBetOfSingleOrDouble" Type="Single" />
+          <Property Name="BigBetOfVieFirstPoint" Type="Single" />
+          <Property Name="BigBetOfVieLastPoint" Type="Single" />
+          <Property Name="AllienceLevel" Type="Byte" />
+          <Property Name="FullFlag" Type="Int32" />
+          <Property Name="SetGameTime" Type="DateTime" Precision="3" />
+          <Property Name="DangerInformation" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Name="CalculateRecords" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="GameLinkedFlag" Type="Byte" />
+          <Property Name="AmountOfSpreadOdds1" Type="Single" />
+          <Property Name="OddsOfSpread1" Type="Single" />
+          <Property Name="AmountOfSpreadOdds2" Type="Single" />
+          <Property Name="OddsOfSpread2" Type="Single" />
+          <Property Name="OddsOfSpread3" Type="Single" />
+          <Property Name="AmountOfSpreadHandicap1" Type="Single" />
+          <Property Name="HandicapOfSpread1" Type="Single" />
+          <Property Name="AmountOfSpreadHandicap2" Type="Single" />
+          <Property Name="HandicapOfSpread2" Type="Single" />
+          <Property Name="HandicapOfSpread3" Type="Single" />
+          <Property Name="AmountOfScoreOdds1" Type="Single" />
+          <Property Name="OddsOfScore1" Type="Single" />
+          <Property Name="AmountOfScoreOdds2" Type="Single" />
+          <Property Name="OddsOfScore2" Type="Single" />
+          <Property Name="OddsOfScore3" Type="Single" />
+          <Property Name="AmountOfScoreHandicap1" Type="Single" />
+          <Property Name="HandicapOfScore1" Type="Single" />
+          <Property Name="AmountOfScoreHandicap2" Type="Single" />
+          <Property Name="HandicapOfScore2" Type="Single" />
+          <Property Name="HandicapOfScore3" Type="Single" />
+          <Property Name="AmountOfCapotOdds1" Type="Single" />
+          <Property Name="OddsOfCapot1" Type="Single" />
+          <Property Name="AmountOfCapotOdds2" Type="Single" />
+          <Property Name="OddsOfCapot2" Type="Single" />
+          <Property Name="OddsOfCapot3" Type="Single" />
+          <Property Name="AmountOfSingleOrDoubleOdds1" Type="Single" />
+          <Property Name="OddsOfSingleOrDouble1" Type="Single" />
+          <Property Name="AmountOfSingleOrDoubleOdds2" Type="Single" />
+          <Property Name="OddsOfSingleOrDouble2" Type="Single" />
+          <Property Name="OddsOfSingleOrDouble3" Type="Single" />
+          <Property Name="AmountOfOneLoseTwoWinOdds1" Type="Single" />
+          <Property Name="OddsOfOneLoseTwoWin1" Type="Single" />
+          <Property Name="AmountOfOneLoseTwoWinOdds2" Type="Single" />
+          <Property Name="OddsOfOneLoseTwoWin2" Type="Single" />
+          <Property Name="OddsOfOneLoseTwoWin3" Type="Single" />
+          <Property Name="AmountOfVieFirstPointOdds1" Type="Single" />
+          <Property Name="OddsOfVieFirstPoint1" Type="Single" />
+          <Property Name="AmountOfVieFirstPointOdds2" Type="Single" />
+          <Property Name="OddsOfVieFirstPoint2" Type="Single" />
+          <Property Name="OddsOfVieFirstPoint3" Type="Single" />
+          <Property Name="AmountOfVieLastPointOdds1" Type="Single" />
+          <Property Name="OddsOfVieLastPoint1" Type="Single" />
+          <Property Name="AmountOfVieLastPointOdds2" Type="Single" />
+          <Property Name="OddsOfVieLastPoint2" Type="Single" />
+          <Property Name="OddsOfVieLastPoint3" Type="Single" />
+          <Property Name="RollingAmountOfSpread11" Type="Single" />
+          <Property Name="RollingAmountOfSpread21" Type="Single" />
+          <Property Name="RollingAmountOfSpread31" Type="Single" />
+          <Property Name="RollingAmountOfSpread41" Type="Single" />
+          <Property Name="RollingAmountOfSpread51" Type="Single" />
+          <Property Name="RollingAmountOfSpread12" Type="Single" />
+          <Property Name="RollingAmountOfSpread22" Type="Single" />
+          <Property Name="RollingAmountOfSpread32" Type="Single" />
+          <Property Name="RollingAmountOfSpread42" Type="Single" />
+          <Property Name="RollingAmountOfSpread52" Type="Single" />
+          <Property Name="RollingDelayOfSpread1" Type="Byte" />
+          <Property Name="RollingDelayOfSpread2" Type="Byte" />
+          <Property Name="RollingDelayOfSpread3" Type="Byte" />
+          <Property Name="RollingDelayOfSpread4" Type="Byte" />
+          <Property Name="RollingDelayOfSpread5" Type="Byte" />
+          <Property Name="RollingAmountOfScore11" Type="Single" />
+          <Property Name="RollingAmountOfScore21" Type="Single" />
+          <Property Name="RollingAmountOfScore31" Type="Single" />
+          <Property Name="RollingAmountOfScore41" Type="Single" />
+          <Property Name="RollingAmountOfScore51" Type="Single" />
+          <Property Name="RollingAmountOfScore12" Type="Single" />
+          <Property Name="RollingAmountOfScore22" Type="Single" />
+          <Property Name="RollingAmountOfScore32" Type="Single" />
+          <Property Name="RollingAmountOfScore42" Type="Single" />
+          <Property Name="RollingAmountOfScore52" Type="Single" />
+          <Property Name="RollingDelayOfScore1" Type="Byte" />
+          <Property Name="RollingDelayOfScore2" Type="Byte" />
+          <Property Name="RollingDelayOfScore3" Type="Byte" />
+          <Property Name="RollingDelayOfScore4" Type="Byte" />
+          <Property Name="RollingDelayOfScore5" Type="Byte" />
+          <Property Name="RollingAmountOfSingleOrDouble11" Type="Single" />
+          <Property Name="RollingAmountOfSingleOrDouble21" Type="Single" />
+          <Property Name="RollingAmountOfSingleOrDouble31" Type="Single" />
+          <Property Name="RollingAmountOfSingleOrDouble41" Type="Single" />
+          <Property Name="RollingAmountOfSingleOrDouble51" Type="Single" />
+          <Property Name="RollingAmountOfSingleOrDouble12" Type="Single" />
+          <Property Name="RollingAmountOfSingleOrDouble22" Type="Single" />
+          <Property Name="RollingAmountOfSingleOrDouble32" Type="Single" />
+          <Property Name="RollingAmountOfSingleOrDouble42" Type="Single" />
+          <Property Name="RollingAmountOfSingleOrDouble52" Type="Single" />
+          <Property Name="RollingDelayOfSingleOrDouble1" Type="Byte" />
+          <Property Name="RollingDelayOfSingleOrDouble2" Type="Byte" />
+          <Property Name="RollingDelayOfSingleOrDouble3" Type="Byte" />
+          <Property Name="RollingDelayOfSingleOrDouble4" Type="Byte" />
+          <Property Name="RollingDelayOfSingleOrDouble5" Type="Byte" />
           <Property Name="f_rfx" Type="Int32" />
           <Property Name="f_rfy" Type="Int32" />
           <Property Name="f_rfz" Type="Double" />
@@ -1431,7 +1431,7 @@
           <Property Name="f_qwz" Type="Double" />
           <Property Name="f_jmjbkf" Type="Int32" />
           <Property Name="f_fzlmkfsd" Type="Int32" />
-          <Property Name="f_ballid" Type="Int32" />
+          <Property Name="BallId" Type="Int32" />
           <Property Name="f_countryid" Type="Int32" />
           <Property Name="f_holiday" Type="Byte" />
           <Property Name="f_isqy" Type="Byte" />
@@ -1495,7 +1495,7 @@
           <Property Name="f_tpjs_rf0fppk_p2" Type="Single" />
           <Property Name="f_tpjs_rf0fppk_p3" Type="Single" />
           <Property Name="f_gpbj" Type="Byte" />
-          <Property Name="f_playid" Type="Int32" />
+          <Property Name="PlayId" Type="Int32" />
           <Property Name="f_ballgroup" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="f_playtmid1" Type="Int32" />
           <Property Name="f_playtmid2" Type="Int32" />
@@ -2164,248 +2164,248 @@
                 <ScalarProperty Name="TotalOfOneLoseTwoWinSubsite" ColumnName="f_yej2" />
                 <ScalarProperty Name="TotalOfTeamAOneLoseTwoWinSubsite" ColumnName="f_yejj2" />
                 <ScalarProperty Name="SpreadJump" ColumnName="f_rftd" />
-                <ScalarProperty Name="WaterLevelMax" ColumnName="f_rfswmax" />
-                <ScalarProperty Name="WaterLevelMin" ColumnName="f_rfswmin" />
+                <ScalarProperty Name="WaterLevelMaxOfSpread" ColumnName="f_rfswmax" />
+                <ScalarProperty Name="WaterLevelMinOfSpread" ColumnName="f_rfswmin" />
                 <ScalarProperty Name="ScoreJump" ColumnName="f_dxtd" />
-                <ScalarProperty Name="f_dxswmax" ColumnName="f_dxswmax" />
-                <ScalarProperty Name="f_dxswmin" ColumnName="f_dxswmin" />
-                <ScalarProperty Name="f_order" ColumnName="f_order" />
-                <ScalarProperty Name="f_brf" ColumnName="f_brf" />
-                <ScalarProperty Name="f_bdx" ColumnName="f_bdx" />
-                <ScalarProperty Name="f_bdy" ColumnName="f_bdy" />
-                <ScalarProperty Name="f_bysey" ColumnName="f_bysey" />
-                <ScalarProperty Name="f_bds" ColumnName="f_bds" />
-                <ScalarProperty Name="f_bqsf" ColumnName="f_bqsf" />
-                <ScalarProperty Name="f_bqwf" ColumnName="f_bqwf" />
-                <ScalarProperty Name="f_bdjzgdf" ColumnName="f_bdjzgdf" />
-                <ScalarProperty Name="f_drf" ColumnName="f_drf" />
-                <ScalarProperty Name="f_ddx" ColumnName="f_ddx" />
-                <ScalarProperty Name="f_ddy" ColumnName="f_ddy" />
-                <ScalarProperty Name="f_dysey" ColumnName="f_dysey" />
-                <ScalarProperty Name="f_dds" ColumnName="f_dds" />
-                <ScalarProperty Name="f_dqsf" ColumnName="f_dqsf" />
-                <ScalarProperty Name="f_dqwf" ColumnName="f_dqwf" />
-                <ScalarProperty Name="f_ddjzgdf" ColumnName="f_ddjzgdf" />
-                <ScalarProperty Name="f_dtrf" ColumnName="f_dtrf" />
-                <ScalarProperty Name="f_dtdx" ColumnName="f_dtdx" />
-                <ScalarProperty Name="f_dtdy" ColumnName="f_dtdy" />
-                <ScalarProperty Name="f_dtysey" ColumnName="f_dtysey" />
-                <ScalarProperty Name="f_dtds" ColumnName="f_dtds" />
-                <ScalarProperty Name="f_dtqsf" ColumnName="f_dtqsf" />
-                <ScalarProperty Name="f_dtqwf" ColumnName="f_dtqwf" />
-                <ScalarProperty Name="f_dtdjzgdf" ColumnName="f_dtdjzgdf" />
-                <ScalarProperty Name="f_delay" ColumnName="f_delay" />
+                <ScalarProperty Name="WaterLevelMaxOfScore" ColumnName="f_dxswmax" />
+                <ScalarProperty Name="WaterLevelMinOfScore" ColumnName="f_dxswmin" />
+                <ScalarProperty Name="Orderd" ColumnName="f_order" />
+                <ScalarProperty Name="SpreadOfBigBet" ColumnName="f_brf" />
+                <ScalarProperty Name="ScoreOfBigBet" ColumnName="f_bdx" />
+                <ScalarProperty Name="CapotOfBigBet" ColumnName="f_bdy" />
+                <ScalarProperty Name="OneLoseTwoWinOfBigBet" ColumnName="f_bysey" />
+                <ScalarProperty Name="SingleOrDoubleOfBigBet" ColumnName="f_bds" />
+                <ScalarProperty Name="VieFirstPointOfBigBet" ColumnName="f_bqsf" />
+                <ScalarProperty Name="VieLastPointOfBigBet" ColumnName="f_bqwf" />
+                <ScalarProperty Name="HighestScoreOfSingle" ColumnName="f_bdjzgdf" />
+                <ScalarProperty Name="SpreadOfDelay" ColumnName="f_drf" />
+                <ScalarProperty Name="ScoreOfDelay" ColumnName="f_ddx" />
+                <ScalarProperty Name="CapotOfDelay" ColumnName="f_ddy" />
+                <ScalarProperty Name="OneLoseTwoWinOfDelay" ColumnName="f_dysey" />
+                <ScalarProperty Name="SingleOrDoubleOfDelay" ColumnName="f_dds" />
+                <ScalarProperty Name="VieFirstPointOfDelay" ColumnName="f_dqsf" />
+                <ScalarProperty Name="VieLastPointOfDelay" ColumnName="f_dqwf" />
+                <ScalarProperty Name="HighestScoreOfDelay" ColumnName="f_ddjzgdf" />
+                <ScalarProperty Name="DelayOfSpread" ColumnName="f_dtrf" />
+                <ScalarProperty Name="DelayOfScore" ColumnName="f_dtdx" />
+                <ScalarProperty Name="DelayOfCapot" ColumnName="f_dtdy" />
+                <ScalarProperty Name="DelayOfOneLoseTwoWin" ColumnName="f_dtysey" />
+                <ScalarProperty Name="DelayOfSingleOrDouble" ColumnName="f_dtds" />
+                <ScalarProperty Name="DelayOfVieFirstPoint" ColumnName="f_dtqsf" />
+                <ScalarProperty Name="DelayOfVieLastPoint" ColumnName="f_dtqwf" />
+                <ScalarProperty Name="DelayOfHighestScore" ColumnName="f_dtdjzgdf" />
+                <ScalarProperty Name="DelaySeconds" ColumnName="f_delay" />
                 <ScalarProperty Name="f_xdelay" ColumnName="f_xdelay" />
-                <ScalarProperty Name="f_q1zdpl" ColumnName="f_q1zdpl" />
-                <ScalarProperty Name="f_q1ydpl" ColumnName="f_q1ydpl" />
-                <ScalarProperty Name="f_q1zdggcj" ColumnName="f_q1zdggcj" />
-                <ScalarProperty Name="f_q1ydggcj" ColumnName="f_q1ydggcj" />
-                <ScalarProperty Name="f_q1zdsx" ColumnName="f_q1zdsx" />
-                <ScalarProperty Name="f_q1ydsx" ColumnName="f_q1ydsx" />
+                <ScalarProperty Name="OddsOfTeamAVieFirstPoint" ColumnName="f_q1zdpl" />
+                <ScalarProperty Name="OddsOfTeamBVieFirstPoint" ColumnName="f_q1ydpl" />
+                <ScalarProperty Name="GapOfTeamAParlayVieFirstPoint" ColumnName="f_q1zdggcj" />
+                <ScalarProperty Name="GapOfTeamBPaylayVieLastPoint" ColumnName="f_q1ydggcj" />
+                <ScalarProperty Name="DifferenceOfTeamAVieFirstPoint" ColumnName="f_q1zdsx" />
+                <ScalarProperty Name="DifferenceOfTeamBVieFirstPoint" ColumnName="f_q1ydsx" />
                 <ScalarProperty Name="f_q1ldjecj" ColumnName="f_q1ldjecj" />
                 <ScalarProperty Name="f_q1tpl" ColumnName="f_q1tpl" />
-                <ScalarProperty Name="f_q1pljz" ColumnName="f_q1pljz" />
-                <ScalarProperty Name="f_q1zdcj" ColumnName="f_q1zdcj" />
-                <ScalarProperty Name="f_q1ydcj" ColumnName="f_q1ydcj" />
-                <ScalarProperty Name="f_q2zdpl" ColumnName="f_q2zdpl" />
-                <ScalarProperty Name="f_q2ydpl" ColumnName="f_q2ydpl" />
-                <ScalarProperty Name="f_q2zdggcj" ColumnName="f_q2zdggcj" />
-                <ScalarProperty Name="f_q2ydggcj" ColumnName="f_q2ydggcj" />
-                <ScalarProperty Name="f_q2zdsx" ColumnName="f_q2zdsx" />
-                <ScalarProperty Name="f_q2ydsx" ColumnName="f_q2ydsx" />
+                <ScalarProperty Name="SumOddsOfVieFirstPoint" ColumnName="f_q1pljz" />
+                <ScalarProperty Name="GapOfTeamAVieFirstPoint" ColumnName="f_q1zdcj" />
+                <ScalarProperty Name="GapOfTeamBVieFirstPoint" ColumnName="f_q1ydcj" />
+                <ScalarProperty Name="OddsOfTeamAVieLastPoint" ColumnName="f_q2zdpl" />
+                <ScalarProperty Name="OddsOfTeamBVieLastPoint" ColumnName="f_q2ydpl" />
+                <ScalarProperty Name="GapOfTeamAParlayVieLastPoint" ColumnName="f_q2zdggcj" />
+                <ScalarProperty Name="GapOfTeamBParlayVieLastPoint" ColumnName="f_q2ydggcj" />
+                <ScalarProperty Name="DifferenceOfTeamAVieLastPoint" ColumnName="f_q2zdsx" />
+                <ScalarProperty Name="DifferenceOfTeamBVieLastPoint" ColumnName="f_q2ydsx" />
                 <ScalarProperty Name="f_q2ldjecj" ColumnName="f_q2ldjecj" />
                 <ScalarProperty Name="f_q2tpl" ColumnName="f_q2tpl" />
-                <ScalarProperty Name="f_q2pljz" ColumnName="f_q2pljz" />
-                <ScalarProperty Name="f_q2zdcj" ColumnName="f_q2zdcj" />
-                <ScalarProperty Name="f_q2ydcj" ColumnName="f_q2ydcj" />
-                <ScalarProperty Name="f_q3zdpl" ColumnName="f_q3zdpl" />
-                <ScalarProperty Name="f_q3ydpl" ColumnName="f_q3ydpl" />
-                <ScalarProperty Name="f_q3zdggcj" ColumnName="f_q3zdggcj" />
-                <ScalarProperty Name="f_q3ydggcj" ColumnName="f_q3ydggcj" />
-                <ScalarProperty Name="f_q3zdsx" ColumnName="f_q3zdsx" />
-                <ScalarProperty Name="f_q3ydsx" ColumnName="f_q3ydsx" />
+                <ScalarProperty Name="SumOddsOfVieLastPoint" ColumnName="f_q2pljz" />
+                <ScalarProperty Name="GapOfTeamAVieLastPoint" ColumnName="f_q2zdcj" />
+                <ScalarProperty Name="GapOfTeamBVieLastPoint" ColumnName="f_q2ydcj" />
+                <ScalarProperty Name="OddsOfTeamAHighestScore" ColumnName="f_q3zdpl" />
+                <ScalarProperty Name="OddsOfTeamBHighestScore" ColumnName="f_q3ydpl" />
+                <ScalarProperty Name="GapOfTeamAParlayHighestScore" ColumnName="f_q3zdggcj" />
+                <ScalarProperty Name="GapOfTeamBParlayHighestScore" ColumnName="f_q3ydggcj" />
+                <ScalarProperty Name="DifferenceOfTeamAHighestScore" ColumnName="f_q3zdsx" />
+                <ScalarProperty Name="DifferenceOfTeamBHighestScore" ColumnName="f_q3ydsx" />
                 <ScalarProperty Name="f_q3ldjecj" ColumnName="f_q3ldjecj" />
                 <ScalarProperty Name="f_q3tpl" ColumnName="f_q3tpl" />
-                <ScalarProperty Name="f_q3pljz" ColumnName="f_q3pljz" />
-                <ScalarProperty Name="f_q3zdcj" ColumnName="f_q3zdcj" />
-                <ScalarProperty Name="f_q3ydcj" ColumnName="f_q3ydcj" />
-                <ScalarProperty Name="f_bsjg1_dyj" ColumnName="f_bsjg1_dyj" />
-                <ScalarProperty Name="f_bsjg2_dyj" ColumnName="f_bsjg2_dyj" />
-                <ScalarProperty Name="f_bsjg1_dej" ColumnName="f_bsjg1_dej" />
-                <ScalarProperty Name="f_bsjg2_dej" ColumnName="f_bsjg2_dej" />
-                <ScalarProperty Name="f_bsjg1_dsj" ColumnName="f_bsjg1_dsj" />
-                <ScalarProperty Name="f_bsjg2_dsj" ColumnName="f_bsjg2_dsj" />
-                <ScalarProperty Name="f_bsjg1_dsij" ColumnName="f_bsjg1_dsij" />
-                <ScalarProperty Name="f_bsjg2_dsij" ColumnName="f_bsjg2_dsij" />
-                <ScalarProperty Name="f_bsjg1_jj" ColumnName="f_bsjg1_jj" />
-                <ScalarProperty Name="f_bsjg2_jj" ColumnName="f_bsjg2_jj" />
-                <ScalarProperty Name="f_bsjg1_sbc" ColumnName="f_bsjg1_sbc" />
-                <ScalarProperty Name="f_bsjg2_sbc" ColumnName="f_bsjg2_sbc" />
-                <ScalarProperty Name="f_bsjg1_xbc" ColumnName="f_bsjg1_xbc" />
-                <ScalarProperty Name="f_bsjg2_xbc" ColumnName="f_bsjg2_xbc" />
-                <ScalarProperty Name="f_bsjg1_qc" ColumnName="f_bsjg1_qc" />
-                <ScalarProperty Name="f_bsjg2_qc" ColumnName="f_bsjg2_qc" />
+                <ScalarProperty Name="SumOddsOfHighestScore" ColumnName="f_q3pljz" />
+                <ScalarProperty Name="GapOfTeamAHighestScore" ColumnName="f_q3zdcj" />
+                <ScalarProperty Name="GapOfTeamBHighestScore" ColumnName="f_q3ydcj" />
+                <ScalarProperty Name="GameResultOfTeamAPeriod1" ColumnName="f_bsjg1_dyj" />
+                <ScalarProperty Name="GameResultOfTeamBPeriod1" ColumnName="f_bsjg2_dyj" />
+                <ScalarProperty Name="GameResultOfTeamAPeriod2" ColumnName="f_bsjg1_dej" />
+                <ScalarProperty Name="GameResultOfTeamBPeriod2" ColumnName="f_bsjg2_dej" />
+                <ScalarProperty Name="GameResultOfTeamAPeriod3" ColumnName="f_bsjg1_dsj" />
+                <ScalarProperty Name="GameResultOfTeamBPeriod3" ColumnName="f_bsjg2_dsj" />
+                <ScalarProperty Name="GameResultOfTeamAPeriod4" ColumnName="f_bsjg1_dsij" />
+                <ScalarProperty Name="GameResultOfTeamBPeriod4" ColumnName="f_bsjg2_dsij" />
+                <ScalarProperty Name="GameResultOfTeamAAddPeriod" ColumnName="f_bsjg1_jj" />
+                <ScalarProperty Name="GameResultOfTeamBAddPeriod" ColumnName="f_bsjg2_jj" />
+                <ScalarProperty Name="GameResultOfTeamAFirstHalf" ColumnName="f_bsjg1_sbc" />
+                <ScalarProperty Name="GameResultOfTeamBFirstHalf" ColumnName="f_bsjg2_sbc" />
+                <ScalarProperty Name="GameResultOfTeamASecondHalf" ColumnName="f_bsjg1_xbc" />
+                <ScalarProperty Name="GameResultOfTeamBSecondHalf" ColumnName="f_bsjg2_xbc" />
+                <ScalarProperty Name="GameResultOfTeamA" ColumnName="f_bsjg1_qc" />
+                <ScalarProperty Name="GameResultOfTeamB" ColumnName="f_bsjg2_qc" />
                 <ScalarProperty Name="f_bsjg1_zkczdf" ColumnName="f_bsjg1_zkczdf" />
                 <ScalarProperty Name="f_bsjg2_zkczdf" ColumnName="f_bsjg2_zkczdf" />
-                <ScalarProperty Name="f_bsjg1_qsf" ColumnName="f_bsjg1_qsf" />
-                <ScalarProperty Name="f_bsjg2_qsf" ColumnName="f_bsjg2_qsf" />
-                <ScalarProperty Name="f_bsjg1_qwf" ColumnName="f_bsjg1_qwf" />
-                <ScalarProperty Name="f_bsjg2_qwf" ColumnName="f_bsjg2_qwf" />
-                <ScalarProperty Name="f_bsjg1_djzgdf" ColumnName="f_bsjg1_djzgdf" />
-                <ScalarProperty Name="f_bsjg2_djzgdf" ColumnName="f_bsjg2_djzgdf" />
-                <ScalarProperty Name="f_qsf_i" ColumnName="f_qsf_i" />
-                <ScalarProperty Name="f_qsf_ii" ColumnName="f_qsf_ii" />
-                <ScalarProperty Name="f_qsf_j" ColumnName="f_qsf_j" />
-                <ScalarProperty Name="f_qsf_jj" ColumnName="f_qsf_jj" />
-                <ScalarProperty Name="f_qsf_j2" ColumnName="f_qsf_j2" />
-                <ScalarProperty Name="f_qsf_jj2" ColumnName="f_qsf_jj2" />
-                <ScalarProperty Name="f_qwf_i" ColumnName="f_qwf_i" />
-                <ScalarProperty Name="f_qwf_ii" ColumnName="f_qwf_ii" />
-                <ScalarProperty Name="f_qwf_j" ColumnName="f_qwf_j" />
-                <ScalarProperty Name="f_qwf_jj" ColumnName="f_qwf_jj" />
-                <ScalarProperty Name="f_qwf_j2" ColumnName="f_qwf_j2" />
-                <ScalarProperty Name="f_qwf_jj2" ColumnName="f_qwf_jj2" />
-                <ScalarProperty Name="f_djzgdf_i" ColumnName="f_djzgdf_i" />
-                <ScalarProperty Name="f_djzgdf_ii" ColumnName="f_djzgdf_ii" />
-                <ScalarProperty Name="f_djzgdf_j" ColumnName="f_djzgdf_j" />
-                <ScalarProperty Name="f_djzgdf_jj" ColumnName="f_djzgdf_jj" />
-                <ScalarProperty Name="f_djzgdf_j2" ColumnName="f_djzgdf_j2" />
-                <ScalarProperty Name="f_djzgdf_jj2" ColumnName="f_djzgdf_jj2" />
-                <ScalarProperty Name="f_qsf_a" ColumnName="f_qsf_a" />
-                <ScalarProperty Name="f_qsf_b" ColumnName="f_qsf_b" />
-                <ScalarProperty Name="f_qwf_a" ColumnName="f_qwf_a" />
-                <ScalarProperty Name="f_qwf_b" ColumnName="f_qwf_b" />
-                <ScalarProperty Name="f_djzgdf_a" ColumnName="f_djzgdf_a" />
-                <ScalarProperty Name="f_djzgdf_b" ColumnName="f_djzgdf_b" />
-                <ScalarProperty Name="f_bsjg1_dwj" ColumnName="f_bsjg1_dwj" />
-                <ScalarProperty Name="f_bsjg2_dwj" ColumnName="f_bsjg2_dwj" />
-                <ScalarProperty Name="f_bsjg1_dlj" ColumnName="f_bsjg1_dlj" />
-                <ScalarProperty Name="f_bsjg2_dlj" ColumnName="f_bsjg2_dlj" />
-                <ScalarProperty Name="f_bsjg1_dqj" ColumnName="f_bsjg1_dqj" />
-                <ScalarProperty Name="f_bsjg2_dqj" ColumnName="f_bsjg2_dqj" />
-                <ScalarProperty Name="f_bsjg1_dbj" ColumnName="f_bsjg1_dbj" />
-                <ScalarProperty Name="f_bsjg2_dbj" ColumnName="f_bsjg2_dbj" />
-                <ScalarProperty Name="f_bsjg1_djj" ColumnName="f_bsjg1_djj" />
-                <ScalarProperty Name="f_bsjg2_djj" ColumnName="f_bsjg2_djj" />
-                <ScalarProperty Name="f_dxcj" ColumnName="f_dxcj" />
+                <ScalarProperty Name="GameResultOfTeamAVieFirstPoint" ColumnName="f_bsjg1_qsf" />
+                <ScalarProperty Name="GameResultOfTeamBVieFirstResult" ColumnName="f_bsjg2_qsf" />
+                <ScalarProperty Name="GameResultOfTeamAVieLastPoint" ColumnName="f_bsjg1_qwf" />
+                <ScalarProperty Name="GameResultOfTeamBVieLastPoint" ColumnName="f_bsjg2_qwf" />
+                <ScalarProperty Name="GameResultOfTeamAHighestScore" ColumnName="f_bsjg1_djzgdf" />
+                <ScalarProperty Name="GameResultOfTeamBHighestScore" ColumnName="f_bsjg2_djzgdf" />
+                <ScalarProperty Name="BetCountOfVieFirstPoint" ColumnName="f_qsf_i" />
+                <ScalarProperty Name="BetCountOfVieFirstPoint2" ColumnName="f_qsf_ii" />
+                <ScalarProperty Name="CompanyResultOfVieFirstPoint" ColumnName="f_qsf_j" />
+                <ScalarProperty Name="CompanyResultOfVieFirstPoint2" ColumnName="f_qsf_jj" />
+                <ScalarProperty Name="CompanyMoneyOfVieFirstPoint" ColumnName="f_qsf_j2" />
+                <ScalarProperty Name="CompanyMoneyOfVieFirstPoint2" ColumnName="f_qsf_jj2" />
+                <ScalarProperty Name="BetCountOfVieLastPoint" ColumnName="f_qwf_i" />
+                <ScalarProperty Name="BetCountOfVieLastPoint2" ColumnName="f_qwf_ii" />
+                <ScalarProperty Name="CompanyResultOfVieLastPoint" ColumnName="f_qwf_j" />
+                <ScalarProperty Name="CompanyResultOfVieLastPoint2" ColumnName="f_qwf_jj" />
+                <ScalarProperty Name="CompanyMoneyOfVieLastPoint" ColumnName="f_qwf_j2" />
+                <ScalarProperty Name="CompanyMoneyOfVieLastPoint2" ColumnName="f_qwf_jj2" />
+                <ScalarProperty Name="BetCountOfHighestScore" ColumnName="f_djzgdf_i" />
+                <ScalarProperty Name="BetCountOfHighestScore2" ColumnName="f_djzgdf_ii" />
+                <ScalarProperty Name="CompanyResultOfHighestScore" ColumnName="f_djzgdf_j" />
+                <ScalarProperty Name="CompanyResultOfHighestScore2" ColumnName="f_djzgdf_jj" />
+                <ScalarProperty Name="CompanyMoneyOfHighestScore" ColumnName="f_djzgdf_j2" />
+                <ScalarProperty Name="CompanyMoneyOfHighestScore2" ColumnName="f_djzgdf_jj2" />
+                <ScalarProperty Name="DangerLevelOfTeamAVieFirstPoint" ColumnName="f_qsf_a" />
+                <ScalarProperty Name="DangerLevelOfTeamBVieFirstPoint" ColumnName="f_qsf_b" />
+                <ScalarProperty Name="DangerLevelOfTeamAVieLastPoint" ColumnName="f_qwf_a" />
+                <ScalarProperty Name="DangerLevelOfTeamBVieLastPoint" ColumnName="f_qwf_b" />
+                <ScalarProperty Name="DangerLevelOfTeamAHighestScore" ColumnName="f_djzgdf_a" />
+                <ScalarProperty Name="DangerLevelOfTeamBHighestScore" ColumnName="f_djzgdf_b" />
+                <ScalarProperty Name="GameResultOfTeamAPeriod5" ColumnName="f_bsjg1_dwj" />
+                <ScalarProperty Name="GameResultOfTeamBPeriod5" ColumnName="f_bsjg2_dwj" />
+                <ScalarProperty Name="GameResultOfTeamAPeriod6" ColumnName="f_bsjg1_dlj" />
+                <ScalarProperty Name="GameResultOfTeamBPeriod6" ColumnName="f_bsjg2_dlj" />
+                <ScalarProperty Name="GameResultOfTeamAPeriod7" ColumnName="f_bsjg1_dqj" />
+                <ScalarProperty Name="GameResultOfTeamBPeriod7" ColumnName="f_bsjg2_dqj" />
+                <ScalarProperty Name="GameResultOfTeamAPeriod8" ColumnName="f_bsjg1_dbj" />
+                <ScalarProperty Name="GameResultOfTeamBPeriod8" ColumnName="f_bsjg2_dbj" />
+                <ScalarProperty Name="GameResultOfTeamAPeriod9" ColumnName="f_bsjg1_djj" />
+                <ScalarProperty Name="GameResultOfTeamBPeriod9" ColumnName="f_bsjg2_djj" />
+                <ScalarProperty Name="GapOfScore" ColumnName="f_dxcj" />
                 <ScalarProperty Name="f_suodan" ColumnName="f_suodan" />
-                <ScalarProperty Name="f_rf_dd" ColumnName="f_rf_dd" />
-                <ScalarProperty Name="f_rf_dc" ColumnName="f_rf_dc" />
-                <ScalarProperty Name="f_dx_dd" ColumnName="f_dx_dd" />
-                <ScalarProperty Name="f_dx_dc" ColumnName="f_dx_dc" />
-                <ScalarProperty Name="f_dy_dd" ColumnName="f_dy_dd" />
-                <ScalarProperty Name="f_dy_dc" ColumnName="f_dy_dc" />
-                <ScalarProperty Name="f_er_dd" ColumnName="f_er_dd" />
-                <ScalarProperty Name="f_er_dc" ColumnName="f_er_dc" />
-                <ScalarProperty Name="f_ds_dd" ColumnName="f_ds_dd" />
-                <ScalarProperty Name="f_ds_dc" ColumnName="f_ds_dc" />
-                <ScalarProperty Name="f_sf_dd" ColumnName="f_sf_dd" />
-                <ScalarProperty Name="f_sf_dc" ColumnName="f_sf_dc" />
-                <ScalarProperty Name="f_wf_dd" ColumnName="f_wf_dd" />
-                <ScalarProperty Name="f_wf_dc" ColumnName="f_wf_dc" />
-                <ScalarProperty Name="f_d_rf" ColumnName="f_d_rf" />
-                <ScalarProperty Name="f_d_dx" ColumnName="f_d_dx" />
-                <ScalarProperty Name="f_d_dy" ColumnName="f_d_dy" />
-                <ScalarProperty Name="f_d_ysey" ColumnName="f_d_ysey" />
-                <ScalarProperty Name="f_d_ds" ColumnName="f_d_ds" />
-                <ScalarProperty Name="f_d_qsf" ColumnName="f_d_qsf" />
-                <ScalarProperty Name="f_d_qwf" ColumnName="f_d_qwf" />
-                <ScalarProperty Name="f_lmdj" ColumnName="f_lmdj" />
-                <ScalarProperty Name="f_sxymkf" ColumnName="f_sxymkf" />
-                <ScalarProperty Name="f_SdbsTime" ColumnName="f_SdbsTime" />
-                <ScalarProperty Name="f_Wxtext" ColumnName="f_Wxtext" />
-                <ScalarProperty Name="f_jstext" ColumnName="f_jstext" />
-                <ScalarProperty Name="f_rfdxdsauto" ColumnName="f_rfdxdsauto" />
-                <ScalarProperty Name="f_tpjs_rfpl_j1" ColumnName="f_tpjs_rfpl_j1" />
-                <ScalarProperty Name="f_tpjs_rfpl_p1" ColumnName="f_tpjs_rfpl_p1" />
-                <ScalarProperty Name="f_tpjs_rfpl_j2" ColumnName="f_tpjs_rfpl_j2" />
-                <ScalarProperty Name="f_tpjs_rfpl_p2" ColumnName="f_tpjs_rfpl_p2" />
-                <ScalarProperty Name="f_tpjs_rfpl_p3" ColumnName="f_tpjs_rfpl_p3" />
-                <ScalarProperty Name="f_tpjs_rfpk_j1" ColumnName="f_tpjs_rfpk_j1" />
-                <ScalarProperty Name="f_tpjs_rfpk_p1" ColumnName="f_tpjs_rfpk_p1" />
-                <ScalarProperty Name="f_tpjs_rfpk_j2" ColumnName="f_tpjs_rfpk_j2" />
-                <ScalarProperty Name="f_tpjs_rfpk_p2" ColumnName="f_tpjs_rfpk_p2" />
-                <ScalarProperty Name="f_tpjs_rfpk_p3" ColumnName="f_tpjs_rfpk_p3" />
-                <ScalarProperty Name="f_tpjs_dxpl_j1" ColumnName="f_tpjs_dxpl_j1" />
-                <ScalarProperty Name="f_tpjs_dxpl_p1" ColumnName="f_tpjs_dxpl_p1" />
-                <ScalarProperty Name="f_tpjs_dxpl_j2" ColumnName="f_tpjs_dxpl_j2" />
-                <ScalarProperty Name="f_tpjs_dxpl_p2" ColumnName="f_tpjs_dxpl_p2" />
-                <ScalarProperty Name="f_tpjs_dxpl_p3" ColumnName="f_tpjs_dxpl_p3" />
-                <ScalarProperty Name="f_tpjs_dxpk_j1" ColumnName="f_tpjs_dxpk_j1" />
-                <ScalarProperty Name="f_tpjs_dxpk_p1" ColumnName="f_tpjs_dxpk_p1" />
-                <ScalarProperty Name="f_tpjs_dxpk_j2" ColumnName="f_tpjs_dxpk_j2" />
-                <ScalarProperty Name="f_tpjs_dxpk_p2" ColumnName="f_tpjs_dxpk_p2" />
-                <ScalarProperty Name="f_tpjs_dxpk_p3" ColumnName="f_tpjs_dxpk_p3" />
-                <ScalarProperty Name="f_tpjs_dypl_j1" ColumnName="f_tpjs_dypl_j1" />
-                <ScalarProperty Name="f_tpjs_dypl_p1" ColumnName="f_tpjs_dypl_p1" />
-                <ScalarProperty Name="f_tpjs_dypl_j2" ColumnName="f_tpjs_dypl_j2" />
-                <ScalarProperty Name="f_tpjs_dypl_p2" ColumnName="f_tpjs_dypl_p2" />
-                <ScalarProperty Name="f_tpjs_dypl_p3" ColumnName="f_tpjs_dypl_p3" />
-                <ScalarProperty Name="f_tpjs_dspl_j1" ColumnName="f_tpjs_dspl_j1" />
-                <ScalarProperty Name="f_tpjs_dspl_p1" ColumnName="f_tpjs_dspl_p1" />
-                <ScalarProperty Name="f_tpjs_dspl_j2" ColumnName="f_tpjs_dspl_j2" />
-                <ScalarProperty Name="f_tpjs_dspl_p2" ColumnName="f_tpjs_dspl_p2" />
-                <ScalarProperty Name="f_tpjs_dspl_p3" ColumnName="f_tpjs_dspl_p3" />
-                <ScalarProperty Name="f_tpjs_yepl_j1" ColumnName="f_tpjs_yepl_j1" />
-                <ScalarProperty Name="f_tpjs_yepl_p1" ColumnName="f_tpjs_yepl_p1" />
-                <ScalarProperty Name="f_tpjs_yepl_j2" ColumnName="f_tpjs_yepl_j2" />
-                <ScalarProperty Name="f_tpjs_yepl_p2" ColumnName="f_tpjs_yepl_p2" />
-                <ScalarProperty Name="f_tpjs_yepl_p3" ColumnName="f_tpjs_yepl_p3" />
-                <ScalarProperty Name="f_tpjs_qsfpl_j1" ColumnName="f_tpjs_qsfpl_j1" />
-                <ScalarProperty Name="f_tpjs_qsfpl_p1" ColumnName="f_tpjs_qsfpl_p1" />
-                <ScalarProperty Name="f_tpjs_qsfpl_j2" ColumnName="f_tpjs_qsfpl_j2" />
-                <ScalarProperty Name="f_tpjs_qsfpl_p2" ColumnName="f_tpjs_qsfpl_p2" />
-                <ScalarProperty Name="f_tpjs_qsfpl_p3" ColumnName="f_tpjs_qsfpl_p3" />
-                <ScalarProperty Name="f_tpjs_qwfpl_j1" ColumnName="f_tpjs_qwfpl_j1" />
-                <ScalarProperty Name="f_tpjs_qwfpl_p1" ColumnName="f_tpjs_qwfpl_p1" />
-                <ScalarProperty Name="f_tpjs_qwfpl_j2" ColumnName="f_tpjs_qwfpl_j2" />
-                <ScalarProperty Name="f_tpjs_qwfpl_p2" ColumnName="f_tpjs_qwfpl_p2" />
-                <ScalarProperty Name="f_tpjs_qwfpl_p3" ColumnName="f_tpjs_qwfpl_p3" />
-                <ScalarProperty Name="f_zdyc_rfj11" ColumnName="f_zdyc_rfj11" />
-                <ScalarProperty Name="f_zdyc_rfj21" ColumnName="f_zdyc_rfj21" />
-                <ScalarProperty Name="f_zdyc_rfj31" ColumnName="f_zdyc_rfj31" />
-                <ScalarProperty Name="f_zdyc_rfj41" ColumnName="f_zdyc_rfj41" />
-                <ScalarProperty Name="f_zdyc_rfj51" ColumnName="f_zdyc_rfj51" />
-                <ScalarProperty Name="f_zdyc_rfj12" ColumnName="f_zdyc_rfj12" />
-                <ScalarProperty Name="f_zdyc_rfj22" ColumnName="f_zdyc_rfj22" />
-                <ScalarProperty Name="f_zdyc_rfj32" ColumnName="f_zdyc_rfj32" />
-                <ScalarProperty Name="f_zdyc_rfj42" ColumnName="f_zdyc_rfj42" />
-                <ScalarProperty Name="f_zdyc_rfj52" ColumnName="f_zdyc_rfj52" />
-                <ScalarProperty Name="f_zdyc_rfs1" ColumnName="f_zdyc_rfs1" />
-                <ScalarProperty Name="f_zdyc_rfs2" ColumnName="f_zdyc_rfs2" />
-                <ScalarProperty Name="f_zdyc_rfs3" ColumnName="f_zdyc_rfs3" />
-                <ScalarProperty Name="f_zdyc_rfs4" ColumnName="f_zdyc_rfs4" />
-                <ScalarProperty Name="f_zdyc_rfs5" ColumnName="f_zdyc_rfs5" />
-                <ScalarProperty Name="f_zdyc_dxj11" ColumnName="f_zdyc_dxj11" />
-                <ScalarProperty Name="f_zdyc_dxj21" ColumnName="f_zdyc_dxj21" />
-                <ScalarProperty Name="f_zdyc_dxj31" ColumnName="f_zdyc_dxj31" />
-                <ScalarProperty Name="f_zdyc_dxj41" ColumnName="f_zdyc_dxj41" />
-                <ScalarProperty Name="f_zdyc_dxj51" ColumnName="f_zdyc_dxj51" />
-                <ScalarProperty Name="f_zdyc_dxj12" ColumnName="f_zdyc_dxj12" />
-                <ScalarProperty Name="f_zdyc_dxj22" ColumnName="f_zdyc_dxj22" />
-                <ScalarProperty Name="f_zdyc_dxj32" ColumnName="f_zdyc_dxj32" />
-                <ScalarProperty Name="f_zdyc_dxj42" ColumnName="f_zdyc_dxj42" />
-                <ScalarProperty Name="f_zdyc_dxj52" ColumnName="f_zdyc_dxj52" />
-                <ScalarProperty Name="f_zdyc_dxs1" ColumnName="f_zdyc_dxs1" />
-                <ScalarProperty Name="f_zdyc_dxs2" ColumnName="f_zdyc_dxs2" />
-                <ScalarProperty Name="f_zdyc_dxs3" ColumnName="f_zdyc_dxs3" />
-                <ScalarProperty Name="f_zdyc_dxs4" ColumnName="f_zdyc_dxs4" />
-                <ScalarProperty Name="f_zdyc_dxs5" ColumnName="f_zdyc_dxs5" />
-                <ScalarProperty Name="f_zdyc_dsj11" ColumnName="f_zdyc_dsj11" />
-                <ScalarProperty Name="f_zdyc_dsj21" ColumnName="f_zdyc_dsj21" />
-                <ScalarProperty Name="f_zdyc_dsj31" ColumnName="f_zdyc_dsj31" />
-                <ScalarProperty Name="f_zdyc_dsj41" ColumnName="f_zdyc_dsj41" />
-                <ScalarProperty Name="f_zdyc_dsj51" ColumnName="f_zdyc_dsj51" />
-                <ScalarProperty Name="f_zdyc_dsj12" ColumnName="f_zdyc_dsj12" />
-                <ScalarProperty Name="f_zdyc_dsj22" ColumnName="f_zdyc_dsj22" />
-                <ScalarProperty Name="f_zdyc_dsj32" ColumnName="f_zdyc_dsj32" />
-                <ScalarProperty Name="f_zdyc_dsj42" ColumnName="f_zdyc_dsj42" />
-                <ScalarProperty Name="f_zdyc_dsj52" ColumnName="f_zdyc_dsj52" />
-                <ScalarProperty Name="f_zdyc_dss1" ColumnName="f_zdyc_dss1" />
-                <ScalarProperty Name="f_zdyc_dss2" ColumnName="f_zdyc_dss2" />
-                <ScalarProperty Name="f_zdyc_dss3" ColumnName="f_zdyc_dss3" />
-                <ScalarProperty Name="f_zdyc_dss4" ColumnName="f_zdyc_dss4" />
-                <ScalarProperty Name="f_zdyc_dss5" ColumnName="f_zdyc_dss5" />
+                <ScalarProperty Name="LimitOfSpreadSingleBet" ColumnName="f_rf_dd" />
+                <ScalarProperty Name="LimitOfSpreadSingleScene" ColumnName="f_rf_dc" />
+                <ScalarProperty Name="LimitOfScoreSingleBet" ColumnName="f_dx_dd" />
+                <ScalarProperty Name="LimitOfScoreSingleScene" ColumnName="f_dx_dc" />
+                <ScalarProperty Name="LimitOfCapotSingleBet" ColumnName="f_dy_dd" />
+                <ScalarProperty Name="LimitOfCapotSingleScene" ColumnName="f_dy_dc" />
+                <ScalarProperty Name="LimitOfOneLoseTwoWinSingleBet" ColumnName="f_er_dd" />
+                <ScalarProperty Name="LimitOfOneLoseTwoWinSingleScene" ColumnName="f_er_dc" />
+                <ScalarProperty Name="LimitOfSingleOrDoubleSingleBet" ColumnName="f_ds_dd" />
+                <ScalarProperty Name="LimitOfSingleOrDoubleSingleScene" ColumnName="f_ds_dc" />
+                <ScalarProperty Name="LimitOfVieFirstPointSingleBet" ColumnName="f_sf_dd" />
+                <ScalarProperty Name="LimitOfVieFirstPointSingleScene" ColumnName="f_sf_dc" />
+                <ScalarProperty Name="LimitOfVieLastPointSingleBet" ColumnName="f_wf_dd" />
+                <ScalarProperty Name="LimitOfVieLastPointSingleScene" ColumnName="f_wf_dc" />
+                <ScalarProperty Name="BigBetOfSpread" ColumnName="f_d_rf" />
+                <ScalarProperty Name="BigBetOfScore" ColumnName="f_d_dx" />
+                <ScalarProperty Name="BigBetOfCapot" ColumnName="f_d_dy" />
+                <ScalarProperty Name="BigBetOfOneLoseTwoWin" ColumnName="f_d_ysey" />
+                <ScalarProperty Name="BigBetOfSingleOrDouble" ColumnName="f_d_ds" />
+                <ScalarProperty Name="BigBetOfVieFirstPoint" ColumnName="f_d_qsf" />
+                <ScalarProperty Name="BigBetOfVieLastPoint" ColumnName="f_d_qwf" />
+                <ScalarProperty Name="AllienceLevel" ColumnName="f_lmdj" />
+                <ScalarProperty Name="FullFlag" ColumnName="f_sxymkf" />
+                <ScalarProperty Name="SetGameTime" ColumnName="f_SdbsTime" />
+                <ScalarProperty Name="DangerInformation" ColumnName="f_Wxtext" />
+                <ScalarProperty Name="CalculateRecords" ColumnName="f_jstext" />
+                <ScalarProperty Name="GameLinkedFlag" ColumnName="f_rfdxdsauto" />
+                <ScalarProperty Name="AmountOfSpreadOdds1" ColumnName="f_tpjs_rfpl_j1" />
+                <ScalarProperty Name="OddsOfSpread1" ColumnName="f_tpjs_rfpl_p1" />
+                <ScalarProperty Name="AmountOfSpreadOdds2" ColumnName="f_tpjs_rfpl_j2" />
+                <ScalarProperty Name="OddsOfSpread2" ColumnName="f_tpjs_rfpl_p2" />
+                <ScalarProperty Name="OddsOfSpread3" ColumnName="f_tpjs_rfpl_p3" />
+                <ScalarProperty Name="AmountOfSpreadHandicap1" ColumnName="f_tpjs_rfpk_j1" />
+                <ScalarProperty Name="HandicapOfSpread1" ColumnName="f_tpjs_rfpk_p1" />
+                <ScalarProperty Name="AmountOfSpreadHandicap2" ColumnName="f_tpjs_rfpk_j2" />
+                <ScalarProperty Name="HandicapOfSpread2" ColumnName="f_tpjs_rfpk_p2" />
+                <ScalarProperty Name="HandicapOfSpread3" ColumnName="f_tpjs_rfpk_p3" />
+                <ScalarProperty Name="AmountOfScoreOdds1" ColumnName="f_tpjs_dxpl_j1" />
+                <ScalarProperty Name="OddsOfScore1" ColumnName="f_tpjs_dxpl_p1" />
+                <ScalarProperty Name="AmountOfScoreOdds2" ColumnName="f_tpjs_dxpl_j2" />
+                <ScalarProperty Name="OddsOfScore2" ColumnName="f_tpjs_dxpl_p2" />
+                <ScalarProperty Name="OddsOfScore3" ColumnName="f_tpjs_dxpl_p3" />
+                <ScalarProperty Name="AmountOfScoreHandicap1" ColumnName="f_tpjs_dxpk_j1" />
+                <ScalarProperty Name="HandicapOfScore1" ColumnName="f_tpjs_dxpk_p1" />
+                <ScalarProperty Name="AmountOfScoreHandicap2" ColumnName="f_tpjs_dxpk_j2" />
+                <ScalarProperty Name="HandicapOfScore2" ColumnName="f_tpjs_dxpk_p2" />
+                <ScalarProperty Name="HandicapOfScore3" ColumnName="f_tpjs_dxpk_p3" />
+                <ScalarProperty Name="AmountOfCapotOdds1" ColumnName="f_tpjs_dypl_j1" />
+                <ScalarProperty Name="OddsOfCapot1" ColumnName="f_tpjs_dypl_p1" />
+                <ScalarProperty Name="AmountOfCapotOdds2" ColumnName="f_tpjs_dypl_j2" />
+                <ScalarProperty Name="OddsOfCapot2" ColumnName="f_tpjs_dypl_p2" />
+                <ScalarProperty Name="OddsOfCapot3" ColumnName="f_tpjs_dypl_p3" />
+                <ScalarProperty Name="AmountOfSingleOrDoubleOdds1" ColumnName="f_tpjs_dspl_j1" />
+                <ScalarProperty Name="OddsOfSingleOrDouble1" ColumnName="f_tpjs_dspl_p1" />
+                <ScalarProperty Name="AmountOfSingleOrDoubleOdds2" ColumnName="f_tpjs_dspl_j2" />
+                <ScalarProperty Name="OddsOfSingleOrDouble2" ColumnName="f_tpjs_dspl_p2" />
+                <ScalarProperty Name="OddsOfSingleOrDouble3" ColumnName="f_tpjs_dspl_p3" />
+                <ScalarProperty Name="AmountOfOneLoseTwoWinOdds1" ColumnName="f_tpjs_yepl_j1" />
+                <ScalarProperty Name="OddsOfOneLoseTwoWin1" ColumnName="f_tpjs_yepl_p1" />
+                <ScalarProperty Name="AmountOfOneLoseTwoWinOdds2" ColumnName="f_tpjs_yepl_j2" />
+                <ScalarProperty Name="OddsOfOneLoseTwoWin2" ColumnName="f_tpjs_yepl_p2" />
+                <ScalarProperty Name="OddsOfOneLoseTwoWin3" ColumnName="f_tpjs_yepl_p3" />
+                <ScalarProperty Name="AmountOfVieFirstPointOdds1" ColumnName="f_tpjs_qsfpl_j1" />
+                <ScalarProperty Name="OddsOfVieFirstPoint1" ColumnName="f_tpjs_qsfpl_p1" />
+                <ScalarProperty Name="AmountOfVieFirstPointOdds2" ColumnName="f_tpjs_qsfpl_j2" />
+                <ScalarProperty Name="OddsOfVieFirstPoint2" ColumnName="f_tpjs_qsfpl_p2" />
+                <ScalarProperty Name="OddsOfVieFirstPoint3" ColumnName="f_tpjs_qsfpl_p3" />
+                <ScalarProperty Name="AmountOfVieLastPointOdds1" ColumnName="f_tpjs_qwfpl_j1" />
+                <ScalarProperty Name="OddsOfVieLastPoint1" ColumnName="f_tpjs_qwfpl_p1" />
+                <ScalarProperty Name="AmountOfVieLastPointOdds2" ColumnName="f_tpjs_qwfpl_j2" />
+                <ScalarProperty Name="OddsOfVieLastPoint2" ColumnName="f_tpjs_qwfpl_p2" />
+                <ScalarProperty Name="OddsOfVieLastPoint3" ColumnName="f_tpjs_qwfpl_p3" />
+                <ScalarProperty Name="RollingAmountOfSpread11" ColumnName="f_zdyc_rfj11" />
+                <ScalarProperty Name="RollingAmountOfSpread21" ColumnName="f_zdyc_rfj21" />
+                <ScalarProperty Name="RollingAmountOfSpread31" ColumnName="f_zdyc_rfj31" />
+                <ScalarProperty Name="RollingAmountOfSpread41" ColumnName="f_zdyc_rfj41" />
+                <ScalarProperty Name="RollingAmountOfSpread51" ColumnName="f_zdyc_rfj51" />
+                <ScalarProperty Name="RollingAmountOfSpread12" ColumnName="f_zdyc_rfj12" />
+                <ScalarProperty Name="RollingAmountOfSpread22" ColumnName="f_zdyc_rfj22" />
+                <ScalarProperty Name="RollingAmountOfSpread32" ColumnName="f_zdyc_rfj32" />
+                <ScalarProperty Name="RollingAmountOfSpread42" ColumnName="f_zdyc_rfj42" />
+                <ScalarProperty Name="RollingAmountOfSpread52" ColumnName="f_zdyc_rfj52" />
+                <ScalarProperty Name="RollingDelayOfSpread1" ColumnName="f_zdyc_rfs1" />
+                <ScalarProperty Name="RollingDelayOfSpread2" ColumnName="f_zdyc_rfs2" />
+                <ScalarProperty Name="RollingDelayOfSpread3" ColumnName="f_zdyc_rfs3" />
+                <ScalarProperty Name="RollingDelayOfSpread4" ColumnName="f_zdyc_rfs4" />
+                <ScalarProperty Name="RollingDelayOfSpread5" ColumnName="f_zdyc_rfs5" />
+                <ScalarProperty Name="RollingAmountOfScore11" ColumnName="f_zdyc_dxj11" />
+                <ScalarProperty Name="RollingAmountOfScore21" ColumnName="f_zdyc_dxj21" />
+                <ScalarProperty Name="RollingAmountOfScore31" ColumnName="f_zdyc_dxj31" />
+                <ScalarProperty Name="RollingAmountOfScore41" ColumnName="f_zdyc_dxj41" />
+                <ScalarProperty Name="RollingAmountOfScore51" ColumnName="f_zdyc_dxj51" />
+                <ScalarProperty Name="RollingAmountOfScore12" ColumnName="f_zdyc_dxj12" />
+                <ScalarProperty Name="RollingAmountOfScore22" ColumnName="f_zdyc_dxj22" />
+                <ScalarProperty Name="RollingAmountOfScore32" ColumnName="f_zdyc_dxj32" />
+                <ScalarProperty Name="RollingAmountOfScore42" ColumnName="f_zdyc_dxj42" />
+                <ScalarProperty Name="RollingAmountOfScore52" ColumnName="f_zdyc_dxj52" />
+                <ScalarProperty Name="RollingDelayOfScore1" ColumnName="f_zdyc_dxs1" />
+                <ScalarProperty Name="RollingDelayOfScore2" ColumnName="f_zdyc_dxs2" />
+                <ScalarProperty Name="RollingDelayOfScore3" ColumnName="f_zdyc_dxs3" />
+                <ScalarProperty Name="RollingDelayOfScore4" ColumnName="f_zdyc_dxs4" />
+                <ScalarProperty Name="RollingDelayOfScore5" ColumnName="f_zdyc_dxs5" />
+                <ScalarProperty Name="RollingAmountOfSingleOrDouble11" ColumnName="f_zdyc_dsj11" />
+                <ScalarProperty Name="RollingAmountOfSingleOrDouble21" ColumnName="f_zdyc_dsj21" />
+                <ScalarProperty Name="RollingAmountOfSingleOrDouble31" ColumnName="f_zdyc_dsj31" />
+                <ScalarProperty Name="RollingAmountOfSingleOrDouble41" ColumnName="f_zdyc_dsj41" />
+                <ScalarProperty Name="RollingAmountOfSingleOrDouble51" ColumnName="f_zdyc_dsj51" />
+                <ScalarProperty Name="RollingAmountOfSingleOrDouble12" ColumnName="f_zdyc_dsj12" />
+                <ScalarProperty Name="RollingAmountOfSingleOrDouble22" ColumnName="f_zdyc_dsj22" />
+                <ScalarProperty Name="RollingAmountOfSingleOrDouble32" ColumnName="f_zdyc_dsj32" />
+                <ScalarProperty Name="RollingAmountOfSingleOrDouble42" ColumnName="f_zdyc_dsj42" />
+                <ScalarProperty Name="RollingAmountOfSingleOrDouble52" ColumnName="f_zdyc_dsj52" />
+                <ScalarProperty Name="RollingDelayOfSingleOrDouble1" ColumnName="f_zdyc_dss1" />
+                <ScalarProperty Name="RollingDelayOfSingleOrDouble2" ColumnName="f_zdyc_dss2" />
+                <ScalarProperty Name="RollingDelayOfSingleOrDouble3" ColumnName="f_zdyc_dss3" />
+                <ScalarProperty Name="RollingDelayOfSingleOrDouble4" ColumnName="f_zdyc_dss4" />
+                <ScalarProperty Name="RollingDelayOfSingleOrDouble5" ColumnName="f_zdyc_dss5" />
                 <ScalarProperty Name="f_rfx" ColumnName="f_rfx" />
                 <ScalarProperty Name="f_rfy" ColumnName="f_rfy" />
                 <ScalarProperty Name="f_rfz" ColumnName="f_rfz" />
@@ -2429,7 +2429,7 @@
                 <ScalarProperty Name="f_qwz" ColumnName="f_qwz" />
                 <ScalarProperty Name="f_jmjbkf" ColumnName="f_jmjbkf" />
                 <ScalarProperty Name="f_fzlmkfsd" ColumnName="f_fzlmkfsd" />
-                <ScalarProperty Name="f_ballid" ColumnName="f_ballid" />
+                <ScalarProperty Name="BallId" ColumnName="f_ballid" />
                 <ScalarProperty Name="f_countryid" ColumnName="f_countryid" />
                 <ScalarProperty Name="f_holiday" ColumnName="f_holiday" />
                 <ScalarProperty Name="f_isqy" ColumnName="f_isqy" />
@@ -2493,7 +2493,7 @@
                 <ScalarProperty Name="f_tpjs_rf0fppk_p2" ColumnName="f_tpjs_rf0fppk_p2" />
                 <ScalarProperty Name="f_tpjs_rf0fppk_p3" ColumnName="f_tpjs_rf0fppk_p3" />
                 <ScalarProperty Name="f_gpbj" ColumnName="f_gpbj" />
-                <ScalarProperty Name="f_playid" ColumnName="f_playid" />
+                <ScalarProperty Name="PlayId" ColumnName="f_playid" />
                 <ScalarProperty Name="f_ballgroup" ColumnName="f_ballgroup" />
                 <ScalarProperty Name="f_playtmid1" ColumnName="f_playtmid1" />
                 <ScalarProperty Name="f_playtmid2" ColumnName="f_playtmid2" />

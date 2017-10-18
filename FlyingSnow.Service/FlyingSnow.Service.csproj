@@ -45,6 +45,7 @@
     <Compile Include="AllianceService.cs" />
     <Compile Include="BillService.cs" />
     <Compile Include="BillStatisticsService.cs" />
+    <Compile Include="GameService.cs" />
     <Compile Include="ManagerService.cs" />
     <Compile Include="MonitorService.cs" />
     <Compile Include="OnlineService.cs" />
